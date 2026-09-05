@@ -5,7 +5,7 @@ misbehaviour-detection benchmarks.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22397725.svg)](https://doi.org/10.5281/zenodo.22397725)
 
-**Paper:** `workspace/paper/veremi_audit.pdf` · **Archive:** <https://doi.org/10.5281/zenodo.22397725>
+**Paper:** `workspace/paper/veremi_audit.pdf` (conference, 12 pp) · `veremi_audit_journal.pdf` (IEEE Transactions, 10 pp) · **Archive:** <https://doi.org/10.5281/zenodo.22397725>
 
 ---
 
