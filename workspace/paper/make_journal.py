@@ -38,6 +38,28 @@ cut(r"\maketitle",
     "\\markboth{IEEE Transactions on Intelligent Transportation Systems}%\n"
     "{Muzammil: What VeReMi Measures}\n\\maketitle", "running head")
 
+# T-ITS wants the affiliation as a title footnote rather than an author block,
+# and Regular Papers carry a biography. The conference variant keeps its block.
+a = s.index(r"\author{")
+b = s.index("\n\n", a)
+s = s[:a] + r"""\author{Hannan~Muzammil%
+\thanks{Manuscript submitted for review. This work received no external funding.}%
+\thanks{H. Muzammil is with Hannsoft (e-mail: abdullhannan0311@gmail.com;
+web: https://www.hannsoft.org/).}%
+\thanks{The replication package is archived at doi:10.5281/zenodo.22397725.}}
+""" + s[b + 1:]
+applied.append("author footnote")
+
+cut(r"\end{document}",
+    r"""\begin{IEEEbiographynophoto}{Hannan Muzammil}
+is an independent researcher at Hannsoft. His work concerns measurement
+and reproducibility in vehicular network security, with a focus on what
+shared evaluation benchmarks encode. He maintains the replication package
+accompanying this paper.
+\end{IEEEbiographynophoto}
+
+\end{document}""", "biography")
+
 # --- 1. visual abstract ----------------------------------------------------------
 a = s.index(r"\begin{figure}[t]")
 b = s.index(r"\end{figure}", a) + len(r"\end{figure}")
@@ -80,13 +102,13 @@ applied.append("Section IV")
 # --- 4. Discussion lists ---------------------------------------------------------
 cut("""We propose the cascade itself as a pre-publication check.
 Any detector evaluated on these archives can be run through it.
-A result that survives S0 to S6 has earned its number.
+A result that survives S0 to S6 has passed our controls.
 A result that collapses at S2 was reading the partition.
 The released script takes an archive and a model flag.
 It reports the ladder for whatever detector is supplied.
 A logistic regression run through it behaves the same way.
 That removal is followed by 0.096 there and 0.064 here.
-The ladder is a property of the data, not of one model.
+We tested two model families, which agree on that ordering.
 
 We also propose seven reporting rules.
 State the attacker fraction and beacon rate always.
@@ -97,11 +119,11 @@ Match evidence per identity when comparing policies.
 Use identity-free tokens and disjoint splits by vehicle.
 Publish the prevalence sweep, not one operating point.""",
     """We propose the cascade itself as a pre-publication check.
-A result surviving S0 to S6 has earned its number.
+A result surviving S0 to S6 has passed our controls.
 A result collapsing at S2 was reading the partition.
 The released script accepts any detector through a model flag.
 A logistic regression behaves the same way, moving 0.096 against 0.064.
-The ladder is a property of the data, not of one model.
+We tested two model families, which agree on that ordering.
 
 Seven reporting rules follow from the measurements.
 Always state the attacker fraction, beacon rate and density.
@@ -226,10 +248,10 @@ A manifest records hashes, library versions and self-tested metric code.""",
     "availability")
 
 # --- 8. conclusion ----------------------------------------------------------------
-cut("""One untrained scalar solves six of eight archives.
+cut("""One untrained count scalar exceeds AUC 0.99 on six archives.
 Timing alone reaches near-perfect linkage accuracy.
 Geometry, the meaningful signal, performs far worse.""",
-    """One untrained timing scalar solves six of eight archives.
+    """One untrained count scalar exceeds AUC 0.99 on six archives.
 Geometry, the meaningful signal, performs far worse.""",
     "conclusion findings")
 

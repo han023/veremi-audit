@@ -29,12 +29,14 @@ g = casc[casc.archive == "GridSybil_0709"].set_index("stage")["auc"]
 published, controlled = float(g["S0_published"]), float(g["S6_no_rate"])
 
 scalar = pd.read_csv("workspace/sybilbench/exp1b_rate_baseline_v2.csv")
-# The count and the value must share a threshold. 1.000 holds on four archives;
-# six reach 0.99 or better. 0.993 would exclude DataReplaySybil sparse at 0.9929.
+# The count and the value must share a threshold, and the claim says ONE scalar,
+# so this counts message count alone rather than the better of two per archive.
+# Message count clears 0.99 on six. 0.993 would drop DataReplaySybil sparse at
+# 0.9929, leaving five, so the count and the printed threshold would disagree.
 THRESHOLD = 0.99
-best_scalar = float(scalar.AUC_interval_alone.max())
-n_solved = int(((scalar.AUC_interval_alone >= THRESHOLD)
-                | (scalar.AUC_msgcount_alone >= THRESHOLD)).sum())
+# the log reports the same scalar the caption counts, so the two cannot drift
+best_scalar = float(scalar.AUC_msgcount_alone.max())
+n_solved = int((scalar.AUC_msgcount_alone >= THRESHOLD).sum())
 
 path = pd.read_csv("workspace/verify/v5_pathloss.csv").set_index("fit")
 oof = float(path.loc["all_links", "auc_oof"])
@@ -75,7 +77,7 @@ ax.text(7.55, 4.62, "AUC", fontsize=6.4, color=SOFT, ha="left")
 
 ax.plot([0.45, 9.3], [1.12, 1.12], color="#d8d7d2", lw=0.8)
 ax.text(0.45, 0.68,
-        "One untrained scalar reaches AUC %.2f or better on %d of the eight."
+        "Message count alone reaches AUC %.2f or better on %d of the eight."
         % (THRESHOLD, n_solved),
         fontsize=6.4, color=INK)
 ax.text(0.45, 0.20,
@@ -85,5 +87,6 @@ ax.text(0.45, 0.20,
 fig.tight_layout(pad=0.15)
 fig.savefig("workspace/paper/fig_abstract.pdf", bbox_inches="tight")
 fig.savefig("workspace/paper/fig_abstract.png", dpi=240, bbox_inches="tight")
-print("wrote fig_abstract: published %.3f, controlled %.3f, scalar %.3f on %d, phy %.3f"
-      % (published, controlled, best_scalar, n_solved, oof))
+print("wrote fig_abstract: published %.3f, controlled %.3f, "
+      "msgcount max %.3f, >=%.2f on %d, phy %.3f"
+      % (published, controlled, best_scalar, THRESHOLD, n_solved, oof))

@@ -78,24 +78,24 @@ cefc10704cb96962  verify/v8_nextgen_probe.py
 dc204730b5a5cf1a  paper/assemble.py
 fa01281acd29122f  paper/audit_numbers.py
 8360eaa9d123101b  paper/bibliography.tex
-81a46e2df16b060b  paper/body_new.tex
-9ac4ee3dfeb687ab  paper/check_claims.py
+792ae8cc5fb7b542  paper/body_new.tex
+f3f71341756fb287  paper/check_claims.py
 37112bdb6db76bfe  paper/check_refs.py
 bc0f69a2bf1d16ad  paper/check_sentences.py
 f612d20e94d516ca  paper/fig_ablation.pdf
-5b5848fd35bca0a8  paper/fig_abstract.pdf
+3ab0769674968b92  paper/fig_abstract.pdf
 a31a53e9584b1ae7  paper/fig_decode.pdf
 703ec678898a2f70  paper/fig_prevalence.pdf
 d9fbd314d6411591  paper/find_corruption.py
 a03c4116913fb881  paper/fix_criticals.py
-b8f1ee092dd20124  paper/make_fig_abstract.py
+f56ee469ac40a052  paper/make_fig_abstract.py
 e5805bd4ff1564b1  paper/make_figure.py
 9ecaa932f6b9a0db  paper/make_figures_2_3.py
-cabcdee57f50e4fa  paper/make_journal.py
-407ae0de537c3a94  paper/veremi_audit.pdf
-a60a1fcc52d73b68  paper/veremi_audit.tex
-b2d002bdae7548d7  paper/veremi_audit_journal.pdf
-356505afdd0f9f84  paper/veremi_audit_journal.tex
+f7e30bf88e1ec256  paper/make_journal.py
+1d990e45de6a8d61  paper/veremi_audit.pdf
+85c0ebf8568d390c  paper/veremi_audit.tex
+8532fb6aff500aa7  paper/veremi_audit_journal.pdf
+cc6704ebadc1b33c  paper/veremi_audit_journal.tex
 ```
 
 ## results

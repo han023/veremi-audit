@@ -89,6 +89,31 @@ for a in ARCH:
     check("scalar %s attacker interval" % a,
           in_text("Benign identities beacon at 1.0"), "1.0 s benign")
 
+# The headline count and the scalar it belongs to. The abstract once said one
+# scalar solved six archives "reading message timing alone": median interval
+# clears 0.99 on four, message count on six. The two were being mixed. Both
+# counts are pinned here so the sentence cannot drift from the table again.
+THRESH = 0.99
+n_count = int((scalar.AUC_msgcount_alone >= THRESH).sum())
+n_interval = int((scalar.AUC_interval_alone >= THRESH).sum())
+check("message count clears 0.99 on six", n_count == 6, str(n_count))
+check("median interval clears 0.99 on four", n_interval == 4, str(n_interval))
+check("headline names the count scalar",
+      in_text("That scalar is raw message count"), "named")
+check("headline states the threshold",
+      in_text("exceeds AUC 0.99 on six of eight VeReMi archives"), "stated")
+check("count claim grounded beside the table",
+      in_text("Message count exceeds AUC 0.99 on six of the eight"), "grounded")
+check("interval claim grounded beside the table",
+      in_text("Median interval reaches 1.000 on the four DoS archives"), "grounded")
+
+# "solves" has no defined threshold, so it is not used of a detection result.
+check("no undefined 'solves' wording", not in_text("solves"), "absent")
+
+# The NextGen rotation result covers the scenarios we ran, not the design.
+check("NextGen rotation claim is scoped",
+      in_text("in the four scenarios we measured"), "scoped")
+
 # ---------------------------------------------------------------- ablation table
 fam = {"GridSybil": ["GridSybil_0709", "GridSybil_1416"],
        "DoSRandomSybil": ["DoSRandomSybil_0709", "DoSRandomSybil_1416"],

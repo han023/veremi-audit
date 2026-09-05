@@ -16,16 +16,19 @@
 
 \title{What VeReMi Measures: Structural Artefacts in\\ VANET Misbehaviour Detection Benchmarks}
 
-\author{\IEEEauthorblockN{Hannan Muzammil}
-\IEEEauthorblockA{Hannsoft\\ \url{https://www.hannsoft.org/}\\ abdullhannan0311@gmail.com}}
+\author{Hannan~Muzammil%
+\thanks{Manuscript submitted for review. This work received no external funding.}%
+\thanks{H. Muzammil is with Hannsoft (e-mail: abdullhannan0311@gmail.com;
+web: https://www.hannsoft.org/).}%
+\thanks{The replication package is archived at doi:10.5281/zenodo.22397725.}}
 
 \markboth{IEEE Transactions on Intelligent Transportation Systems}%
 {Muzammil: What VeReMi Measures}
 \maketitle
 
 \begin{abstract}
-One untrained scalar solves six of eight VeReMi archives.
-It reads message timing alone, never a claimed position.
+One untrained scalar exceeds AUC 0.99 on six of eight VeReMi archives.
+That scalar is raw message count, never a claimed position.
 These archives are the field's main shared misbehaviour benchmark.
 Reported detection rates on them sit between 94\% and 99.9\%.
 We audit them by measurement: every claim is re-derived from source.
@@ -93,7 +96,7 @@ Our contributions are as follows.
 \begin{itemize}
   \item We document six structural artefacts across all eight Sybil archives.
         Each is measured from source, not read from documentation.
-  \item We show a single untrained scalar solves most archives.
+  \item A single untrained scalar exceeds AUC 0.99 on six archives.
         No training, no linkage and no physical reasoning are required.
   \item We separate timing evidence from geometric evidence.
         Timing alone reaches AUC near unity on several families.
@@ -193,7 +196,6 @@ NextGen \cite{nextgen2026} & yes & no & no & first structural probe \\
 
 Only the Guven set pairs Sybil attacks with received power.
 We could not evaluate it, for the reason given later.
-We found no study in our search that measures them structurally.
 
 Adjacent work does question evaluation.
 SixPack evades detectors by abusing anti-lock braking signals~\cite{sixpack2021}.
@@ -571,7 +573,7 @@ Its test fold contained a single class.
 
 \section{How Far the Task Is Simplified}
 
-\subsection{One scalar solves most archives}
+\subsection{One scalar separates six of eight archives}
 
 We computed two statistics per identity.
 The first is median inter-arrival time.
@@ -618,6 +620,8 @@ We measure 50\,s, so arithmetic and archive agree.
 Benign identities beacon once per second throughout.
 Median inter-arrival is therefore a sufficient statistic here.
 Geometry is redundant by construction, not by weakness.
+Message count exceeds AUC 0.99 on six of the eight.
+Median interval reaches 1.000 on the four DoS archives.
 Only the two GridSybil archives resist both trivial statistics.
 
 \subsection{Timing evidence versus geometric evidence}
@@ -1077,7 +1081,8 @@ Linkage from it sits at chance in all four scenarios.
 The artefact we weight most heavily is gone.
 
 Three things survive the redesign.
-Benign identities still never rotate, so privacy stays unstudiable.
+Benign identities never rotate in the four scenarios we measured.
+Pseudonym-change policy therefore stays unstudiable there too.
 Receiver duplication persists, at a median of 2 to 49 copies.
 Message count alone still reaches AUC 0.972 to 0.996.
 
@@ -1104,11 +1109,11 @@ We report identity-level figures only, and say so.
 \subsection{What should change}
 
 We propose the cascade itself as a pre-publication check.
-A result surviving S0 to S6 has earned its number.
+A result surviving S0 to S6 has passed our controls.
 A result collapsing at S2 was reading the partition.
 The released script accepts any detector through a model flag.
 A logistic regression behaves the same way, moving 0.096 against 0.064.
-The ladder is a property of the data, not of one model.
+We tested two model families, which agree on that ordering.
 
 Seven reporting rules follow from the measurements.
 Always state the attacker fraction, beacon rate and density.
@@ -1170,7 +1175,7 @@ Pseudonyms encode sender identity almost everywhere.
 Honest vehicles never change pseudonyms in these archives.
 Attacker prevalence is fixed at thirty percent throughout.
 Ground-truth files omit most pseudonyms the attackers emitted.
-One untrained timing scalar solves six of eight archives.
+One untrained count scalar exceeds AUC 0.99 on six archives.
 Geometry, the meaningful signal, performs far worse.
 
 We then staged the protocol from published practice to deployment.
@@ -1274,5 +1279,12 @@ A manifest records hashes, library versions and self-tested metric code.
 \bibitem{hadri2026} H.~Hadri, M.~Ouadou, and K.~Minaoui, ``A novel approach to Sybil attack detection in VANETs using verifiable delay functions and hierarchical fog-cloud architecture,'' \emph{J. Cybersecurity and Privacy}, vol.~6, no.~2, 2026. DOI: \url{10.3390/jcp6020059}.
 
 \end{thebibliography}
+
+\begin{IEEEbiographynophoto}{Hannan Muzammil}
+is an independent researcher at Hannsoft. His work concerns measurement
+and reproducibility in vehicular network security, with a focus on what
+shared evaluation benchmarks encode. He maintains the replication package
+accompanying this paper.
+\end{IEEEbiographynophoto}
 
 \end{document}
