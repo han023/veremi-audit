@@ -17,13 +17,15 @@ ROOT = Path("workspace")
 GROUPS = [
     ("loader and analysis", ["sybilbench/loader.py", "sybilbench/loader_veremi2018.py",
                              "sybilbench/analysis.py", "sybilbench/pseudonym_layer.py"]),
-    ("experiments", sorted(str(p.relative_to(ROOT)) for p in (ROOT / "sybilbench").glob("exp*.py"))),
-    ("independent verification", sorted(str(p.relative_to(ROOT)) for p in (ROOT / "verify").glob("v*.py"))),
-    ("paper", ["paper/veremi_audit.tex", "paper/assemble.py", "paper/body_new.tex",
-               "paper/bibliography.tex", "paper/make_figure.py",
-               "paper/check_sentences.py", "paper/check_refs.py"]),
-    ("results", sorted(str(p.relative_to(ROOT)) for p in (ROOT / "sybilbench").glob("*.csv"))
-                + sorted(str(p.relative_to(ROOT)) for p in (ROOT / "verify").glob("*.csv"))),
+    ("experiments", sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "sybilbench").glob("exp*.py"))),
+    ("independent verification", sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "verify").glob("v*.py"))),
+    # globbed, not listed: a hardcoded list silently drops scripts added later,
+    # and the paper promises a hash per file
+    ("paper", sorted(p.relative_to(ROOT).as_posix()
+                     for ext in ("*.py", "*.tex", "*.pdf")
+                     for p in (ROOT / "paper").glob(ext))),
+    ("results", sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "sybilbench").glob("*.csv"))
+                + sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "verify").glob("*.csv"))),
 ]
 
 

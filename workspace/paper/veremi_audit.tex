@@ -198,8 +198,9 @@ VeReMi NextGen moves to the InTAS scenario and adds attacks.
 It ships predefined training and validation splits.
 Its aliases do not encode the sender: at most 0.02\%.
 That single change removes our first structural artefact.
-Our audit concerns VeReMi and its extension only.
-We have not audited NextGen, and it deserves the same treatment.
+Our structural audit concerns VeReMi and its extension.
+Section~\ref{sec:generalise} carries the same measurements to NextGen.
+A full audit of NextGen is future work, not this paper.
 
 Table~\ref{tab:datasets} places the four artefacts side by side.
 It also states what this audit adds to each.
@@ -270,7 +271,8 @@ Statements below about absent prior work refer to this search.
 
 \subsection{Datasets and their schema}
 
-We used three public artefacts, verified by MD5 against Zenodo.
+Three public artefacts form the substrate, verified by MD5 against Zenodo.
+A fourth, VeReMi NextGen, is used only in Section~\ref{sec:generalise}.
 VeReMi 2018 provides received power and position falsification attacks.
 Its record is \url{10.5281/zenodo.20081895}.
 VeReMi Extension provides Sybil families and pseudonyms.
@@ -1228,7 +1230,8 @@ We report it as one distribution, uniform, not as a model.
 Observations are not independent within a vehicle.
 Consecutive beacons from one sender are strongly correlated.
 Our splits are vehicle-disjoint, which handles the worst of that.
-Temporal dependence within a fold remains, and inflates precision.
+Temporal dependence remains within folds.
+Uncertainty estimates are therefore optimistic.
 
 Two further limits are structural.
 Emulated infrastructure uses claimed positions for reception.

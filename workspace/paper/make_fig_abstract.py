@@ -29,8 +29,12 @@ g = casc[casc.archive == "GridSybil_0709"].set_index("stage")["auc"]
 published, controlled = float(g["S0_published"]), float(g["S6_no_rate"])
 
 scalar = pd.read_csv("workspace/sybilbench/exp1b_rate_baseline_v2.csv")
+# The count and the value must share a threshold. 1.000 holds on four archives;
+# six reach 0.99 or better. 0.993 would exclude DataReplaySybil sparse at 0.9929.
+THRESHOLD = 0.99
 best_scalar = float(scalar.AUC_interval_alone.max())
-n_solved = int(((scalar.AUC_interval_alone >= 0.99) | (scalar.AUC_msgcount_alone >= 0.99)).sum())
+n_solved = int(((scalar.AUC_interval_alone >= THRESHOLD)
+                | (scalar.AUC_msgcount_alone >= THRESHOLD)).sum())
 
 path = pd.read_csv("workspace/verify/v5_pathloss.csv").set_index("fit")
 oof = float(path.loc["all_links", "auc_oof"])
@@ -71,8 +75,8 @@ ax.text(7.55, 4.62, "AUC", fontsize=6.4, color=SOFT, ha="left")
 
 ax.plot([0.45, 9.3], [1.12, 1.12], color="#d8d7d2", lw=0.8)
 ax.text(0.45, 0.68,
-        "One untrained scalar already reaches %.3f on %d of the eight."
-        % (best_scalar, n_solved),
+        "One untrained scalar reaches AUC %.2f or better on %d of the eight."
+        % (THRESHOLD, n_solved),
         fontsize=6.4, color=INK)
 ax.text(0.45, 0.20,
         "Signal-strength position verification reaches %.3f, which is chance." % oof,

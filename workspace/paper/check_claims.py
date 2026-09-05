@@ -254,7 +254,13 @@ check("nextgen encoding bound", in_text("at most %.2f" % ng.encoding_pct.max()),
       "%.2f" % ng.encoding_pct.max())
 check("nextgen splits are predefined",
       in_text("predefined training and validation splits"), "Train/Validation present")
-check("nextgen not claimed as audited", in_text("We have not audited NextGen"), "scoped")
+# The old assertion demanded a sentence that Section X made false. What must hold
+# is that the structural audit is scoped to VeReMi and its extension, while the
+# generalisation section is named as where NextGen is measured.
+check("nextgen scoping is consistent with Section X",
+      in_text("Our structural audit concerns VeReMi and its extension")
+      and in_text("A full audit of NextGen is future work")
+      and not in_text("We have not audited NextGen"), "reconciled")
 
 # ------------------------------------------------------- physical-layer scope
 check("physical-layer claim is scoped to 2018",

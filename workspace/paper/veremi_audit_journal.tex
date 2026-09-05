@@ -166,8 +166,9 @@ VeReMi NextGen moves to the InTAS scenario and adds attacks.
 It ships predefined training and validation splits.
 Its aliases do not encode the sender: at most 0.02\%.
 That single change removes our first structural artefact.
-Our audit concerns VeReMi and its extension only.
-We have not audited NextGen, and it deserves the same treatment.
+Our structural audit concerns VeReMi and its extension.
+Section~\ref{sec:generalise} carries the same measurements to NextGen.
+A full audit of NextGen is future work, not this paper.
 
 Table~\ref{tab:datasets} places the four artefacts side by side.
 It also states what this audit adds to each.
@@ -238,7 +239,8 @@ Statements below about absent prior work refer to this search.
 
 \subsection{Datasets and their schema}
 
-We used three public artefacts, verified by MD5 against Zenodo.
+Three public artefacts form the substrate, verified by MD5 against Zenodo.
+A fourth, VeReMi NextGen, is used only in Section~\ref{sec:generalise}.
 VeReMi 2018 provides received power and position falsification attacks.
 Its record is \url{10.5281/zenodo.20081895}.
 VeReMi Extension provides Sybil families and pseudonyms.
@@ -1149,7 +1151,8 @@ We report one uniform distribution, not a channel model.
 
 Observations are not independent within a vehicle.
 Vehicle-disjoint splits handle the worst of that dependence.
-Temporal dependence within a fold remains, and inflates precision.
+Temporal dependence remains within folds.
+Uncertainty estimates are therefore optimistic.
 
 Two further limits are structural.
 Emulated infrastructure uses claimed positions for reception.
@@ -1167,19 +1170,16 @@ Pseudonyms encode sender identity almost everywhere.
 Honest vehicles never change pseudonyms in these archives.
 Attacker prevalence is fixed at thirty percent throughout.
 Ground-truth files omit most pseudonyms the attackers emitted.
-One untrained scalar solves six of eight archives.
-Timing alone reaches near-perfect linkage accuracy.
+One untrained timing scalar solves six of eight archives.
 Geometry, the meaningful signal, performs far worse.
 
 We then staged the protocol from published practice to deployment.
 Removing ground-truth aggregation moved the score furthest.
 The pseudonym feature added nothing once aggregation was fixed.
 Ranking metrics survive a prevalence change; precision metrics do not.
-Finally, VeReMi 2018 cannot validate the signal-strength family.
+VeReMi 2018 cannot validate the signal-strength family.
 An accessible calibrated dataset is therefore a necessity.
-
 Our code, controls and checklist accompany this paper.
-We hope future results become comparable again.
 
 \section*{Ethics}
 
@@ -1191,17 +1191,13 @@ We report its stated availability, take no position, and never obtained it.
 
 \section*{Availability}
 
-Scripts, controls and result tables are released with this paper.
-They reproduce every number above from the raw archives.
+Scripts, controls and result tables reproduce every number above.
 The archive is deposited at \url{10.5281/zenodo.22397725}.
 A container image rebuilds and re-verifies it in one command.
-The full eight-archive census ships as a machine-readable table.
-Every statistic we measured is a column, not only those printed here.
-
+The eight-archive census ships as a machine-readable table.
+Every measured statistic is a column there, not only printed ones.
 Every result file names the script that produced it.
-A manifest records a hash per file and the library versions.
-The archive states the route from raw data to every table.
-Independent metric implementations are included and self-tested.
+A manifest records hashes, library versions and self-tested metric code.
 
 \begin{thebibliography}{99}
 
