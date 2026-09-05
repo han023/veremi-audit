@@ -114,6 +114,21 @@ check("no undefined 'solves' wording", not in_text("solves"), "absent")
 check("NextGen rotation claim is scoped",
       in_text("in the four scenarios we measured"), "scoped")
 
+# Wording that reviewers flagged as absolute, causal, or interpretive. Each was
+# corrected once; these keep the correction from being undone by a later edit.
+check("NextGen substrate is primary, not total",
+      in_text("form the primary substrate"), "scoped")
+check("NextGen named as the fourth artefact",
+      in_text("A fourth, VeReMi NextGen, is evaluated in"), "named")
+check("NextGen pseudonym capability acknowledged",
+      in_text("The generator supports pseudonym change"), "acknowledged")
+check("S2 wording is sensitivity, not cause",
+      not in_text("was reading the partition")
+      and in_text("shows strong sensitivity to the partition"), "corrected")
+check("geometry described as physically motivated",
+      not in_text("meaningful signal")
+      and in_text("physically motivated signal"), "corrected")
+
 # ---------------------------------------------------------------- ablation table
 fam = {"GridSybil": ["GridSybil_0709", "GridSybil_1416"],
        "DoSRandomSybil": ["DoSRandomSybil_0709", "DoSRandomSybil_1416"],
@@ -267,7 +282,12 @@ pct_unnamed = 100.0 - usage.loc["any named public dataset", "share_pct"]
 check("corpus total full texts", in_text("Of our %d full texts" % n_total), str(n_total))
 check("corpus VeReMi mentions", in_text("%d mention VeReMi at all" % n_veremi), str(n_veremi))
 check("corpus named datasets", in_text("Only %d name any public dataset" % n_named), str(n_named))
-check("corpus bespoke share", in_text("remaining %.0f" % pct_unnamed), "%.1f" % pct_unnamed)
+# %.0f rounded 92.4 to "92", which collided with the corpus size of 92 texts.
+# The count and the percentage are both pinned now, at one decimal place.
+n_unnamed = n_total - n_named
+check("corpus bespoke count", in_text("The other %d," % n_unnamed), str(n_unnamed))
+check("corpus bespoke share", in_text(r"or %.1f\%%, name none" % pct_unnamed),
+      "%.1f" % pct_unnamed)
 check("no 'almost entirely' claim survives", not in_text("almost entirely"), "removed")
 check("no unqualified 'no public dataset' claim",
       not in_text("No public dataset offers both together"), "removed")

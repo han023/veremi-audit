@@ -88,7 +88,7 @@ Its extension added attack families including explicit Sybil variants~\cite{kame
 Shared evaluation is nonetheless rare in this literature.
 Of our 92 full texts, 5 mention VeReMi at all.
 Only 7 name any public dataset whatsoever.
-The remaining 92\% name no public dataset at all.
+The other 85, or 92.4\%, name none.
 So these archives are not ubiquitous; they are the main alternative.
 That is precisely why their contents matter.
 
@@ -270,8 +270,8 @@ Statements below about absent prior work refer to this search.
 
 \subsection{Datasets and their schema}
 
-Three public artefacts form the substrate, verified by MD5 against Zenodo.
-A fourth, VeReMi NextGen, is used only in Section~\ref{sec:generalise}.
+Three public artefacts form the primary substrate, verified by MD5 against Zenodo.
+A fourth, VeReMi NextGen, is evaluated in Section~\ref{sec:generalise}.
 VeReMi 2018 provides received power and position falsification attacks.
 Its record is \url{10.5281/zenodo.20081895}.
 VeReMi Extension provides Sybil families and pseudonyms.
@@ -699,7 +699,7 @@ Features were partitioned into timing and geometry.
 \caption{Timing evidence versus geometric evidence, per archive.
 Each pair shows one archive under two feature sets.
 Timing alone sits at or near AUC 1.000 everywhere.
-Geometry, the physically meaningful signal, varies widely.
+Geometry, the physically motivated signal, varies widely.
 The dashed rule marks chance at AUC 0.5.
 DataReplaySybil is absent: it yields no concurrent pairs.}
 \label{fig:ablation}
@@ -724,7 +724,7 @@ DataReplaySybil & no concurrent pairs & --- \\
 Figure~\ref{fig:ablation} shows the gap per archive.
 Table~\ref{tab:ablation} gives the same result by family.
 Timing alone reaches unity on every measurable family.
-Geometry, the physically meaningful signal, is much weaker.
+Geometry, the physically motivated signal, is much weaker.
 
 The mechanism is a fixed transmission schedule.
 Sibling identities interleave on their attacker's clock.
@@ -1145,7 +1145,8 @@ The artefact we weight most heavily is gone.
 
 Three things survive the redesign.
 Benign identities never rotate in the four scenarios we measured.
-Pseudonym-change policy therefore stays unstudiable there too.
+The generator supports pseudonym change; these released runs do not exercise it.
+Policy therefore stays unstudiable in the scenarios we obtained.
 Receiver duplication persists, at a median of 2 to 49 copies.
 Message count alone still reaches AUC 0.972 to 0.996.
 
@@ -1174,7 +1175,7 @@ We report identity-level figures only, and say so.
 We propose the cascade itself as a pre-publication check.
 Any detector evaluated on these archives can be run through it.
 A result that survives S0 to S6 has passed our controls.
-A result that collapses at S2 was reading the partition.
+A result that collapses at S2 shows strong sensitivity to the partition.
 The released script takes an archive and a model flag.
 It reports the ladder for whatever detector is supplied.
 A logistic regression run through it behaves the same way.
@@ -1254,7 +1255,7 @@ Attacker prevalence is fixed at thirty percent throughout.
 Ground-truth files omit most pseudonyms the attackers emitted.
 One untrained count scalar exceeds AUC 0.99 on six archives.
 Timing alone reaches near-perfect linkage accuracy.
-Geometry, the meaningful signal, performs far worse.
+Geometry, the physically motivated signal, performs far worse.
 
 We then staged the protocol from published practice to deployment.
 Removing ground-truth aggregation moved the score furthest.

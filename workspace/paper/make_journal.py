@@ -103,7 +103,7 @@ applied.append("Section IV")
 cut("""We propose the cascade itself as a pre-publication check.
 Any detector evaluated on these archives can be run through it.
 A result that survives S0 to S6 has passed our controls.
-A result that collapses at S2 was reading the partition.
+A result that collapses at S2 shows strong sensitivity to the partition.
 The released script takes an archive and a model flag.
 It reports the ladder for whatever detector is supplied.
 A logistic regression run through it behaves the same way.
@@ -120,7 +120,7 @@ Use identity-free tokens and disjoint splits by vehicle.
 Publish the prevalence sweep, not one operating point.""",
     """We propose the cascade itself as a pre-publication check.
 A result surviving S0 to S6 has passed our controls.
-A result collapsing at S2 was reading the partition.
+A result collapsing at S2 shows strong sensitivity to the partition.
 The released script accepts any detector through a model flag.
 A logistic regression behaves the same way, moving 0.096 against 0.064.
 We tested two model families, which agree on that ordering.
@@ -250,9 +250,9 @@ A manifest records hashes, library versions and self-tested metric code.""",
 # --- 8. conclusion ----------------------------------------------------------------
 cut("""One untrained count scalar exceeds AUC 0.99 on six archives.
 Timing alone reaches near-perfect linkage accuracy.
-Geometry, the meaningful signal, performs far worse.""",
+Geometry, the physically motivated signal, performs far worse.""",
     """One untrained count scalar exceeds AUC 0.99 on six archives.
-Geometry, the meaningful signal, performs far worse.""",
+Geometry, the physically motivated signal, performs far worse.""",
     "conclusion findings")
 
 cut("""Finally, VeReMi 2018 cannot validate the signal-strength family.
