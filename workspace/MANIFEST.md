@@ -75,12 +75,12 @@ acd8c9999bd6f0b3  verify\v7_dataset_usage.py
 ## paper
 
 ```
-ce7b78bd9394cb70  paper/veremi_audit.tex
+bcc21c44841aa169  paper/veremi_audit.tex
 f79d4d90ba8e26b8  paper/assemble.py
-a5cacb2a699e8d57  paper/body_new.tex
+de3053310629a93c  paper/body_new.tex
 8360eaa9d123101b  paper/bibliography.tex
 e5805bd4ff1564b1  paper/make_figure.py
-fd33010baa266ca9  paper/check_sentences.py
+bc0f69a2bf1d16ad  paper/check_sentences.py
 5d2fe04fca9b8ba4  paper/check_refs.py
 ```
 

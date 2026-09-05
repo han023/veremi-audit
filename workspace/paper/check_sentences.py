@@ -13,6 +13,7 @@ start = text.index(r"\begin{document}")
 end = text.index(r"\begin{thebibliography}")
 body = text[start:end]
 
+body = re.sub(r"\\markboth\{.*?\}\s*%?\s*\{.*?\}", " ", body, flags=re.S)
 body = re.sub(r"\\author\{.*?\}\}", " ", body, flags=re.S)
 body = re.sub(r"\\begin\{table\*?\}.*?\\end\{table\*?\}", " ", body, flags=re.S)
 # Escaped percent must go before comment stripping: otherwise the bare % left behind
