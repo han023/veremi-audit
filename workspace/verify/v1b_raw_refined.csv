@@ -1,0 +1,9 @@
+archive,windows,vehicles,attackers,benign,prevalence_vehicles_pct,senders_unlabelled,gt_messages,identities,identities_attacker,prevalence_identities_pct,encoding_pct_messages,encoding_pct_pairs,distinct_pairs,ids_per_benign_max,ids_per_attacker_min,ids_per_attacker_med,ids_per_attacker_max,pseudonyms_shared_by_many,shared_pseudonym_values,shared_pseudonym_msgs,recv_records,unique_transmissions,copies_median,copies_mean,copies_ratio_records_over_unique
+GridSybil_0709,2,4064,1219,2845,30.0,0,769016,7606,5948,67.64,80.8,86.49,8793,1,1,3,7,1,[1],147672,5483111,747559,6.0,7.335,7.335
+GridSybil_1416,3,1691,507,1182,29.98,0,350805,1689,507,30.02,100.0,100.0,1689,1,1,1,1,0,[],0,1501368,318633,4.0,4.712,4.712
+DataReplaySybil_0709,2,4068,1221,2847,30.01,0,410724,4068,1221,30.01,100.0,100.0,4068,1,1,1,1,0,[],0,2954753,398239,7.0,7.42,7.42
+DataReplaySybil_1416,3,1691,507,1182,29.98,0,180030,1689,507,30.02,100.0,100.0,1689,1,1,1,1,0,[],0,767958,162983,4.0,4.712,4.712
+DoSRandomSybil_0709,2,4068,1221,2847,30.01,0,529676,4068,1221,30.01,100.0,100.0,4068,1,1,1,1,0,[],0,3822887,513901,7.0,7.439,7.439
+DoSRandomSybil_1416,3,1691,507,1182,29.98,0,235178,1689,507,30.02,100.0,100.0,1689,1,1,1,1,0,[],0,1005847,213282,4.0,4.716,4.716
+DoSDisruptiveSybil_0709,2,4068,1221,2847,30.01,0,529676,4068,1221,30.01,100.0,100.0,4068,1,1,1,1,0,[],0,3822887,513901,7.0,7.439,7.439
+DoSDisruptiveSybil_1416,3,1691,507,1182,29.98,0,235178,1689,507,30.02,100.0,100.0,1689,1,1,1,1,0,[],0,1005847,213282,4.0,4.716,4.716

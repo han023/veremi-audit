@@ -1,0 +1,13 @@
+{
+ "source": "OpenAlex REST API",
+ "queried": "2026-09-05",
+ "records": [
+  {
+   "doi": "10.1109/ICC40277.2020.9149132",
+   "title": "VeReMi Extension: A Dataset for Comparable Evaluation of Misbehavior Detection in VANETs",
+   "cited_by_count": 216,
+   "endpoint": "https://api.openalex.org/works/doi:10.1109/ICC40277.2020.9149132"
+  }
+ ],
+ "note": "Cited in the introduction. Live counts drift; this records the value used and the date it was read."
+}

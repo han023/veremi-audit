@@ -1,0 +1,37 @@
+# The source archives. 12 GB, not ours to redistribute, and fetched by
+# workspace/verify_datasets.py from their own Zenodo records.
+workspace/datasets/
+
+# The 92 open-access papers and their extracted text. Other people's work.
+# The derived match matrix in workspace/verify/ keeps the corpus counts checkable.
+pdfs/
+workspace/text/
+
+# Rebuilt by workspace/sybilbench/run_ingest.py from the archives.
+workspace/sybilbench/cache/
+
+# Build outputs and the release zips, which are deposited rather than committed.
+workspace/release/
+workspace/tools/
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Harvest working files. meta/raw/ holds base64 blobs of publisher responses,
+# which may carry copyrighted full text; the logs hold request traces. The corpus
+# they produced ships as index.csv and references.bib, which is the reusable part.
+meta/raw/
+meta/*.log
+meta/*.json
+
+# Third-party figure, not ours to redistribute.
+F2MD-Diagram-V2.jpg
+*.jpg
+*.jpeg

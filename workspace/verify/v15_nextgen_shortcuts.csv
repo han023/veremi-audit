@@ -1,0 +1,5 @@
+scenario,records,vehicles,attacker_vehicles,prevalence_vehicles_pct,identities,identities_attacker,prevalence_identities_pct,encoding_pct,benign_alias_max,benign_with_more_than_one,attacker_alias_med,attacker_alias_max,copies_median,identities_scored,AUC_interval,AUC_msgcount,AUC_interval_lo,AUC_interval_hi
+InTAS_highway_2_trafficCongestionSybil,73694,19015,18533,97.47,19035,18553,97.47,0.0,1,0,1.0,2,2.0,10300,0.185,0.9962,0.1639,0.2062
+InTAS_highway_7_trafficCongestionSybil,2710088,33091,32529,98.3,33164,32602,98.31,0.0,1,0,1.0,2,49.0,33048,0.5,0.9902,0.5,0.5
+InTAS_urban_2_trafficCongestionSybil,610159,105805,104640,98.9,106581,105416,98.91,0.0,1,0,1.0,3,3.0,76735,0.2847,0.9935,0.2698,0.2992
+InTAS_urban_7_trafficCongestionSybil,2684189,49568,49133,99.12,49717,49282,99.13,0.0,1,0,1.0,2,31.0,48705,0.4804,0.972,0.4704,0.4889

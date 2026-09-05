@@ -1,0 +1,2781 @@
+[
+ {
+  "file": "2006_Xiao_Detection_and_localization_of_sybil_nodes_in_VANETs.pdf",
+  "year": 2006,
+  "cites": 252,
+  "title": "Detection and localization of sybil nodes in VANETs",
+  "venue": null,
+  "assumptions": [
+   "the system assumptions which would be appropriate for future applications of V ANETs. 2.1 Attack Model The Sybil attack refers to a malicious node illegitimately taking on multiple identities [7]. In wireless networks, mobile nodes usu- ally discover new neighbors by periodically",
+   "we assume that there are a certain amount of vehicles travelling independently on roads and most drivers (ve- hicles) can be trusted. Only a few greedy drivers (vehicles) may perform Sybil attacks in order to achieve their malicious goals.",
+   "we assume that all vehicles, including malicious vehicles, are equipped with same radio modules, one for each. The radio module may be based on any RF(Radio Frequency) communication tech- nique providing RSSI(Received Signal Strength Indicator), such as DSRC [1].",
+   "we assume that each vehicle is equipped with GPS devices, and GPS positions are supposed to be accurate. Fi- nally, we assume that roadside base stations are sparsely deployed along roads, and the identity authentication infrastructure such as ELP(Electronic License Plate) [5] ha",
+   "we assume that roadside base stations are sparsely deployed along roads, and the identity authentication infrastructure such as ELP(Electronic License Plate) [5] has been implemented for the whole network. Identity authentication prevents a malicious ve- hicle from unlimitedly fa"
+  ],
+  "threat_model": [
+   "attack model and system assumptions. Section 3 presents the basic position veriﬁcation scheme based on signal strength mea- surement.",
+   "attack model of Sybil attacks and then present the system assumptions which would be appropriate for future applications of V ANETs. 2.1 Attack Model The Sybil attack refers to a malicious node illegitimately taking on multiple identities [7]. In wireless networks, mobile nodes u",
+   "Attack Model The Sybil attack refers to a malicious node illegitimately taking on multiple identities [7]. In wireless networks, mobile nodes usu- ally discover new neighbors by periodically broadcasting beacon packets, in which they claim their identities."
+  ],
+  "limitations": [
+   "cannot prevent Sybil attacks, because a malicious node may get multiple identities by non-technical means such as stealing. Further, strict registration causes serious privacy concerns.",
+   "cannot prevent Sybil attacks. Please also note that the main detection mechanisms of our scheme are not implemented in roadside base stations, but we do require indirect support from base stations. 3."
+  ],
+  "future_work": [
+   "our future work. 4.2 Detection Model We propose the following model for detecting Sybil nodes in V ANETs. Let P be a Euclidean space and let ‖P1 − P2‖ denote the Euclidian distance from point P1 to P2.",
+   "in the future. First, we plan to implement a prototype system for our scheme and then investigate its feasibility in real vehicular settings."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "30% Sybil"
+  ],
+  "claimed_perf": [
+   "detection rate over 95%",
+   "detection rate is larger than 90%",
+   "detection rate ( ≥99%",
+   "false positive rate less than 10%",
+   "detection rate ( ≥95%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2007_Bouassida_Sybil_Nodes_Detection_Based_on_Received_Signal_Strength_Variations_within_VANET.pdf",
+  "year": 2007,
+  "cites": 74,
+  "title": "Sybil Nodes Detection Based on Received Signal Strength Variations within VANET",
+  "venue": null,
+  "assumptions": [
+   "We assume that the transmission of a single message is immediate, allowing to consider the positions of S and R as ﬁxed points of the space at the time of transmission. We denote by d( S, R) the distance between S and R.",
+   "we assume that each car periodically diﬀuses some hello messages containing their GPS posi- tion. To create a Sybil node F , a sender S could give some false GPS positions in its messages.",
+   "We assume that all the mobile nodes (cars) are on the same two-dimensional Euclidean space, approximat- ing the earth’s surface. To estimate the number of poten- tially cheated cars, we can equivalently compute the area of the Euclidean plan where the Sybil attack cannot be detec",
+   "We assume that the veriﬁer node receives enough messages from the two nodes, in order to evaluate their localizations each ti. We deﬁne M the balanced geometric mean of the dif- ferences between the localizations of the two nodes X and Y at each ti, by adding to each diﬀerence be",
+   "We assume that two nodes localized at distance D at ti are distinct. For example, in V ANET we can choose D = 60m (for a mean speed evaluated at 30m/sec)."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "future work. International Journal of Network Security, Vol.9, No.1, PP.22–33, July 2009 23 2 Existing Sybil Detection Ap- proaches The Sybil attack was ﬁrst described and formalized by Douceur in [6].",
+   "Future Work The establishment of secure communications within wire- less networks remain a key issue because of the vulnerabil- ities of such environment (mobility, dynamicity, wireless links, lack of infrastructure, . . . ) [2]. Indeed, wireless net- works are subject to malicio",
+   "As future work, we plan to elaborate a distributed trust management architecture within V ANET, allowing net- work nodes to cooperate and collaborate in order to en- sure secure communications between them, while detect- ing Sybil and malicious entities. International Journal of "
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2007_Guette_On_the_Sybil_attack_detection_in_VANET.pdf",
+  "year": 2007,
+  "cites": 99,
+  "title": "On the Sybil attack detection in VANET",
+  "venue": null,
+  "assumptions": [
+   "We assume that the transmission of a single message is immediate. As detection of Sybil nodes is general ly done at the reception of a message, we can consider S and R as ﬁxed points of the space at the time of reception.",
+   "we assume that each car periodically diffuses their GPS position. To create a Sybil node F , a sender S could give some false GPS positions in its messages.",
+   "We assume that all the mobile nodes (cars) are on the same two-dimensional Euclidean space, approximating the earth ’s surface. To compute the number of cheated cars, we can equivalently compute the area of the Euclidean plan where the Sybil attack cannot be detected."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "FUTURE WORK In this paper, the inﬂuence of different assumptions on the success of Sybil attacks has been studied. The transmission signal tuning and the kind of reception antenna (either omni - or bi-directional) have been taken into account.",
+   "As future work, we plan to study how node collaboration can reduce the success area of Sybil attacks. This model is based on trust relations establ ish- ment between nodes and may not require cryptography."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2007_Zhou_PrivacyPreserving_Detection_of_Sybil_Attacks_in_Vehicular_Ad_Hoc_Networks.pdf",
+  "year": 2007,
+  "cites": 87,
+  "title": "Privacy-Preserving Detection of Sybil Attacks in Vehicular Ad Hoc Networks",
+  "venue": null,
+  "assumptions": [
+   "We assumethatanattackeriscapableofthefollowing actions,inadditiontoaSybilattack.Ofcourse,someof theseattackshavealreadybeenaddressedinliterature. 1)Eavesdroponwirelessmessages:Inthisattack,an attackertriestotrackavehiclebyassociatingtwo ormorepseudonymstonearbytimesandlocations. "
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [
+   "90vehicles",
+   "90vehicles",
+   "30vehicles",
+   "70vehicles",
+   "110vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2009_Park_Defense_against_Sybil_attack_in_vehicular_ad_hoc_network_based_on_roadside_unit_support.pdf",
+  "year": 2009,
+  "cites": 124,
+  "title": "Defense against Sybil attack in vehicular ad hoc network based on roadside unit support",
+  "venue": null,
+  "assumptions": [
+   "We assume that an attacker can obtain any information on the network at any desired place by using his ow n manufactured devices, but he has a limited number o f devices. The aggregated timestamp includes the previous RSUs’ information."
+  ],
+  "threat_model": [
+   "attack model, our protocol provides security against Sybil attacks and provides driver’s privacy protection. • Prevention of Sybil attack : Any receiver node can detect the Sybil attack of a malicious vehicle if any. • Driver’s privacy protection : It is difficult to track or tra"
+  ],
+  "limitations": [
+   "limitation of RSS based Sybil detection in V ANET. 3. SYSTEM MODEL AND GOAL 3.1 ASSUMPTIONS We consider the initial deployment stage of V ANET where (1) only a small fraction of vehicles on road s are equipped with wireless communication devices (we ca ll them smart vehicles); (2",
+   "limitations and challenges f or extending the approach to urban environments where the roadways have complex topology with many stop traff ic signals, intersections and obstacles. Finally, we p rovide architecture able to solve these challenges. 4.1 BASIC SCHEME On simple structu"
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2011_Chang_Footprint_Detecting_Sybil_Attacks_in_Urban_Vehicular_Networks.pdf",
+  "year": 2011,
+  "cites": 143,
+  "title": "Footprint: Detecting Sybil Attacks in Urban Vehicular Networks",
+  "venue": "IEEE Transactions on Parallel and Distributed Systems",
+  "assumptions": [
+   "we assume that all RSUs are trustworthy. However, if an RSU is compromised, it can help a malicious vehicle generate fake legal trajectories (e.g., by inserting link tags of other RSUs into a forged trajectory)."
+  ],
+  "threat_model": [
+   "attack models in vehicular networks, pointing out the requirements for designing Sybil attack detection schemes in urban vehicular networks. Section 4 elaborates the design of Footprint.",
+   "Attack Model In order to launch a Sybil attack, a malicious vehicle must try to present multiple distinct identities. This can be achieved by either generating legal identities or by impersonating other normal vehicles."
+  ],
+  "limitations": [
+   "limitation on the linkability of two authorized messages, authorized messages used for long-term identification are prohibited. With this scheme, vehicles can generate a location-hidden trajectory for location-privacy-preserved identification by collecting a consecutive series of",
+   "limitation on the linkability of two authorized messages, authorized messages used for long- term identification are prohibited. Therefore, using author- ized messages for identification of vehicles will not harm anonymity of vehicles.",
+   "limitation of Footprint is that Footprint requires an infrastructure of RSUs and a trust authority (TA) existing in the system in order to generate trajectories and establish trust among entities, respectively. We verify that Footprint can achieve all design objectives through se",
+   "cannot handle similar but different messages. It is often the case that multiple vehicles observing the same driving environment will generate different messages with very similar semantics.",
+   "limitations of each road segment and the layout of RSU deployment. Based on these features, we first conduct an exclusion test, examining whether two trajectories are distinct.",
+   "limitations, traffic condition). In summary, although it cannot fully eliminate the threat of Sybil attacks, Footprint can largely restrict Sybil attacks from happening and enormously reduce the impact even if a Sybil attack happens."
+  ],
+  "future_work": [
+   "future work in Section 8. 2R ELATED WORK While it was first described and formalized by Douceur [3], the Sybil attack has been a severe and pervasive problem in many forms. In a Sybil attack, an attacker can launch a Sybil attack by forging multiple identifies, gaining a dispropo",
+   "FUTURE WORK In this paper, we have developed a Sybil attack detection scheme Footprint for urban vehicular networks. Consecu- tive authorized messages obtained by an anonymous vehicle from RSUs form a tr ajectory to identify the corresponding vehicle.",
+   "future work, we will consider the scenario where a small fraction of RSUs are compromised. We will develop cost-efficient techniques to fast detect the corrup- tion of an RSU."
+  ],
+  "baselines": [],
+  "n_vehicles": [
+   "19 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2011_Mortazavi_Distributed_Sybil_Attack_Detection_in_VANET.pdf",
+  "year": 2011,
+  "cites": 4,
+  "title": "Distributed Sybil Attack Detection in VANET",
+  "venue": "International Journal of Computer Applications",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "future works. 2. P2DAP APPROACH Tong Zhou et al. [7] have presented a distributed approach in which RSU can detect Sybil attacks in conjunction with CA,named as Privacy Preserving Detection of Abuses of Pseudonyms (P2DAP).",
+   "future works. 6. REFERENCES [1] Akyildiz, I.F., et al., A survey on sensor networks."
+  ],
+  "baselines": [
+   "outperforms P2DAP by limiting attackers’ ability to misuse pseudonyms. If attackers in a region compromise anRSU, they are unable to use the global private keys from compromised RSU out of the r"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2011_Rahbari_Efficient_Detection_of_Sybil_attack_Based_on_Cryptography_in_Vanet.pdf",
+  "year": 2011,
+  "cites": 19,
+  "title": "Efficient Detection of Sybil attack Based on Cryptography in Vanet",
+  "venue": "International Journal of Network Security & Its Applications",
+  "assumptions": [
+   "It is assumed that every physical entity is equipped with limited comp utational resources. A typical puzzle is given to all the nodes in the network for testing c omputational resources."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "does not detect some attacks. 3.2. Propagation Model Sybil attack can also be detected by using a propag ation model as described in[4,5,6]."
+  ],
+  "future_work": [
+   "our future work we would like to discover location of malicious node, because this nodes is important pro blem in this type of attacks, prevents of other attacks if malicious nodes is identify. This proposed schema have a problem, that, if nodes move to other rejoins, detection o",
+   "future work we would like to improved this method to detection of Sybil attack execute properly and completely. International Journal of Network Security & Its Applications (IJNSA), Vol.3, No.6, November 2011 194 REFERENCES [1] J."
+  ],
+  "baselines": [
+   "comparison with dynamic structures. The purpose of this paper present a method based on a fixed key infrastructure for detection impersonation attack, in other words, Sybil attack, in the vehicul",
+   "comparison with encryption delay. In reception of m essage, the vehicle only generate message digest with AK and compares it with received messag e digest that takes very short time."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2012_Zoghby_Distributed_Data_Fusion_for_Detecting_Sybil_Attacks_in_VANETs.pdf",
+  "year": 2012,
+  "cites": 15,
+  "title": "Distributed Data Fusion for Detecting Sybil Attacks in VANETs",
+  "venue": "Advances in intelligent and soft computing",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2013_Almutaz_Sybil_detection_in_vehicular_networks.pdf",
+  "year": 2013,
+  "cites": 0,
+  "title": "Sybil detection in vehicular networks",
+  "venue": null,
+  "assumptions": [
+   "We assume that a certain number of Road Side Units (RSUs) are deployed in the vehicular network, which can communicate with each other. The RSUs can communicate wirelessly with other vehicles on the road, and many traﬃc lights at intersections today can themselves function as RSU",
+   "We assume that each vehicle in our system is equipped with a 2-way radio like DSRC (Dedicated Short Range Communications) to send and receive messages to other vehicles and RSUs in a local scope. Each Vehicle Vx also has a unique identity that can identify it in the network.",
+   "We assume a Central Authority (CA) that is involved in coordination among all RSUs, along with any key and pseudonym distribution among vehicles. The CA and RSUs are assumed to be trusted.",
+   "We assume in this thesis that RSUs have some prior information about vehicles and speed distributions along road segments. Such an assumption is reasonable and practical as well."
+  ],
+  "threat_model": [
+   "ATTACK MODEL AND PROBLEM DEFINITION .................... 10 3.3. OUR PROPOSED TECHNIQUE FOR SYBIL DETECTION ......... 10 3.4.",
+   "attack model, problem statement, our overall framework, and our protocol for Sybil detection in vehicular networks. Section 4 will demonstrate the performance of our protocol, and we conclude the thesis in Section 5. 4 2.",
+   "ATTACK MODEL AND PROBLEM DEFINITION In this thesis consider an attack model wherein the attacker intends to sub- vert the integrity of peer vehicle communications by launching Sybil attacks. We consider the attacker to have captured certain number of legitimate identities (or key"
+  ],
+  "limitations": [
+   "limitations, we only report and discuss data from simulations. All results are averaged over 50 iterations."
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared to the case when deviation increases, and naturally the platoon sizes keep decreasing progressively as vehicles travel from one observation point to another. 2.2. AN EXAMPLE TO DETECT SYBIL A"
+  ],
+  "n_vehicles": [
+   "50 vehicles",
+   "100 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "4 % of Sybil",
+   "4 % of Sybil"
+  ],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2013_Dutta_A_Timeseries_Clustering_Approach_for_Sybil_Attack_Detection_in_Vehicular_Ad_hoc_Networks.pdf",
+  "year": 2013,
+  "cites": 12,
+  "title": "A Time-series Clustering Approach for Sybil Attack Detection in Vehicular Ad hoc Networks",
+  "venue": null,
+  "assumptions": [
+   "It is assumed that V randomly selects i different ids from the set Vn such that x = 100i n and uses them to communicate for the next ∆t, and then again repeats the same process. We assume that the vehicles follow predeﬁned speed limits on the roads.",
+   "We assume that the vehicles follow predeﬁned speed limits on the roads. In the very dynamic environment of a V ANET, it is chal- lenging to identify a Sybil node due to the high mobility and density of nodes.",
+   "we assume uniform distribution for D1 andD2. For simplicity of computation, we assume d0 = 0 throughout this derivation.",
+   "we assume d0 = 0 throughout this derivation. Now, using normal approximation of uniform distribution, if D1 ∼ Unif (DH,D L) and D2∼Unif (DH,D L), then∑n i=1D1i ∼ N( n(DL+DH ) 2 , n(DH−DL)2 12 ) and∑n i=1D2i∼N( n(DL+DH ) 2 , n(DH−DL)2 12 )."
+  ],
+  "threat_model": [
+   "adversarial model. 35Copyright (c) IARIA, 2013. ISBN: 978-1-61208-288-2 VEHICULAR 2013 : The Second International Conference on Advances in Vehicular Systems, Technologies and Applications Existing techniques for Sybil detection in V ANETs mostly require additional hardware and o",
+   "attack model makes it all the more difﬁcult to estimate consistent association of nodes with one another. Simulation results show that the proposed technique succeeds in identifying most of the Sybil nodes over a period of time under such conditions as well.",
+   "attack model and the problem ad- dressed are deﬁned in this section. Network Model - The main components of the V ANET are - vehicles, Road Side Units (RSUs) and Certiﬁcation Authority (CA)."
+  ],
+  "limitations": [],
+  "future_work": [
+   "Future work involve derivation of threshold parameters considering different mobility models of vehicles and further investigation of platoon dispersion models to incorporate phys- ical and human factors into the current analysis. REFERENCES [1] J."
+  ],
+  "baselines": [],
+  "n_vehicles": [
+   "100 vehicles",
+   "100 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2013_Kumari_Cooperative_Sybil_Attack_Detection_in_Privacy_Preserved_VANETs.pdf",
+  "year": 2013,
+  "cites": 0,
+  "title": "Cooperative Sybil Attack Detection in Privacy Preserved VANETs",
+  "venue": null,
+  "assumptions": [
+   "We assume that the RSUs have received the keys from the DMV , and can therefore compute grained hash values of a given pseudonym. When all events with time have been collected, the RSU goes through each pseudonym and computes the grained hash value."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Almutaz_Detecting_Sybil_attacks_in_vehicular_networks.pdf",
+  "year": 2014,
+  "cites": 16,
+  "title": "Detecting Sybil attacks in vehicular networks",
+  "venue": "Journal of Trust Management",
+  "assumptions": [
+   "It is assumed that a certain number of Road Side Units (RSUs) are deployed in the vehic- ular network. The RSUs can communicate with each other and vehicles on the road.",
+   "It is assumed that some system exists for protecting confidentiality. If privacy is desired, techniques have been proposed for utilizing temporal pseudonyms that expireafter a certain time [36], or using local coor- dination among vehicles and aggregating r esponses before forwar",
+   "It is assumed that the attacker will utilize all its Sybil identities to attack the network in an attempt subvert the network integrity. Note that in this paper, we consider for simplicity one attacker in the network."
+  ],
+  "threat_model": [
+   "attack model, problem statement, overall framework, and protocol for Sybil detection. Section ‘Performance Al-Mutaz et al.",
+   "attack model and problem definition The attack model provides contextual information and elaborates the roles of the various agents. The attacker intends to subvert the integrity of peer vehicle communications by launching Sybil attacks.",
+   "attack model provides contextual information and elaborates the roles of the various agents. The attacker intends to subvert the integrity of peer vehicle communications by launching Sybil attacks."
+  ],
+  "limitations": [
+   "limitations, only simulation data are reported and discussed. However, it should be noted that the analysis data agrees well with simulations results.",
+   "limitations. Figure 6 illustrates the basic features of our protocol, when the number of vehicles in upstream platoon nu = 50.",
+   "limitations to this attack scenario, which the our protocol to detect Sybil attacks exploits. In order to have an effective attack, Vs (set of Sybil identities) must be large compared to Vb (set of benign identities) otherwise the Sybil attack will have little influence on the be"
+  ],
+  "future_work": [
+   "future work b. Given the attack model, the formal problem statement is to rapidly detect the presence of Sybil attacks in a vehicular network.",
+   "future work. A normal distribution with the current case parameters were used to randomly assign start and maximum speeds for vehicles.",
+   "future research. One plan is to integrate long term predictions from RSUs Figure 8 Sybil detection versus number of vehicles.",
+   "future research. Advanced attack model The previous results and discussions have p ertained to a simple attack model where the Sybil vehicles broadcast all stored pseudonyms during an attack.",
+   "Future work involves integration of machine learning algorithms with platoon dispers ion and wireless communication support to not only detect the presence of Sybil attacks, but identifying which are the Sybil nodes. Advanced collusion attacks to validate our protocol performance"
+  ],
+  "baselines": [
+   "Compared to existing works that rely on additional cyber hardware support, or complex cryptographic primitives for Sybil detection, the protocol leverages the theory of platoon dispersion that models",
+   "compared to Vb (set of benign identities) otherwise the Sybil attack will have little influence on the benign vehicles. Using the previous example of Sybil nodes incorrectly reporting road conditions,"
+  ],
+  "n_vehicles": [
+   "50 vehicles",
+   "100 vehicles",
+   "100 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "50% Sybil",
+   "20% Sybil",
+   "80% Sybil",
+   "100% attack",
+   "50% Sybil"
+  ],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_DBalamahalakshmi_Sybil_Attack_Detection_with_Reduced_Bandwidthoverhead_in_Urban_Vehicular_Networks.pdf",
+  "year": 2014,
+  "cites": 5,
+  "title": "Sybil Attack Detection with Reduced Bandwidthoverhead in Urban Vehicular Networks",
+  "venue": "International Journal of Innovative Research in Computer and Communication Engineering",
+  "assumptions": [
+   "we assume that all RSUs are reliable. However, if an RSU is compromised, it makes a ma licious vehicles to generate fake legal trajectories (e.g., by inserting link tags of other RSUs into a forg ed trajectory).In that case, Footprint cannot detect such trajectories."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "cannot handle similar but different messages. It is often the case that multiple vehicles observing the same driving environment will generate different messages with very similar semantics.",
+   "cannot detect such trajectories. However, the corrupted RSU cannot deny a link tag generated by it self nor forge link tags generated by other RSUs, which can be utilized to detect a compromised RSU in the system."
+  ],
+  "future_work": [
+   "FUTURE WORK In Footprint, we assume that all RSUs are reliable. However, if an RSU is compromised, it makes a ma licious vehicles to generate fake legal trajectories (e.g., by inserting link tags of other RSUs into a forg ed trajectory).In that case, Footprint cannot detect such "
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Kushwaha_A_Survey_on_Sybil_Attack_in_Vehicular_Adhoc_Network.pdf",
+  "year": 2014,
+  "cites": 21,
+  "title": "A Survey on Sybil Attack in Vehicular Ad-hoc Network",
+  "venue": "International Journal of Computer Applications",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "drawback is that the overhead on the DMV. Mekliche et al. [8] proposed a Sybil attack detection scheme named L -P2DSA which is very similar to scheme proposed by Tong Zhou et al. [10].",
+   "drawback present in [10]. The drawback was that when excessive numbers of vehicles are there on the roads DMV becomes bottleneck.",
+   "drawback was that when excessive numbers of vehicles are there on the roads DMV becomes bottleneck. To reduce load at DMV, RSU perform additional role of distinguishing between suspicious nodes.",
+   "fail to detect Sybil attack. Chen et al . [2] proposed a Sybil attack detection technique which is based on difference between normal and abnormal trajectories of vehicle."
+  ],
+  "future_work": [
+   "FUTURE WORK Most peer-to-peer systems are vulnerable to security attacks. Sybil attack is one of those attacks."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Narang_Strategical_Comparison_Recognizing_and_Evicting_Sybil_Attack_in_Vehicular_Ad_Hoc_Networks.pdf",
+  "year": 2014,
+  "cites": 0,
+  "title": "Strategical Comparison: Recognizing and Evicting Sybil Attack in Vehicular Ad Hoc Networks",
+  "venue": "International Journal of Computer Applications",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "future work has been suggested. 2. RELATED WORK Sybil Attack was first depicted by Doucer in [4].",
+   "FUTURE WORK In this paper different strategies for recognition and eviction of Sybil attack in VANET like Resource Testing, Radio Resource Testing, Trusted Certification, Received Signal Strength Indicator (R SSI), Public Key Infrastructure (PKI)/Public Key Cryptography, Trusted "
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Perumal_Sybil_Attack_Detection_in_Urban_VehicularNetworks.pdf",
+  "year": 2014,
+  "cites": 0,
+  "title": "Sybil Attack Detection in Urban VehicularNetworks",
+  "venue": "International Journal of Innovative Research in Computer and Communication Engineering",
+  "assumptions": [
+   "We assume it cannot be compromised. Distributed Road Side Units (DRSUs) RSUs are agents of the authority and deployed at the road sides."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "limitation on the likability of two authorized messages, authorized messages used for long -term identification are prohibited. With this scheme, vehicles can generate a location - hidden trajectory for location - privacy- preserved identification by collecting a consecutive seri",
+   "limitation on the link ability of two authorized messages, authorized messages used for long -term identification are prohibited. Therefore, using authorized messages for identification of vehicles will not harm anonymity of vehicles.",
+   "limitation of Footprint is that Footprint requires an infrastructur e of RSUs and a trust authority (TA) existing in the system in order to generate trajectories and establish trust am ong entities, respectively. We verify that Footprint can achieve all design objectives through "
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Prakash_Improved_Session_key_based_Certificate_to_Detect_Sybil_Attack_in_VANET.pdf",
+  "year": 2014,
+  "cites": 2,
+  "title": "Improved Session key based Certificate to Detect Sybil Attack in VANET",
+  "venue": null,
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "FUTURE WORK This improvised scheme provides very much support to the safety and reliability to the drivers. The privacy and the reliability is our main objective same time this sch eme provides increment in response time in comparison to the earlier DTSA mechanism [8] because it ",
+   "future work we are going to implement this whole scenario on network simulator and wi ll be comparing our improved scheme with the previous scheme. So finally the reduction in response time and improvement in performance of the vehicles can be assured."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2014_Suganya_Sybil_Attack_Detection_in_Urban_Vehicular_Networks.pdf",
+  "year": 2014,
+  "cites": 0,
+  "title": "Sybil Attack Detection in Urban Vehicular Networks",
+  "venue": null,
+  "assumptions": [
+   "We assume it cannot be compromised. Distributed Road Side Units (DRSUs) RSUs are agents of the authority and de ployed at the road sides."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "limitation on the linkability of two authorized messages, authorized messages used for long -term identification are prohibited. With this scheme, vehicles can generate a location - hidden trajectory for locati on-privacy-preserved identification by collecting a consecutive serie",
+   "limitation on the link ability of two authorized messages, authorized messages used for long-term identification are prohibited. Therefore, using authorized messages for identification of vehicles will not harm anonymity of vehicles.",
+   "limitation of Footprint is that Footprint requires an infrastructure of RSUs and a trust authority (TA) existing in the system in order to generate trajectories and establish trust among entities, respectively. We verify that Footprint can achieve all design objectives through se"
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Grover_Multivariate_verification_for_sybil_attack_detection_in_VANET.pdf",
+  "year": 2015,
+  "cites": 14,
+  "title": "Multivariate verification for sybil attack detection in VANET",
+  "venue": "Open Computer Science",
+  "assumptions": [
+   "it is assumed that global po- sitioning system (GPS) devices are installed in each node. GPS position claimed by a sender is matched with the po- sition estimated by the radar at receiver end.",
+   "It is assumed that CAs have suﬃcient storage capability. In our case, RSUs are assumed to be the lowest level CA who directly connect with vehicles on the road.",
+   "We assume that there is no hardware device tampering Sybil attackers. It is also assumed that thereisnocollusionamongmultipleSybilattackerstosuc- cessfully launch a collusion attack."
+  ],
+  "threat_model": [
+   "attack model in VANET. Itisassumedthatthereareacertainnumberofvehicles V on the road segment."
+  ],
+  "limitations": [
+   "limitationofRSSbased Sybil attack detection in VANET. Hubaux et al. [2] propose a veri/f_iable multilateration method to perform distance bounding mechanism.",
+   "limitationofRSSbased Sybil attack detection in VANET. Zhou et al. [16] have proposed a privacy preserving method to detect a Sybil attack with trusted roadside boxes and pseudonyms.",
+   "limitations of a shared wireless channel. Figure 7 illustrates the impact of a varying number of Sybilidentitiescreatedbyattackersontheaveragevehicle speed in VANET.",
+   "does not consider the realistic VANET scenario for its evaluation. They have not even mentioned the experimental setup or num- ber of nodes for the experiment. – Wealsocomparetheproposedapproachwith[23], that also leverage the presence of RSUs on road- sides."
+  ],
+  "future_work": [
+   "future work are covered in Section 9. /two.tfRelated work Raya and Hubaux [1] discuss a number of unique chal- lenges in VANETs. They describe how adversaries use safety applications to create various attacks and lead to security issues."
+  ],
+  "baselines": [
+   "compared to the casewith10attackers.Weobservethattheaveragepacket delivery ratio decreases even without the eﬀect of a Sybil attack. This reduction is due to an increase in the aver- agespeedofvehicle",
+   "compared to a non-simultaneous Sybil attack. This is because the number of packet collisions in a simultane- ous Sybil attack is greater as compared to the latter case.",
+   "compared to the latter case. In this case, we consider 10 Sybil attackers.",
+   "compared to 1000 meters transmission range case. Weevaluatedthedetectionrateandfalsepositiverate for our Sybil attack detection approach.",
+   "compared to the observation period. When the speed diﬀerence is 8m/s, our proposed approach is able to accurately diﬀerentiate between Sybil nodes and legit- imate nodes (moving close to each other) w"
+  ],
+  "n_vehicles": [
+   "50 vehicles",
+   "500 vehicles",
+   "10000 nodes",
+   "120 nodes"
+  ],
+  "sim_time": [
+   "simulation timeis2000s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy is 99%"
+  ],
+  "area_km2": [
+   "250 km X 2"
+  ]
+ },
+ {
+  "file": "2015_Jin_A_Traffic_Flow_Theory_Aided_Physical_MeasurementBased_Sybil_Nodes_Detection_Mechanism_in_V.pdf",
+  "year": 2015,
+  "cites": 0,
+  "title": "A Traffic Flow Theory Aided Physical Measurement-Based Sybil Nodes Detection Mechanism in Vehicular Ad-hoc Networks",
+  "venue": "The International journal of networked and distributed computing",
+  "assumptions": [
+   "we assume an attacker have more computational resources compared with normal nodes. Another problem is that this technique may cause network congestion because multiple requests/replies are used to identify the nodes.",
+   "We assume a vehicle knows its own location from the GPS locating system and it equips three time synchronized radio receivers. First, each node periodically exchange beacon message which include its location, speed, and ID."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings. Based on this, we proposed a novel traffic flow theory aided Sybil node detection mechanism, PMSD."
+  ],
+  "future_work": [
+   "future works. 2. Related Works The Sybil attack, first discussed by Douseur [6], is a serious threat to VANETs as it reduces the functionality and QoS.",
+   "Future Work In this paper, we analyzed existing Sybil node detection protocols in VANETs and presented their shortcomings. Based on this, we proposed a novel traffic flow theory aided Sybil node detection mechanism, PMSD.",
+   "In the future, more realistic situation will be studied. The proposed mechanism is simulated in the two- dimensional environment and suitable for highway situations for now.",
+   "in the future. We also work on how to reduce the number of receivers as three receivers for each vehicle cause extra expense."
+  ],
+  "baselines": [
+   "compared to normal nodes. The objective of this paper is to detect the Sybil nodes without the assistance of a centralized infrastructure because a road-side unit cannot cover the whole VANETs are",
+   "compared with normal nodes. Another problem is that this technique may cause network congestion because multiple requests/replies are used to identify the nodes."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "detection rate is greater than 95%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Kamani_A_Review_on_Sybil_Attack_Detection_Techniques.pdf",
+  "year": 2015,
+  "cites": 7,
+  "title": "A Review on Sybil Attack Detection Techniques",
+  "venue": "IJSRD : international journal for scientific research and development",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "Limitation Efficient Detection Of Sybil Attack Based On Cryptography In Vanet[1] Uses cryptography to detect Sybil attack Low delay as most work is done at CA. Proposed schema has a problem that, if nodes move to other rejoin detection of Sybil attack does not work properly."
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Kateshiya_ICMP_and_Monitoring_to_Detect_and_IsolateSybil_Attack_in_VANET.pdf",
+  "year": 2015,
+  "cites": 0,
+  "title": "ICMP and Monitoring to Detect and IsolateSybil Attack in VANET",
+  "venue": "International Journal of Innovative Research in Science Engineering and Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to some existing protocols. In the protocol terms of average delay, RBVT -P performs best and 85% decreased as compared to other protocols.",
+   "compared to the previous scenario. We make the channel secure so final result comes is maximization of th roughput and minimizat ion of packet loss."
+  ],
+  "n_vehicles": [
+   "32 nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Kaur_Movement_Abnormality_Evaluation_Model_in_the_Partially_Centralized_VANETs_for_Prevention_A.pdf",
+  "year": 2015,
+  "cites": 8,
+  "title": "Movement Abnormality Evaluation Model in the Partially Centralized VANETs for Prevention Against Sybil Attack",
+  "venue": "International Journal of Modern Education and Computer Science",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings. The motivation beh ind the literature study is to find and remove the appropriate shortcoming in the existing models, while keeping the advantages intact in order to build the robust system.",
+   "shortcoming in the existing models, while keeping the advantages intact in order to build the robust system. We have conducted the literature review on as many as similar papers we found similar to our research."
+  ],
+  "future_work": [
+   "in the future [9]. Vehicular networks have been developed to improve the s afety, security and efficiency of the transportation systems and enable new mobile applications and services for the travelling public.",
+   "in the future. This vehicular network is interconnected with vehicles which have wireless interface.",
+   "FUTURE WORK The proposed model has been deployed using the random way point mobility in the VANET. The performance of the proposed model has been has been evaluated against the existing model implementation using the Reference point group model."
+  ],
+  "baselines": [
+   "compared against the reference point group model. The experimental results have shown the effectiveness of the proposed model.",
+   "compared to the current traffic management systems. Fig.1.",
+   "compared to evaluate the performance comparison. This section clearly defines the performance evaluation of the proposed model in comparison with existing model.",
+   "comparison with existing model. Comparison of energy and throughput of both mobility models is made.",
+   "comparison with reference point group model. So we conclude that Random way point model has performed better than Reference point model for VANETs."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Naveed_Detection_of_Sybil_Attacks_in_Vehicular_Ad_Hoc_Networks.pdf",
+  "year": 2015,
+  "cites": 3,
+  "title": "Detection of Sybil Attacks in Vehicular Ad Hoc Networks",
+  "venue": "Universal Journal of Communications and Network",
+  "assumptions": [
+   "We assume that roads are divided into segments where each segment is defined to be a part of straight road without intersections or diversions. Each segment has its unique set of road side units installed that are connected to each other.",
+   "We assume that certain sensors are deployed to assist in vehicular movement. Taking the advantage of data gathered by these sensors we can perform certain verification steps for the enhancing the security of the vehicular networks.",
+   "we assume elliptic curve cryptosystem for our basic signature scheme. The summary of our simulation parameters is shown in the table below."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings in some ways. Here we represent a model for defending against Sybil attack using road side units for distinct identities while protecting the drivers’ privacy. 5.1."
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared to Public Key Infrastructure. Some of the methods using encryption based approach are as follows: 4.3.1."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "detection rate of 98%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Shete_VANET_Security_against_Sybil_Attack_by_Using_New_SRAN_Routing_Protocol.pdf",
+  "year": 2015,
+  "cites": 1,
+  "title": "VANET Security against Sybil Attack by Using New SRAN Routing Protocol",
+  "venue": "International Journal of Computer Applications Technology and Research",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Soni_Sybil_Node_Detection_and_Prevention_Approach_on_Physical_Location_in_VANET.pdf",
+  "year": 2015,
+  "cites": 2,
+  "title": "Sybil Node Detection and Prevention Approach on Physical Location in VANET",
+  "venue": "International Journal of Computer Applications",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compare to a particular neighb orhood element. Actually numerous characters may relate to the same nearby element. 1.3 Prevention of sybil attack Validation techniques can be utilized to avoid Sy"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation Time 900s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2015_Tyagi_Preserving_Location_Privacy_in_Location_Based_Services_against_Sybil_Attacks.pdf",
+  "year": 2015,
+  "cites": 16,
+  "title": "Preserving Location Privacy in Location Based Services against Sybil Attacks",
+  "venue": "International Journal of Security and Its Applications",
+  "assumptions": [
+   "It is assumed that the growth of the number of vehicles connected to the network will lead to the increase of the number of RSUs and not RSCs. Therefore, the number of certificate authorities will be affected.",
+   "It is assumed that the response to the Sybil attacks performed when vehicles en ter under the coverage of a new RSU and one false identity at maximum can be used by a Sybil attacker until the revocation process is performed. Now as a major drawback of pseudonyms changing (or cert"
+  ],
+  "threat_model": [],
+  "limitations": [
+   "limitation related to computation, storage, and bandwidt h, and will be unable to send messages with different forged identities at the same time. Other approaches have based their solutions on the use of public key cryptography (PKI) by authenticating every vehicle with its priv",
+   "drawback of pseudonyms changing (or certificate exchanging) for authentication is that they are vulnerable to attacks by adversaries with background knowl edge. Over time as the background knowledge of the adversary increases privacy provided by pseudonyms decreases.",
+   "drawback i s that the overhead on the DMV. Mekliche et al., [23] proposed a Sybil attack detection scheme named L -P2DSA which is very similar to scheme propose d by Tong Zhou et al., [25].",
+   "drawback present in [25]. The drawback was that when excessive numbers of vehicles are there on the roads DMV becomes bottleneck.",
+   "drawback was that when excessive numbers of vehicles are there on the roads DMV becomes bottleneck. To reduce load at DMV, RSU perform additional role of distinguishing bet ween suspicious nodes.",
+   "fail to detect Sybil attack. Chen et al. , [19] proposed a Sybil attack detection technique which is based on difference between normal and abnormal trajectories of vehicle."
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [
+   "40 vehicles",
+   "60 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": [
+   "3 km2"
+  ]
+ },
+ {
+  "file": "2015_anon_Mitigation_of_Sybil_Attack_Using_Location_Aware_Nodes_in_VANET.pdf",
+  "year": 2015,
+  "cites": 1,
+  "title": "Mitigation of Sybil Attack Using Location Aware Nodes in VANET",
+  "venue": "International Journal of Science and Research (IJSR)",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "In the future reference Sybil attack can be avoided by using intrusion detection approach and routing can be done on the basis of location based table for efficient performance during attack on the network. References [1] Sivaraj, R. “QoS-enabled group communication in integrated"
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2016_Arora_Detect_the_Sybil_Attack_by_using_GPSR_Protocol.pdf",
+  "year": 2016,
+  "cites": 0,
+  "title": "Detect the Sybil Attack by using GPSR Protocol",
+  "venue": "International Journal of Computer Applications",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compare to a particular neighborhood element. Actually numerous characters may relate to the same nearby element.",
+   "compare to GPSR. 5 CONCLUSION Security in VANETs is one of the major concerns in the safety of networks. But, because of security attack, VANTEs are facing so many serious issues which can degrad"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 900 s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2016_Chawla_Comparative_Analysis_of_Sybil_Attack_Detection_Techniques_in_VANETs.pdf",
+  "year": 2016,
+  "cites": 3,
+  "title": "Comparative Analysis of Sybil Attack Detection Techniques in VANETs",
+  "venue": "Indian Journal of Science and Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "future work that can be done in this field. Indian Journal of Science and TechnologyVol 9 (47) | December 2016 | www.indjst.org 4 Comparative Analysis of Sybil Attack Detection Techniques in VANETs 2.",
+   "Future Work Most of the research is conducted to improve the secu - rity and safety of V ANETs. There exists a good trade-off between security and efficiency."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2016_Feng_A_method_for_defensing_against_multisource_Sybil_attacks_in_VANET.pdf",
+  "year": 2016,
+  "cites": 81,
+  "title": "A method for defensing against multi-source Sybil attacks in VANET",
+  "venue": "Peer-to-Peer Networking and Applications",
+  "assumptions": [],
+  "threat_model": [
+   "Attack model To launch a Sybil attack successfully, a malicious node must try to present as multiple independent identities. It can fab- ricate traffic scenarios by sending false messages.",
+   "attack model, we present an event based reputation system. Its design goals are: – Conditional privacy preserving: vehicles use time- limited pseudonyms in the V2V and V2I communica- tions which preserves the identity privacy of vehicles."
+  ],
+  "limitations": [],
+  "future_work": [
+   "future work. 2 Related work Douceur [7] first described Sybil attack and proposed the resource testing (RT) method for Sybil attack in P2P net- works. The main idea of this method is that every node in network is issued the same and limited resource such as computation resource, ",
+   "future work Compared to existing methods, EBRS can defense against multi-source Sybil attacks, ensure the integrity of message and preserve the privacy of vehicles. By establishing a repu- tation threshold and trust threshold for each event message, the dissemination of false mes",
+   "further work will loosen the strong security assumption of RSU, and try to find an automatic mode to establish the trust relationship among the participant vehicles. Acknowledgments This research was financially supported by National Natural Science Foundation of China under Gran"
+  ],
+  "baselines": [
+   "Compared to existing methods, EBRS can defense against multi-source Sybil attacks, ensure the integrity of message and preserve the privacy of vehicles. By establishing a repu- tation threshold and tr"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 500s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2016_Minhas_Evaluation_of_Hybrid_framework_for_Detection_of_Sybil_Attack_in_VANET.pdf",
+  "year": 2016,
+  "cites": 0,
+  "title": "Evaluation of Hybrid framework for Detection of Sybil Attack in VANET",
+  "venue": "International Journal of Computer & Organization Trends",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2016_anon_Detecting_and_Avoiding_Sybil_Attack_in_OLSR_Protocol.pdf",
+  "year": 2016,
+  "cites": 0,
+  "title": "Detecting and Avoiding Sybil Attack in OLSR Protocol",
+  "venue": "International Journal of Science and Research (IJSR)",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2017_Panchal_Segregation_of_Sybil_Attack_using_Neighbouring_Information_in_VANET.pdf",
+  "year": 2017,
+  "cites": 7,
+  "title": "Segregation of Sybil Attack using Neighbouring Information in VANET",
+  "venue": "IARJSET",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "further work to strong the security assumption of RSu and true relationship between vehicles. REFERENCES [1] https://en.wikipedia.org/wiki/ITS [2] https://en.wikipedia.org/wiki/Dedicated_short-range_communications [3] https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=image"
+  ],
+  "baselines": [],
+  "n_vehicles": [
+   "16 nodes",
+   "18 nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2017_Yuan_Voiceprint_A_Novel_Sybil_Attack_Detection_Method_Based_on_RSSI_for_VANETs.pdf",
+  "year": 2017,
+  "cites": 0,
+  "title": "Voiceprint: A Novel Sybil Attack Detection Method Based on RSSI for VANETs",
+  "venue": "IEEE Conference Proceedings",
+  "assumptions": [
+   "We assume there may be several Sybil attackers in V ANETs, but those malicious nodes do not collude to launch Sybil attacks. The attacker only creates new identities rather than stealing other vehicle’s identity."
+  ],
+  "threat_model": [
+   "attack model and assumptions. Then, we introduce the similarity measures for time series.",
+   "Attack Model and Assumptions In this paper, we focus on the simultaneous Sybil attack that each Sybil attacker concurrently creates multiple fake identities to disrupt normal functionalities of V ANETs. Figure 8 shows a typical Sybil attack scenario in the highway envi- ronment."
+  ],
+  "limitations": [
+   "limitation that can tolerate the shifting, scaling and warping of series in the temporal domain, which is widely used in speech recognition to cope with different speeking speeds. Considering that packet loss often occurs in V ANETs, we cannot always get two RSSI series with exac"
+  ],
+  "future_work": [
+   "future work, we will take the Service Channel (SCH) into account. Since there is no strict restriction of beacon rate for SCH, we can increase the beacon rate and broadcast the samples from SCH much quicker."
+  ],
+  "baselines": [
+   "compared with the threshold. Figure 13 plots the results recorded by the normal node 3."
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 100s"
+  ],
+  "beacon_rate": [
+   "10Hz",
+   "10Hz",
+   "10HZ",
+   "10Hz"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "detection rate over 90%",
+   "false positive rate under 10%",
+   "detection rate and low false positive rate under 10%",
+   "detection rate is 100%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2017_anon_A_Novel_Mechanism_of_Detection_of_Sybil_Attack_in_Vanet_using_Timestamp_Approach.pdf",
+  "year": 2017,
+  "cites": 1,
+  "title": "A Novel Mechanism of Detection of Sybil Attack in Vanet using Timestamp Approach",
+  "venue": "International Journal of Innovations in Engineering and Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to EBRS, but due to increase in vehicle density the communication delay increase in both the cases but in our proposed technique the results are much better. Fig1.",
+   "compared to EBRS but due to increase in vehicle density the communication delay increase in both the cases but in our proposed technique the results are better. Fig2.",
+   "compared to EBRS. Fig3. simulation time CONCLUSION This paper concludes that many researchers provide their method ologies to solve sybil attack but still our method"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation Time 500 S"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2018_Iwendi_On_Detection_of_Sybil_Attack_in_LargeScale_VANETs_Using_SpiderMonkey_Technique.pdf",
+  "year": 2018,
+  "cites": 97,
+  "title": "On Detection of Sybil Attack in Large-Scale VANETs Using Spider-Monkey Technique",
+  "venue": "IEEE Access",
+  "assumptions": [
+   "it is assumed that the CH and the nodes successfully broadcast beacon message to connected legitimate vehicles. In the proposed technique, the paper investigates closeness of malicious vehicles."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared with existing protocols. It performs better over long transmission distances for the detection of Sybil in dynamic V ANETs’ system in terms of measurement precision, intrusion detection rate,",
+   "outperforms the exiting protocols over long transmission distance for Sybil attack detections in dynamic V ANETs settings in terms of detection rate, measurement precision and energy efﬁciency. The co",
+   "compared to other detection protocols. The remainder of this paper is organized as follows.",
+   "compared with [14]. To realize the prospective node, frac- tional detections are estimated to allow local exploration to detect the sensor node at destination and consistent update of pheromone by eac",
+   "outperform other detection limits as shown in Figure 7. At low secreted pheromone quantity with the transmission distance increases, the probability of detection declines as illustrated in Figure 8."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "precision at detection limit 90%",
+   "precision at detection limit 95%",
+   "precision at detection limit 98%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2018_Shaik_Broadcast_Message_Authentication_Mechanism_to_Detect_Clone_and_Sybil_attacks_in_VANETs_bas.pdf",
+  "year": 2018,
+  "cites": 0,
+  "title": "Broadcast Message Authentication Mechanism to Detect Clone and Sybil attacks in VANET’s based on ID-Based Signature Scheme",
+  "venue": "International Journal of Engineering & Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitation of the traditional techniques. In some cases, vehicle that receives huge signed messages within a very short time period is incapable to verify all of them.",
+   "drawback of all existing models. These models never include an effective message verif i- cation technique.",
+   "drawbacks of all previously developed authentication approaches. This technique depends upon public - key signatures that meet all the relevant security objectives si gnif- icantly."
+  ],
+  "future_work": [
+   "future research, those are mentioned below:- 1.All traditional digital signature schemes results computation overhead at the time of signature generation and verification. Ev e- ry individual message that is sent by vehicles need not have long - term security. 2.All problems rela",
+   "Future research effort must concentrate on the discrimination of various network attacks. M."
+  ],
+  "baselines": [
+   "compared to existing schemes in terms of packet delivery ration, detection rate and detection time. Keywords: Authentication protocol, integrity verification, clone attacks, Sybil attack ID-Based",
+   "compared to the process of signing. Authentication Schemes of VANET: 1.Hash message authentication: - Group signature technique is considered as most efficient technique and it is implemented va"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2018_Singh_Evaluation_of_proposed_technique_for_detection_of_Sybil_attack_in_VANET.pdf",
+  "year": 2018,
+  "cites": 4,
+  "title": "Evaluation of proposed technique for detection of Sybil attack in VANET",
+  "venue": "International Journal of Scientific Research in Computer Sciences and Engineering",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to the current routing protocols of the VANET. A gray-hole attack is basically the extension of black -hole attack."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2018_Toubi_Attacks_against_security_in_the_vehicular_network_and_the_impact_of_Sybil_attack_and_Black.pdf",
+  "year": 2018,
+  "cites": 0,
+  "title": "Attacks against security in the vehicular network and the impact of Sybil attack and Blackhole attack on the vehicular network performances: average Throughput as a study of case",
+  "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "Compared to a conventional ad hoc network, vehicular networks are characterized by a high mobility of nodes making the topology of the network highly dynamic. For the establishment of such a networ",
+   "Compared to a conventional ad hoc network, vehicular networks are characterized by a high mobility of nodes making the topology of the network high ly dynamic. For the establishment of such a netw"
+  ],
+  "n_vehicles": [
+   "23 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Ayaida_A_Macroscopic_Traffic_Modelbased_Approach_for_Sybil_Attack_Detection_in_VANETs.pdf",
+  "year": 2019,
+  "cites": 54,
+  "title": "A Macroscopic Traffic Model-based Approach for Sybil Attack Detection in VANETs",
+  "venue": "Ad Hoc Networks",
+  "assumptions": [
+   "we assume the following290 assumptions: Assumptions: We assume in this section that: • H1:|V−Vest| =V−Vest • H2: According to the three possible types of traﬃc depicted in equation295 1, the following events: 1) the traﬃc is ﬂuid, 2) the traﬃc is congested and 3) the traﬃc is blo",
+   "We assume in this section that: • H1:|V−Vest| =V−Vest • H2: According to the three possible types of traﬃc depicted in equation295 1, the following events: 1) the traﬃc is ﬂuid, 2) the traﬃc is congested and 3) the traﬃc is blocked, are statistically independents. Proposition 1.",
+   "we assume that we have 8 attackers (i.e.α = 8 N0 ). This ﬁgure shows that the higher the number of the honest vehicles N0 on the section, the330 higher the detection rate is."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "drawback, which is that every vehicle has to be equipped with an acoustic ultrasound beeper. This assumption is very strict in reality, since few vehicles are equipped with such devices.80 [6] presented an encryption protocol to avoid Sybil attacks in VANETs.",
+   "limitations of the overviewed approaches, we propose in this paper to design an original Sybil attack detection mechanism, which takes ben- eﬁt from the traﬃc ﬂow model already provided to the vehicle in order to detect Sybil attacks. The proposed mechanism is easy to implemented"
+  ],
+  "future_work": [
+   "Our future works will deal with the identiﬁcation of the attackers and the design of some countermeasures to ﬁght against them. 8. Bibliography510 [1] Al-Sultan S, Al-Doori MM, Al-Bayatti AH, Zedan H."
+  ],
+  "baselines": [
+   "compared with a predeﬁned threshold Vth, which obviously depends essentially on the road and the traﬃc model. It could be given also as an input with the FD.",
+   "compared to the detection speed threshold and the number of the attackers, respectively, for two segments with a length of 600m and 1200m. A false negative detection means that the attack was not dete",
+   "compared to the detection speed threshold and the number of attackers, respec- tively, using three diﬀerent numbers of vehicles 100, 150 and 200 vehicles.470 Figure 12: Attacks detection rate Vs. the",
+   "compared to the number of involved vehicles.485 Parameters Best value Comments Number of vehicles 150 vehs Compromise between false positive and true positive detection rates Segment length 1200m Best"
+  ],
+  "n_vehicles": [
+   "200 vehicles",
+   "15 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [
+   "10 Hz"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Dutt_Defending_Against_Sybil_Attacks_by_Enhanced_Event_Based_Reputation_System_in_Vanet.pdf",
+  "year": 2019,
+  "cites": 2,
+  "title": "Defending Against Sybil Attacks by Enhanced Event Based Reputation System in Vanet",
+  "venue": "International Journal of Engineering and Advanced Technology",
+  "assumptions": [],
+  "threat_model": [
+   "Attack Model Sybil attack tries to forge identity and it can counterfeit the traffic scenario by sending false messages with multiple identities, which habitually leads to traffic jam and accidents full of destructions. [6]. Sybil attack is an attack, which cannot be eliminated t",
+   "attack model, we prompt an enhanced Event Based Reputation System. Our system will keep all the goals of current EBRS and in addition it will give more secured mechanism it will compare hash values instead of reputation values as it may violate at certain cases(if malicious node "
+  ],
+  "limitations": [
+   "drawback that they were not considering RSU and TA modules security. For these both modules assumption has been made that it cannot be compromised thus it is trustable.",
+   "limitations and constrai nts, so they cannot give sufficient up to the mark resolutions[8][6]. In this paper, we present an enhanced Event based reputation system to defend Sybil attack.",
+   "limitations which was giving red signal to its deployment towards the end users. Detection accuracy is limited, because of that signal strength may be influenced by complex road conditions.",
+   "limitation is that this method cannot defend against conspired Sybil attack. B.",
+   "limitations like in a traffic congested situation , vehicles move very slowly so they could receive similar timestamp certificates from the same RSUs located around the congested area. And it cannot be applied in a straightforward way to an urban environment with a complex road i"
+  ],
+  "future_work": [],
+  "baselines": [
+   "compare with next RSU’s table to detect Sybil nodes. If nodes would be legitimate there would be no changes during the journey, there hash values would be same through the entire journey."
+  ],
+  "n_vehicles": [
+   "17 cars",
+   "17 cars",
+   "17 cars",
+   "17 cars"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Hamdan_Detecting_Sybil_attacks_in_vehicular_ad_hoc_networks.pdf",
+  "year": 2019,
+  "cites": 36,
+  "title": "Detecting Sybil attacks in vehicular ad hoc networks",
+  "venue": "International Journal of Parallel Emergent and Distributed Systems",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "drawback. Also this approach suffers from long communication delays and long response time in addition to other potential security issues."
+  ],
+  "future_work": [
+   "Future work In the future, improvements on the proposed algorithm will be done; first of all, the algorithm will be coded using object-oriented language not a TCL script, therefore, the 0% 20% 40% 60%detection rate Footprint P2DAP hybrid improvement on the algorithm will be appli",
+   "In the future, improvements on the proposed algorithm will be done; first of all, the algorithm will be coded using object-oriented language not a TCL script, therefore, the 0% 20% 40% 60%detection rate Footprint P2DAP hybrid improvement on the algorithm will be applied easily in",
+   "in the future. Also, the optimal speed threshold will be studied based on different factors such as the street nature, the number of nodes in the street and the number of lanes."
+  ],
+  "baselines": [
+   "compared to PASS. In [27] the authors proposed a solution that is called signal strength which depends on the signals that are captured by other vehicles in the network.",
+   "compared to the other approach that depends on one certificate at a time. In [33] the authors proposed a scheme called “privacy-preserving detection of abuses of pseudonyms” (P2DAP)."
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time is 900 s",
+   "Simulation time 900s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "detection rate 20%",
+   "tprint P2DAP hybrid 20km/h 46%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Jose_SYBIL_ATTACK_DETECTION_IN_VANET_USING_SPIDER_MONKEY_TECHNIQUE_AND_ECC.pdf",
+  "year": 2019,
+  "cites": 5,
+  "title": "SYBIL ATTACK DETECTION IN VANET USING SPIDER -MONKEY TECHNIQUE AND ECC",
+  "venue": "International Journal of Wireless Communications and Network Technologies",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitation on the likability of two authorized messages, authorized messages used for long term identification are prohibited. Therefore, vehicles can generate a location hidden trajectory for location privacy so that no Sybil attack will be there and safe transportation we can h"
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared with spider monkey technique because ECC provides more security by the usage of the unique key. 5. CONCLUSION This paper proposes a biologically inspired spider monkey time synchroni"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Kumar_Hash_Based_CoOperative_Method_To_Handle_Sybil_Attack_Sequences_In_Vehicular_Ad_Hoc_Network.pdf",
+  "year": 2019,
+  "cites": 1,
+  "title": "Hash Based Co-Operative Method To Handle Sybil Attack Sequences In Vehicular Ad Hoc Networks",
+  "venue": "International Journal of Engineering and Advanced Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "our future work, use some framework oriented scenario to handle DOS & DDOS attacks in VANETs REFERENCES 1. Bo Yu, Cheng-Zhong Xua, Bin Xiao, \"Recognizing Sybil ambushes in VANETs\", J."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Naveen_Increase_the_Performance__Security_in_VANET_using_Deduction_of_Sybil_Attack.pdf",
+  "year": 2019,
+  "cites": 0,
+  "title": "Increase the Performance & Security in VANET using Deduction of Sybil Attack",
+  "venue": "Asian Journal of Applied Research",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Pandey_Proactive_Defence_Technique_PDT_For_Vehicular_Ad_Hoc_Network_To_Protect_Against_Sybil_Atta.pdf",
+  "year": 2019,
+  "cites": 0,
+  "title": "Proactive Defence Technique (PDT) For Vehicular Ad Hoc Network To Protect Against Sybil Attack",
+  "venue": "International Journal of Engineering Trends and Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation Time 300 min"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2019_Samhitha_An_Efficient_Implementation_of_a_Method_to_Detect_Sybil_Attacks_in_Vehicular_Ad_hoc_Networ.pdf",
+  "year": 2019,
+  "cites": 17,
+  "title": "An Efficient Implementation of a Method to Detect Sybil Attacks in Vehicular Ad hoc Networks using Received Signal Strength Indicator",
+  "venue": "International Journal of Innovative Technology and Exploring Engineering",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "future work, we are planning to consider the Service Channel (SCH) into record. Since there is no strict confinement of reference point rate for SCH, we can expand the signal rate and communicate the examples from SCH a lot speedier."
+  ],
+  "baselines": [
+   "comparison with most of previous RSSI -based methods that compute the absolute position or relative distance according to the average RSSI values, or make statistic testing based on RSSI distributi"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2020_Baza_Detecting_Sybil_Attacks_Using_Proofs_of_Work_and_Location_in_VANETs.pdf",
+  "year": 2020,
+  "cites": 21,
+  "title": "Detecting Sybil Attacks Using Proofs of Work and Location in VANETs",
+  "venue": "IEEE Transactions on Dependable and Secure Computing",
+  "assumptions": [],
+  "threat_model": [
+   "threat models in V ANETs, followed by the design goal of our Sybil detection scheme in Section II. In Section III, we discuss preliminaries used by this research work.",
+   "threat models, and then, we introduce the design goals of our scheme. A.",
+   "Threat Model The TA is fully trusted because it is operated by the government which is interested in the security of the V ANET. RSUs are honest-but-curious in running the scheme correctly but they are interested to collect the location information of the drivers."
+  ],
+  "limitations": [
+   "cannot prevent Sybil attacks, because a malicious node may get multiple identities by non-technical means such as stealing or even collusion between vehicles [10]. Secondly, position veriﬁcation approaches depend on the fact that individual vehicle can present at only one locatio",
+   "limitation of a vehicle’s computational resources, it would be difﬁcult for it to generate multiple trajectories simultaneously because it would have to solve a separate puzzle for each authorized message it obtains from an RSU. Then, R2 generates m2 = PK 2 v1||(t1,Tag R1 )||(t2,",
+   "cannot detect such trajectories. Second, since any vehicle is free to start its trajectory at any time, an attacker can construct multiple trajectories while moving, causing not only Sybil attacks, but also denial of service attack because of the complexity of ﬁnding similar Sybi"
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared to the Footprint. The rest of the paper is organized as follows.",
+   "comparison with Footprint [4]. We show the simulation results considering the two heuristics namely check window size and trajectory length limit explained earlier in section IV-E.",
+   "outperforms the performance of Footprint. Speciﬁcally, our 11 Check Window Size [s] 2 7 12 17 22 27 32 37 42 47 F alse Positive Rate 0 0.05 0.1 0.15 0.2 Our Scheme F ootprint (a) Check window size ver",
+   "outperforms Footprint. In Footprint, as the number of Sybil trajectories a malicious vehicle can generate, the computation time to detect Sybil nodes increases and reaches several seconds."
+  ],
+  "n_vehicles": [
+   "160 vehicles",
+   "110 vehicles",
+   "41 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "FPR by around 15%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2020_Kabbur_MARSybil_Cooperative_RSU_Based_Detection_and_Prevention_of_Sybil_Attacks_in_Routing_Proces.pdf",
+  "year": 2020,
+  "cites": 18,
+  "title": "MAR_Sybil: Cooperative RSU Based Detection and Prevention of Sybil Attacks in Routing Process of VANET",
+  "venue": "Journal of Physics Conference Series",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings of cr eating an efficient routing protocol for attaining a globally optimal vehicle control. This problem elevates when various drivers have various unique preferences."
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared against all the series for anomaly analysis. Based on the anomaly Sybil attacks are detected.",
+   "compared to detect Sybil attacks [7]. The trajectory is created in form of sequence of RSU visited.",
+   "compared to detect the Sybil attacks. Each vehicle measures the signal strength of the vehicle it communicates and a signal vector is created for each as, 𝑉𝑖 = {𝑆1 𝑖, 𝑆2 𝑖, 𝑆3 𝑖, … 𝑆𝑛 𝑖 } The dist",
+   "compared against RSSI based detection approach proposed in [6] is given in figure 08. The attack detection ratio is measured by varying the number of vehicles and malicious nodes shown in table 02",
+   "compared to [6]. The fake detection accuracy is 12% more in proposed RSU cooperation scheme compared to RSSI based scheme."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [
+   "10 messages / second"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy is 12%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2020_Kumar_Sybil_Attack_Detection_in_Vehicular_Adhoc_Networks_using_Direct_Trust_Calculation.pdf",
+  "year": 2020,
+  "cites": 1,
+  "title": "Sybil Attack Detection in Vehicular Ad-hoc Networks using Direct Trust Calculation",
+  "venue": "International Journal of Innovative Technology and Exploring Engineering",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "cannot detect the attacker. Hence false positive is high."
+  ],
+  "future_work": [
+   "in the future. 4. Detection of Sybil Attack In this stage, sybil node is detected by comparing location certificate and checking the count of direct trust value.",
+   "Future Directions) (ICRITO) , IEEE, Noida, 20 17, pp. 384-390. 8. Y."
+  ],
+  "baselines": [
+   "compared with the existing system to prove improved sybil attack detection ratio, thus providing better security. NS2 environment is used to prove the simulation results.",
+   "outperforms P2DAP when the speed of vehicles increases. Hybrid scheme was introduced with the intent of higher performance and higher detection rate.",
+   "compared to existing system from Fig 6. The advantage of proposed system lies in selecting times interval for Direct Trust Calculation.",
+   "compared to prove th e efficiency over the existing system. The existing and proposed system are compared by testing the parameters at 30, 50, 70 and 90 node densities.",
+   "compared to the existing system. The main intent of higher attack detection of sybil nodes is achieved in SAD -V-DTC."
+  ],
+  "n_vehicles": [
+   "90 nodes",
+   "50 nodes",
+   "90 nodes",
+   "50 nodes",
+   "90 nodes",
+   "90 nodes",
+   "90 nodes"
+  ],
+  "sim_time": [
+   "SIMULATION TIME 50 S"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2020_Preetha_A_SURVEY_OF_SYBIL_ATTACK_DETECTION_IN_VANETS.pdf",
+  "year": 2020,
+  "cites": 1,
+  "title": "A SURVEY OF SYBIL ATTACK DETECTION IN VANETS",
+  "venue": "International Journal of Engineering Applied Sciences and Technology",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "drawbacks for implementing. Resource testing methods aren't sufficient to implement for Sybil attack detection with high accuracy in VANETs."
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2020_Rhamdhan_Hybrid_Trustbased_Defense_Mechanisms_Against_Sybil_Attack_in_Vehicular_Adhoc_Networks.pdf",
+  "year": 2020,
+  "cites": 4,
+  "title": "Hybrid Trust-based Defense Mechanisms Against Sybil Attack in Vehicular Ad-hoc Networks",
+  "venue": "Proceedings of the Proceedings of the 7th Mathematics, Science, and Computer Science Education International Seminar, MSCEIS 2019, 12 October 2019, Bandung, West Java, Indonesia",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitation. The proposed system and its goals are discussed in Section 4.",
+   "cannot detect if the Sybil node dominates the number of nodes in the process of determining the value of trust, so additional arrangements are needed to overcome this. 4 Proposed Defense Mechanism 4.1 System Model The defense mechanism proposed in this study can be seen in Figure"
+  ],
+  "future_work": [
+   "future works. 2 Sybil Attack Defense Mechanism Sybil attac k is an intrusion with malicious devices trying to connect to legitimate networks using some illegally obtained identity. Some of the effects of the Sybil attack on several protocols are described in [5], including distri",
+   "As future work, we plan to implement the proposed defense mechanism and to evaluate its detection accuracy and efficiency to detect the Sybil attack. References [1] A.",
+   "Future Directions, ICRITO 2017, 2018, vol. 2018-January, pp. 384–390. [21] Y. Hao, J."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2020_anon_Sybil_Attack_Behavior_Detection_for_V2x_Based_on_Traffic_Statistics.pdf",
+  "year": 2020,
+  "cites": 2,
+  "title": "Sybil Attack Behavior Detection for V2x Based on Traffic Statistics",
+  "venue": "Computer Science and Application",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy of over 85%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2021_Amandeep_Sybil_attack_detection_in_VAVET_by_using_neighbouring_vehicles_in_Wireless_Sensor_Networks.pdf",
+  "year": 2021,
+  "cites": 0,
+  "title": "Sybil attack detection in VAVET by using neighbouring vehicles in Wireless Sensor Networks",
+  "venue": "International journal of advance research and innovative ideas in education",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compare with existing in terms of throughput, packet loss and delay. 4. RESULTS There are a number of quantitative metrics that can be used for evaluating the performance of a routing protocol for",
+   "compared with the other secure techniques which are applied to isolate malicious nodes from the network. The reactive routing protocols has high performance in terms of certain parameters like throu"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2021_Funderburg_A_PrivacyPreserving_Key_Management_Scheme_with_Support_for_Sybil_Attack_Detection_in_VANET.pdf",
+  "year": 2021,
+  "cites": 24,
+  "title": "A Privacy-Preserving Key Management Scheme with Support for Sybil Attack Detection in VANETs",
+  "venue": "Sensors",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings of the schemes discussed in Section 3. Table 1 shows the notations used in this paper."
+  ],
+  "future_work": [
+   "future work we intend to investigate the performance and network usage of the proposed scheme and identify ways in which the scheme’s efﬁciency can be improved. We also plan to examine how the concept of authorization could be applied in VANET, for example limiting some data acce"
+  ],
+  "baselines": [
+   "Compared to other applications of MANETs, VANETs both move and change at faster rates [2]. Applications of VANETs include infor- mation services for human drivers, enhanced safety through driver-assis"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2021_Stpie_Security_Measures_with_Enhanced_Behavior_Processing_and_Footprint_Algorithm_against_Sybil.pdf",
+  "year": 2021,
+  "cites": 15,
+  "title": "Security Measures with Enhanced Behavior Processing and Footprint Algorithm against Sybil and Bogus Attacks in Vehicular Ad Hoc Network",
+  "venue": "Sensors",
+  "assumptions": [],
+  "threat_model": [
+   "Attack Models and Infrastructure Supported Detection Mechanisms for Position Forging Attacks in Vehicular Ad Hoc Networks. CSI Trans."
+  ],
+  "limitations": [
+   "Limitations Marmol et al. [17] TRIP Probabilistic reasoning identiﬁes a node based on the multiple factors. Difﬁcult to preserve the node’s trust and behavior, as the system does not know that the node is truthful or malicious.",
+   "cannot detect behavior of reporter. 3. Related Work on Protection against Sybil Attacks In a Sybil attack, the attacker creates a large number of false identities with which he can propagate messages to other network participants.",
+   "Limitations Ruj et al. [37] MDS Resistant to massive attacks in which the attacker gains numerical advantages. Privacy and security problems.",
+   "does not consider the number of submissions, which makes it better for cases of massive attacks. The system allows to monitor a particular node and verify the ﬂuency of its behavior."
+  ],
+  "future_work": [
+   "future work. The future of the ITS (intelligent transportation system), where safety and the attack- free environment is required to achieve the desired trafﬁc quality, is the vehicular ad hoc network."
+  ],
+  "baselines": [
+   "compared with the previous one. The results of the tests were presented and analyzed in the paper.",
+   "compared with the current data and then decides its credibility [24]. Another approach named the misbehavior detection system (MDS) was developed by Raya et al. [25] to identify adjacent attackers who",
+   "compared to half of the speed allowed on the road. A report is considered genuine when a sufﬁcient number of vehicle speeds pass the test (Algorithm 3).",
+   "comparison with the previously mentioned approach (Bogus & Sybil Trust Level & Timestamp algorithm) [6]. Figure 11 shows different scenarios when the number of users increased signiﬁcantly as well as",
+   "compared with the algorithm implemented by the authors (Table 8 and Figure 15). The results obtained by other authors varied from 30 up to 140 ms in case of high network load."
+  ],
+  "n_vehicles": [
+   "26 nodes",
+   "200 vehicles",
+   "200 vehicles",
+   "15 cars",
+   "200 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2021_Velayudhan_Sybil_Attack_with_RSU_Detection_and_Location_Privacy_in_Urban_VANETs_an_Efficient_EPORP_Te.pdf",
+  "year": 2021,
+  "cites": 8,
+  "title": "Sybil Attack with RSU Detection and Location Privacy in Urban VANETs- an Efficient EPORP Technique",
+  "venue": "Research Square",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations of static foundations. Be that as it may, the serious level of Vehicle- to-Infrastructure (V2I) correspondences straightforwardness and availabilit y delivers the whole transportation framework exceptionally helpless again st different dangers focusing on information,"
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared with the WOA, PSO and FA methods. Similarly, the other parameters are analyzed and compared with the existing methods.",
+   "compared with the existing methods. Keywords: security, SXOR operation, sybil attack, malicious node, urban VANET, Rumour routing technique and emperor penguin optimization. 1.",
+   "compared with existing methods such as WOA, ACO and FA methods. The comparison analysis of proposed method is analyzed with performance metrics such as delay, delivery ratio, throughput and packet l",
+   "compared with the WOA , PSO and FA methods. In the figure 13 describes the delivery ratio values of proposed and existing methods.",
+   "compared with the WOA , PSO and FA methods. In the figure 12 describes the packet loss values of proposed and existing methods."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Ardakani_Fuzzy_clustering_algorithm_to_identify_Sybil_attacks_in_Vehicular_ad_hoc_networks.pdf",
+  "year": 2022,
+  "cites": 0,
+  "title": "Fuzzy clustering algorithm to identify Sybil attacks in Vehicular ad hoc networks",
+  "venue": "Research Square",
+  "assumptions": [],
+  "threat_model": [
+   "attack model has been examined. In the fourth section, the objectives of the plan stated in the \u0000fth section are presented in full, and in the sixth section, the simulation and comparison of the proposed method with the lim2020, footprint and maleknasab2022 methods are stated, an",
+   "Attack Model Sybil attacks are started by malicious nodes with impersonation to attack neighboring nodes. Network layers and application layers are damaged by Sybil attacks with more activities in using channel resources.",
+   "attacker models, in order to improve the performance and further evaluate the plan. Declarations Ethical Approval All procedures performed in studies involving human participants were in accordance with the ethical standards of the institutional and national research committee an"
+  ],
+  "limitations": [],
+  "future_work": [
+   "future work are stated. 2. Related Works Many articles have been written about identifying and preventing Sybil attacks in VANET, each of which has provided a solution to this problem, but in general they can be divided into the following groups: Resource testing methods This met",
+   "In the future, to identify malicious activities, intelligent methods can be used to learn the optimal choice of fuzzy rules for each environment. Also, the proposed plan will be examined for different scenarios with different attacker models, in order to improve the performance a"
+  ],
+  "baselines": [
+   "compared with Lim2020, footprint and maleknasab2022 methods. Lim2020 detects nearby objects by scanning the surrounding environment with the help of advanced ADAS sensors.",
+   "Compared to previousmethods, this idea hasreduced the delay timein detecting Sybilattacks by 30%,increased the detectionrate of Sybil attacks by15%, and controlled thefrequency of generatingattack nod",
+   "Compared to the EBRSalgorithm, the numberof correct receivedpackets has increasedby about 3 tenths of apercent, the detection ofSybil nodes hasincreased by 4 tenths ofa percent, and thepacket received",
+   "compared to thefootprint algorithm.Also, the detection rateof malicious nodes thatare correctly detectedhas decreased and thedetection rate of correct,compared to footprint,and has increased up to40%.",
+   "compared to footprint,and has increased up to40%. Page 10/37 AuthorName Year ofpublication description Result Kumar etal., 2019 In this paper, by combining support vectormachine algorithm, arti\u0000cial n"
+  ],
+  "n_vehicles": [
+   "2020 Vehicles",
+   "2012 Nodes",
+   "120 nodes",
+   "1250 nodes"
+  ],
+  "sim_time": [
+   "Simulation time 500 s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy of over 98%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Azam_Collaborative_Learning_Based_Sybil_Attack_Detection_in_Vehicular_ADHOC_Networks_VANETS.pdf",
+  "year": 2022,
+  "cites": 65,
+  "title": "Collaborative Learning Based Sybil Attack Detection in Vehicular AD-HOC Networks (VANETS)",
+  "venue": "Sensors",
+  "assumptions": [
+   "we assume that there is more similarity in the driving pattern of vehicles when the density of the vehicle is high. From the data, we create a driving pattern Mi for every vehicle Vi in the network for each time interval t."
+  ],
+  "threat_model": [
+   "Attack Model In a vehicular communication context, Sybil attacks can be divided into 2 steps: virtual node generation and launch attack. According to ETSI standards, cooperative awareness messages (CAMs) could be used in the virtual node creation process and make virtual nodes re"
+  ],
+  "limitations": [
+   "shortcomings in the computation of Eigenvalues. In [ 32], Sybil attack is detected using classiﬁcation algorithms SVM, Logistic regression, and Random Forest."
+  ],
+  "future_work": [
+   "Future Directions VANET being a promising technology is constantly under threat of a number of the security attacks. These security attacks, speciﬁcally the ones focusing on security disruption and fake information dissemination i.e., Sybil attack, not only disturb the network ﬂo"
+  ],
+  "baselines": [
+   "compared to MANET is the high mobility of vehicles and its dynamic nature i.e., it has no ﬁxed network topology [1]. A VANET system comprises VANET-equipped automobiles with On-Board Units (OBUs) for",
+   "comparison with the proposed technique. Section 3 entails system design, presenting a view of how simulation is done and how the Sybil attack is launched in the VANET system for the proposed study.",
+   "compared to all existing methods. Table 1 summarizes the Machine learning studies that have been presented, highlighting how they differ from our approach as well as their beneﬁts and drawbacks.",
+   "compared to individual classiﬁers and are the main focus of this study. To the best of our knowledge, no study except [32] has attempted to make machine learning-based Sybil attack detection on a bala",
+   "compared to the rest, the performance of ensemble classiﬁers can drop over [43]. Keeping our focus on the proposed technique, it was observed that both classiﬁers (Hard and Soft) show the same perform"
+  ],
+  "n_vehicles": [
+   "800 vehicles",
+   "800 nodes",
+   "300 Nodes",
+   "500 Nodes",
+   "800 Nodes",
+   "500 nodes",
+   "800 nodes",
+   "300 Nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy, recall, and precision values of 99%",
+   "accuracy, 96%",
+   "recall and 95%",
+   "accuracy, 83%",
+   "recall and 90%",
+   "accuracy, recall, and precision values of 97%",
+   "accuracy and precision values for SVM are 96%",
+   "recall is 95%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Chaubey_Detection_of_Sybil_attack_in_vehicular_ad_hoc_networks_by_analyzing_network_performance.pdf",
+  "year": 2022,
+  "cites": 14,
+  "title": "Detection of Sybil attack in vehicular ad hoc networks by analyzing network performance",
+  "venue": "International Journal of Power Electronics and Drive Systems/International Journal of Electrical and Computer Engineering",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to the threshold value in VANET, it is considered as an attack. It is clear from Table 3 that the possibility of number of vehicles greater than the threshold value is zero."
+  ],
+  "n_vehicles": [
+   "45 vehicles",
+   "60 vehicles",
+   "60 vehicles",
+   "60 vehicles",
+   "45 vehicles",
+   "60 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Helmi_Sybil_Attack_Prediction_on_Vehicle_Network_Using_Deep_Learning.pdf",
+  "year": 2022,
+  "cites": 6,
+  "title": "Sybil Attack Prediction on Vehicle Network Using Deep Learning",
+  "venue": "Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)",
+  "assumptions": [
+   "It is assumed that if the deep learning generates a value less than 0.4, then the system will state that the network is not in attack status. On the other hand, if the comparison value is more than 0.4, the prediction status will be marked as attack status.",
+   "it is assumed that the value between 0 to 0.39 is the no attack condition, whereas the value between 0.4 to 1 is the condition of the network infected by the Sybil attack. 3. Results and Discussions The evaluation in this research is conducted within 100 random repetitions."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "does not detect the time pattern when it is sent. As result, the network could be down."
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared to yield the time difference. The tolerance time difference is 120 seconds or two minutes [14].",
+   "compared with t he coordinate of the recipient node. If the emergency car position is in its home base or its office, then the status is determined under attack."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Junaidi_Secure_Vehicular_Platoon_Management_against_Sybil_Attacks.pdf",
+  "year": 2022,
+  "cites": 11,
+  "title": "Secure Vehicular Platoon Management against Sybil Attacks",
+  "venue": "Sensors",
+  "assumptions": [
+   "it is assumed that the ECDLP , ECCDH and ECDDH problems are hard to solve. The initialization phase happens before the start of platoon operation. 4.1.2.",
+   "it is assumed that the leaving vehicle is 𝐽𝑉, which holds the same set of keys and maintain s information after the pla- toon entry and communication events. The JV is denoted as 𝐿𝑉 to indicate it is a leaving vehicle.",
+   "it is assumed that the leaving vehicle is JV, which holds the same set of keys and maintains information after the platoon entry and communication events. The JV is denoted as LV to indicate it is a leaving vehicle.",
+   "It is assumed that no vehicle has joined or left the platoon since LV’s entry into the platoon. In other words, the platoon key that is established throughout all platoon members is pG.",
+   "We assume a best-case scenario where there are no invalid signatures i.e., no Sybil nodes. The computational costs for Algorithms 4, 6 and 7 of PASAD are as follows: TPASAD−Alg4 = 2TMul + 4TPair (11) TPASAD−Alg6 = 8TExp + 7TMul + TPair + THash (12) TPASAD−Alg7−Best = 9nTExp + (9n"
+  ],
+  "threat_model": [
+   "Threat Model The threat model we consider is the Canetti–Krawczyk (CK) adversary model [21–23], which is deﬁned as follows: 1. Participants: Let JV be the vehicle attempting to join a platoon, PL be the leader of the speciﬁc platoon, RSU be a trusted RSU and P be any of the parti",
+   "threat model we consider is the Canetti–Krawczyk (CK) adversary model [21–23], which is deﬁned as follows: 1. Participants: Let JV be the vehicle attempting to join a platoon, PL be the leader of the speciﬁc platoon, RSU be a trusted RSU and P be any of the participants.",
+   "adversary model [21–23], which is deﬁned as follows: 1. Participants: Let JV be the vehicle attempting to join a platoon, PL be the leader of the speciﬁc platoon, RSU be a trusted RSU and P be any of the participants."
+  ],
+  "limitations": [
+   "shortcomings of these existing solutions, we designed a hybrid security scheme that authenticated both vehicle identity and messages exchanged into a platoon management scheme to prevent threats by Sybil vehicles. The proposed solution is called secure platoon management against ",
+   "drawbacks of current cryptographic implementations discussed in Section 2.3. These drawbacks include incomplete identity and message authentication as well as high computation costs.",
+   "drawbacks include incomplete identity and message authentication as well as high computation costs. As it concerns platoon management, the proposed scheme operated over three main events: platoon entry, platoon communication and platoon exit.",
+   "Limitations in Vehicle Platoon Control. IEEE Intell."
+  ],
+  "future_work": [
+   "Future work is expected to ex- plore the authentication of a new platoon leader when the existing leader intends to leave the platoon. As evidenced by the proposed scheme, the platoon leader carries important information that needs to be handed over to the right vehicle in a secu",
+   "Future work is expected to explore the authentication of a new platoon leader when the existing leader intends to leave the platoon. As evidenced by the proposed scheme, the platoon leader carries important information that needs to be handed over to the right vehicle in a secure"
+  ],
+  "baselines": [
+   "outperformed typical platooning systems with regards to packet drop rates and delays. On the other hand, an alternative hazardous scenario could arise whereby nodes that are intentionally malicious wo",
+   "compare with the SPMSA, we assume a minimalist VANET system for PASAD where two vehicles communicate in isolation as in the SPMSA. Hence, n = 1, and the total computation overhead of PASAD is TPASAD =",
+   "compared with the computational overheads for both schemes, the computational overhead will be the dominant factor in the execution times of the schemes. 6.3. Performance Comparison by Simulations In"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy of 99.86%",
+   "accuracy of 87.94%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2022_Kakulla_Sybil_Attack_Detection_in_VANET_Using_Machine_Learning_Approach.pdf",
+  "year": 2022,
+  "cites": 8,
+  "title": "Sybil Attack Detection in VANET Using Machine Learning Approach",
+  "venue": "Ingénierie des systèmes d information",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "drawbacks of this plan are very complex. It was time consuming.",
+   "shortcomings tha t were discussed previously . As a consequence of this, ELM eliminates the problems that were mentioned earlier."
+  ],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2023_Akil_NonInteractive_PrivacyPreserving_SybilFree_Authentication_Scheme_in_VANETs.pdf",
+  "year": 2023,
+  "cites": 5,
+  "title": "Non-Interactive Privacy-Preserving Sybil-Free Authentication Scheme in VANETs",
+  "venue": null,
+  "assumptions": [
+   "we assume that users hold a single ABC containing all their attributes. Users can prove ownership of a selection of attributes in their ABCs to a verifier using zero knowledge proofs (ZKP) that: ( a) reveals the values of the set of disclosed attributes Ad, while keeping the valu",
+   "We assume that an adversary might be a participating vehicles in the V ANET, i.e, she may obtain one valid ABC from the CA. The limitations of the adversaries are the following: we assume that they are not able to compromise the CA, break the underlying cryptographic building blo",
+   "we assume that they are not able to compromise the CA, break the underlying cryptographic building blocks, and identify the pseudonym holders based on metadata, such as IP, MAC ad- dresses, or imperfections on the radio transmission signatures. IV."
+  ],
+  "threat_model": [
+   "adversary model, and Section IV outlines the detailed explanation of our proposed privacy- preserving authentication scheme. The security, privacy and performance analysis of our proposal are presented in Section V.",
+   "adversary model. network SA CA vehicles ... Fig. 2: Our new system architecture requires neither PAs nor RSUs.",
+   "adversary model The adversary’s goal is to either expose the vehicle’s pri- vate key kU from its a pseudonym or to link two or more pseudonyms generated in different epochs to a given vehicle. An adversary can eavesdrop, modify and inject data between the communicating parties."
+  ],
+  "limitations": [
+   "limitations. Section VII discusses the flexibility of our model and its extensions.",
+   "limitations, and future directions are summarized in Section VIII. II.",
+   "limitations. We also describe attribute-based credentials, which are a category of ACs.",
+   "Limitations: This privacy-enhancing V ANET architecture has the following two important limitations: • Vehicles have to contact the PA to get a new set of pseudonyms. If there are no unused pseudonyms in the pool, then vehicles have to contact the PA and request a new pool of pse",
+   "limitations: • Vehicles have to contact the PA to get a new set of pseudonyms. If there are no unused pseudonyms in the pool, then vehicles have to contact the PA and request a new pool of pseudonyms.",
+   "limitations of privacy-enhancing V ANETs that are based on the architecture presented in Section II-A. In this section, we introduce ABCs. 1) ABCs: are the digital equivalent of a passport, drivers license, or diploma."
+  ],
+  "future_work": [
+   "future directions are summarized in Section VIII. II.",
+   "FUTURE WORK We leveraged idemix to develop a non-interactive, privacy- preserving, Sybil-free authentication scheme in V ANETs. Our security and privacy evaluation shows that we man- aged to achieve the goals mentioned in Section III-A: ( a) Authenticated broadcasting allows rece",
+   "future work, we plan improve our protocol design so it provide the same security and privacy properties with a less computational effort while providing means to protect against replay attacks. We will provide a formal verification of our system protocols."
+  ],
+  "baselines": [
+   "compared to exponentiations. Also, the issuing and inspection protocols are not considered in the evaluation because they are performed by the CA.",
+   "compared to ours. For a more comprehensive overview of security and privacy in V ANETs we refer to [22]."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2023_Bhanja_Detection_of_Sybil__DDoS_Attacks_in_VANET_using_Intelligent_Technique.pdf",
+  "year": 2023,
+  "cites": 0,
+  "title": "Detection of Sybil & DDoS Attacks in VANET using Intelligent Technique",
+  "venue": "Research Square",
+  "assumptions": [
+   "It is assumed that if any of these three trust values is low then, the ﬁnal trust value is low as estimated by the RSU. 4. F uzzy Inference System (FIS) FLC-1 is the ﬁrst fuzzy logic controller (FLC) used in the proposed model for DDoS attack detection."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared with the existing techniques. The proposed model yields better accuracy , sensitivity , and recall value compared to the existing techniques.",
+   "compared to the existing techniques. Mar- gin of error for the attack detection is also estimated for 95% of the conﬁdence interval.",
+   "compared with other existing soft computing techniques in terms of accuracy of detection,lifetime of networks, consumption of energy and eﬃciency. However, the proposed model is capable of handling mi",
+   "compared with other existing papers. 3. Proposed Model Due to lack of centralized authority, it becomes challenging to detect the attacks, which aﬀect the V ANET.",
+   "compared to that of ’packet loss ratio’ for detection of DDoS attack. 5 RESULT AND DISCUSSIONS 23 Figure 21. SNIR Lost Packets under 4,6,8,10 DDoS Attackers Figure 22."
+  ],
+  "n_vehicles": [
+   "126 nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2023_Noman_Techniques_to_Overcome_Network_Attacks_Sybil_Attack_Jamming_Attack_Timing_Attack_in_VANET.pdf",
+  "year": 2023,
+  "cites": 4,
+  "title": "Techniques to Overcome Network Attacks (Sybil Attack, Jamming Attack, Timing Attack) in VANET",
+  "venue": "Journal of The Colloquium for Information Systems Security Education",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2023_Paranjothi_Enhancing_Security_in_VANETs_with_Sybil_Attack_Detection_using_Fog_Computing.pdf",
+  "year": 2023,
+  "cites": 5,
+  "title": "Enhancing Security in VANETs with Sybil Attack Detection using Fog Computing",
+  "venue": null,
+  "assumptions": [
+   "we assume the center vehicle in the region will act as a guard node ( 𝐺𝑛), as the vehicle in the center has more number of the neighboring vehicles in its communication range compared to the front and tail-end vehicles. Second, we assume that the total number of vehicles ( N) in ",
+   "we assume that the total number of vehicles ( N) in the region at any given time is at least two. The guard node needs at least two vehicles in the region to compare and analyze the beacon messages to detect rogue nodes causing a Sybil attack."
+  ],
+  "threat_model": [],
+  "limitations": [
+   "limitations of the existing Sybil attack detection schemes, we propose a fog computing-based Sybil attack detection for V ANETs (FSDV). The FSDV framework employs the concept of guard nodes.",
+   "limitations of the existing Sybil attack de- tection schemes [4-6, 8-12], we propose the FSDV framework, which utilizes only vehicle speed values in beacon messages and does not depend on either trust score, cryptography, or past vehicle data in rogue nodes detection. III.",
+   "limitations and to provide an efﬁcient scheme to detect false messages broadcasted over the network, we proposed an OBU-based fog computing technique called FSDV to detect rogue nodes increases by up to 40% in the region. The simulations were performed to evaluate the performance"
+  ],
+  "future_work": [
+   "FUTURE WORK We studied the challenges in detecting Sybil attacks, such as high processing delay, high network overhead, low TPR, and high FPR, notably when the number of rogue nodes increases in the region. To address these limitations and to provide an efﬁcient scheme to detect ",
+   "In the future, we are planning to extend this work to detect various attacks, such as tunneling attacks, impersonation attacks, etc. This can be done by simulating the environment of the security attacks and then detecting the malicious information broadcasted using rogue nodes d"
+  ],
+  "baselines": [
+   "compared to existing Sybil attack detection schemes. Index Terms—Rogue nodes, Sybil attack, Fog computing.",
+   "compared to traditional communication techniques [7]. The novelty of our proposed work lies in providing low data processing delays and low FPR at high vehicle densities.",
+   "compared to the front and tail-end vehicles. Second, we assume that the total number of vehicles ( N) in the region at any given time is at least two.",
+   "compared with the received speed values of the neighboring vehicles (𝑆𝑟𝑐𝑣𝑑 ). If the difference in speed values is greater than the dynamic threshold ( 𝑆𝑡ℎ ), i.e., 𝑆𝐺 – 𝑆𝑟𝑐𝑣𝑑 ¡ 𝑆𝑡ℎ , a Sybil attack i",
+   "compared to [4-6] schemes, we have analyzed different types of delays, such as communication delay, queuing delay, and data processing delay associated with the FSDV framework, illustrated in Section"
+  ],
+  "n_vehicles": [
+   "4000 vehicles",
+   "4000 vehicles",
+   "4000 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "FPR, and performs up to 32%",
+   "FPR is 31%",
+   "FPR, and 13%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2023_Vani_Detecting_Sybil_Attacks_using_Proofs_of_Work_and_Location_in_VANETs.pdf",
+  "year": 2023,
+  "cites": 0,
+  "title": "Detecting Sybil Attacks using Proofs of Work and Location in VANETs",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "FUTURE WORK The vehicular adhoc network is the self configuring type of network in which vehicles can move freely on the roads. The veh icular adhoc network is the decentralized type of network in which vehicles can International Journal of Scientific Research in Science, Enginee"
+  ],
+  "baselines": [
+   "compared with the existing system to prove improved sybil attack detection ratio, thus providing better security. NS2 environment is used to prove the simulation results.",
+   "outperforms P2DAP when the speed of vehicles increases. Hybrid scheme was introduced with the intent of higher performance and higher detection rate."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2024_Almazroi_FCLSR_Fog_ComputingBased_Lightweight_Sybil_Resistant_Scheme_in_5GEnabled_Vehicular_Network.pdf",
+  "year": 2024,
+  "cites": 16,
+  "title": "FC-LSR: Fog Computing-Based Lightweight Sybil Resistant Scheme in 5G-Enabled Vehicular Networks",
+  "venue": "IEEE Access",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to the hash value H((AID vf irst) obtained. If the hash values are the same, the (AID vf irst status in the MMPT is set to 1 and the fog server appends the public key of the vehicle P KV to t",
+   "compared with the received rootsignbyRT A after the vehicle obtains the Missing Hash Values (MHVs), MHT root signed by RTA rootsignbyRT A, public key of RTA signed by TA P KRT AsignbyT A, and public k",
+   "compared to the hash of the anonymous. A message injection attack is flagged if these two numbers don’t match up.",
+   "Compared to Wang and Yuo [21], Bayat et al. [23], and Ali et al. [22], the proposed FC-LSR scheme is seen to have a much smaller signature verification overhead. In a scenario with 30 cars, for instan",
+   "compared with related works. DECLARATION OF COMPETING INTEREST No conflict of interests exists regarding the publication of this paper. 10 VOLUME 4, 2016 This article has been accepted for publication"
+  ],
+  "n_vehicles": [
+   "30 cars"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2024_Guven_Creating_A_Realistic_Sybil_Attack_Dataset_For_Intervehicle_Communication.pdf",
+  "year": 2024,
+  "cites": 0,
+  "title": "Creating A Realistic Sybil Attack Dataset For Inter-vehicle Communication",
+  "venue": "Research Square",
+  "assumptions": [
+   "we assume that attackers can capture packets over the wireless network, create new packets based on information from old packets, and broad cast new packets with negligible delay, enabling them to carry out replay att acks as described in [ 48]. We also assume that attackers can ",
+   "we assume that the attackers can have a suﬃcient numbe r of pseudonym certiﬁcates to perform a sybil attack, as mentioned in [ 21]. With the capabilities we described, attackers can monitor network ac tivity to ana- lyze existing messages, create new packets and modify existing o"
+  ],
+  "threat_model": [
+   "attack models as the VeReMi Extension [ 17] but focuses exclu- sively on data compliant with the misbehavior reporting protocol [ 27]. Since it lacks simulation of RSSI measurements, DARE is unsuitable for evaluating RS SI-based sybil attack detection methods.",
+   "attacker models included in our simulations are given. Our study aims to create an environment in which both sybil attacks and attack detection methods can be developed and evaluated.",
+   "Attacker Model Several types of sybil attack methods have been described in the l iterature [ 6, 21]. These types are generated by manipulating two parameters."
+  ],
+  "limitations": [
+   "limitations includ e low beaconing frequency (1Hz), small simulation area (3.6 km2), low traﬃc density, and a lack of built-in sybil attack scenarios, making it unsuitable for evaluating RSSI-based sybil attack detection methods. The simulation uses the outdated Veins 3.0, and du",
+   "limitations regarding RSSI support. Additionally, the dataset covers a small area (1.6 km2) with low traﬃc density and low beaconing frequency (1 Hz), which makes it unsuitable for evaluating attack detection methods in dense and diverse traﬃc situations.",
+   "limitation is that BurST-ADMA contains only fault y behavior attack types, making it only suitable for evaluating attack detection me thods based on plausibility checks. Additionally, since the dataset is generated solely with a traﬃc simulator without a network simulator, it doe",
+   "limitation of Voiceprint’s reliance on RSSI patterns. To address this attack, they proposed a time-series change -point detection method and adapted Voiceprint to utilize Service Channel (SCH) mes sages to reduce message observation time and false positives.",
+   "limitation, we employed the log-normal shadowing mod el, which incorporates random variations in signal strength typically observed in r eal-world environments due to factors like multipath propagation and obstacles. Fi gure 6 demon- strates a comparison of RSSI sequences generat",
+   "limitation arises from the fact th at Veins does not inherently support multi-thread or multi-process simulation. W e believe that enabling parallel execution of simulations would signiﬁcantly accelerate resear ch in the V ANET simulation ﬁeld."
+  ],
+  "future_work": [
+   "future work are outlined in Section 6. 3 2 Related Work Sybil attacks pose a signiﬁcant challenge to the security and integrit y of V ANETs [ 21]. Researchers and developers require realistic and comprehensive d atasets to develop and rigorously evaluate robust detection methods."
+  ],
+  "baselines": [
+   "compared to the VeReMi Extensions LuST scenario. It’s important to note that the VeReMi Exte nsions LuST traﬃc scenario speciﬁcally produces zero collisions. 21 (a) LuST-A received msgs (b) LuST-A co"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 4800 s",
+   "Simulation time 25 min"
+  ],
+  "beacon_rate": [
+   "1Hz",
+   "1 Hz",
+   "10 Hz",
+   "10 Hz"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": [
+   "3.6 km2",
+   "150 km2",
+   "1.6 km2"
+  ]
+ },
+ {
+  "file": "2024_Khatri_Sybil_AttackResistant_BlockchainBased_ProofofLocation_Mechanism_with_Privacy_Protection_in.pdf",
+  "year": 2024,
+  "cites": 12,
+  "title": "Sybil Attack-Resistant Blockchain-Based Proof-of-Location Mechanism with Privacy Protection in VANET",
+  "venue": "Sensors",
+  "assumptions": [
+   "We assume that the RSUs are deployed with a similar distance between the consecutive ones along the road section and it cannot be easily compromised by hackers. These RSUs maintain a dedicated blockchain to store the information about the passing vehicle in the table of the smart",
+   "we assume that the DMV stores the true identity of RSUs in its database. 4.5. Smart Contract (SC) A smart contract is a piece of code that is invoked by RSUs and stores the location information of vehicles [19].",
+   "We assume that CA generates certificates and keys for both vehicles and RSUs based on the elliptic-curve cryptography (ECC) scheme of public-key cryptography. The notations used in the proposed system are shown in Table 1. 5.2.",
+   "We assume that the Global PID will be sent through the secure channel, e.g., by encrypting with the public key of the receiver. Then, the verifier Xi can query the smart contract with a request message consisting of the tuple (ti, Li) for location verification of vehicle Vi at so"
+  ],
+  "threat_model": [],
+  "limitations": [
+   "does not consider the security attack mitigation strategy in VANETs as compared to our proposed work. Location privacy preserving system using blockchain technology has been proposed in [16].",
+   "drawback with this approach is that the hardware fingerprint is vulnerable to theft or vandalism thereby raising other security and privacy concerns. Sensors 2024, 24, 8140 5 of 28 The blockchain-based solutions [14–17,19] proposed the trust management and pri- vacy preservation ",
+   "Limitations Proposed Scheme ✓ ✓ ✓ ✓ Low ✓ Low scalable solution, do not impose burden to TA single-core ECU assumption [7] ✓ ✗ ✗ ✗ Low ✗ Medium high detection rate burden to TA for managing the trajectories [8] ✓ ✗ ✗ ✗ Low ✓ Medium high detection rate burden to TA for managing th"
+  ],
+  "future_work": [
+   "our future work. Furthermore, the identity and location information of vehicles inside the smart contract is encrypted with a PoL privacy preservation mechanism, thereby preserving the privacy of vehicles.",
+   "our future work. 7.4. Implementation and Scalability Issues In this subsection, we will discuss scalability issues, computation overhead, and com- munication overhead associated with the proposed PoL mechanism.",
+   "Future Works The security of VANET systems is critical and one of the most active research topics. Sybil attacks are considered to be one of the most serious types of attacks, which can pose security risks.",
+   "In the future, we will investigate the proof-of-location mechanism for cases where both single-core ECUs and multi-core ECUs are involved in the proof-of-location process among diverse vehicles in VANET. Author Contributions: Conceptualization, N.K. and S.Y.N.; methodology, N.K. "
+  ],
+  "baselines": [
+   "compared to other existing approaches. Keywords: VANET; proof-of-location (PoL); sybil attack; privacy; smart contract; blockchain 1.",
+   "compared to multi-core ECUs [10]. According to [10], most vehicle functions, such as heating, ventilation and air conditioning (HV AC), or powertrain control, are developed for single-core ECUs in Sen",
+   "compared to the previous studies. The blockchain-based privacy preservation mechanism in the VANET environment has been studied in the literature [11–16].",
+   "compared to our proposed work. Location privacy preserving system using blockchain technology has been proposed in [16].",
+   "compared to the previous works. Maffiola et al. [20] proposed a simulation tool called GOLIATH, which is used for real- time data collection for intelligent transportation systems (ITSs)."
+  ],
+  "n_vehicles": [
+   "100 vehicles"
+  ],
+  "sim_time": [
+   "Simulation time 100 s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "51% attack"
+  ],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2024_Man_Strong_Anonymous_Batch_Authentication_Scheme_Against_Sybil_Attack_in_VANET.pdf",
+  "year": 2024,
+  "cites": 0,
+  "title": "Strong Anonymous Batch Authentication Scheme Against Sybil Attack in VANET",
+  "venue": "Research Square",
+  "assumptions": [
+   "we assume the existence of a secure channel between the TA and rRSUs. This channel enables the secure transmission of sensitive information, including rRSUs' regional private keys, the corresponding certificates, and their regional member lists.",
+   "it is assumed that the message to be sent is 𝑚 and has a length of 20 bytes. To initiate a signature on behalf of the group, the vehicle runs Algorithm 6 to generate a signature ( )iPPA T , and then broadcast ( )( ) , im PPA T .",
+   "it is assumed in this paper that 𝑁𝑜 adheres to the binomial distribution 𝐵(𝑛, 𝑝). 𝑁𝑘 is related to the vehicle density 𝑑 and the longest transmission distance 𝑙 of vehicle single-hop messages. In the following paper, we set 𝑙=300m,𝑑=5-500 vehicles/km, and the channel bandwidth is",
+   "It is assumed that the vehicle uses the ( )( ) ,,i i ix A k for signing and then broadcasts the signature to the V ANET. Compared to the comparison [9], this paper modifies the structure of message 𝑚 by taking out the timestamp iT in the original 𝑚 and putting it into the computa"
+  ],
+  "threat_model": [],
+  "limitations": [
+   "does not consider strong anonymity, although it does achieve weak anonymity. In this scheme, vehicles transmit the entire message to the RSU for uniform authentication before broadcasting.",
+   "drawback: if the timestamp indicates the current moment of signature generation, it could result in a situation where, even if a vehicle signs a different payload using the same key, it would appear unlinkable to other vehicles. This contradicts the original design principle of s"
+  ],
+  "future_work": [],
+  "baselines": [
+   "Compared to the signature scheme in [ 30], this approach not only significantly reduces the signature overhead but also the verification burden. However, [9] does not account for the design of effi",
+   "Compared to [9], this algorithm enables vehicles to verify numerous signatures in a significantly shorter period of time, effectively eliminating much of the overhead associated with calculating lin",
+   "compared with other related schemes. 4.1 Functional Comparison To effectively evaluate the performance of the protocol presented in this paper, this section compares it with protocols from referen",
+   "compared to the schemes in [9],[ 11],[34]. The reason for the low overhead in [ 27] is that its design does not inherently consider strong anonymity.",
+   "compared to the message delay 𝐷𝑚𝑠𝑔 1 of [9], the larger 10 −  msg msgDD t is. This means that our scheme is more adapted to the situation where the vehicle needs to verify a large number of signat"
+  ],
+  "n_vehicles": [
+   "120 vehicles",
+   "500 vehicles",
+   "41 Vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2024_Morton_TrustAware_Sybil_Attack_Detection_for_Resilient_Vehicular_Communication.pdf",
+  "year": 2024,
+  "cites": 2,
+  "title": "Trust‐Aware Sybil Attack Detection for Resilient Vehicular Communication",
+  "venue": "Internet Technology Letters",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations of these methods by maintaining a trust metric associated with temporary pseudonyms for vehicles. Each vehicle independently creates an identity for each neighboring vehicle."
+  ],
+  "future_work": [
+   "future work. 2. LITERATURE ON SYBIL ATTACK DETECTION This section presents an overview of some recent approaches to Sybil attack detection which loosely fall into three categories: encryption & authentication schemes, identity management schemes, and message anomaly analysis9.",
+   "future research. 3.2 Challenging Vehicle Authenticity When the difference in reported velocity exceeds the dynamic threshold, the vehicle’s data is flagged as suspect, prompting further analysis. The observing vehicle then analyzes the received data using a two -tailed t-hypothes",
+   "FUTURE WORK In this paper, we present a robust approach to Sybil attack detection by utilizing a trust -scoring metric based on vehicles’ observations of neighboring vehicles’ traffic patterns. We consider detection solely through the V2V domain and without mediation through VANE"
+  ],
+  "baselines": [
+   "compared to the current route’s speed limit, denoted as SpeedLimit. If the velocity is within a defined threshold of ±δ% of this limit, the sender’s trust score in the recipient’s score table is in"
+  ],
+  "n_vehicles": [
+   "500 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "30% Sybil",
+   "5% Sybil",
+   "10% Sybil",
+   "15% Sybil",
+   "20% Sybil"
+  ],
+  "claimed_perf": [
+   "F1 Score Time to Detection 5% Sybil Nodes 87.16%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2024_Pal_Proposed_approach_for_securing_VANET_by_detection_and_avoidance_of_Sybil_attack.pdf",
+  "year": 2024,
+  "cites": 0,
+  "title": "Proposed approach for securing VANET by detection and avoidance of Sybil attack",
+  "venue": "Journal of Discrete Mathematical Sciences and Cryptography",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "in the future to work on other types of attacks in V ANET and MANET. References [1] Upadhyay, U., Kumar, A., Sharma, G., Saini, A."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Almesaeed_Realtime_Sybil_Attack_Detection_Based_on_Channel_Characterization_in_VANET.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "Real-time Sybil Attack Detection Based on Channel Characterization in VANET",
+  "venue": "International Journal of Computer Network and Information Security",
+  "assumptions": [
+   "It is assumed that a physical vehicle utilizing multiple forged identities, while the claimed virtual identities are referred to as sybil nodes. The proposed scheme comprises three primary phases: Acquisition, signal analysis, and verification.",
+   "it is assumed that each vehicle's On -Board Unit (OBU) operates in the Control/Service channels (CCH/SCH) alternating switch mode as defined in the IEEE 1609.4 protocol [41]. In this mode, every vehicle broadcast safety messages at a freq uency of 10Hz (equivalent to 10 packets p",
+   "It is assumed that all vehicles have fixed transmission power of 23 dBm and a packet size of 500 Bytes. All nodes broadcast 10 packets per second."
+  ],
+  "threat_model": [
+   "attack models and might deliver an accurate result in complex attacks scenarios. The use of machine learning techniques has also been utilized to reduce identification time, increase detection accuracy, and enhance scalability of sybil detection as proposed in [18]."
+  ],
+  "limitations": [],
+  "future_work": [
+   "Future Works In this article, a novel approach for detecting sybil attacks in V2V communication is proposed based on the analysis of the wireless channel profile presented by the angular spread and the RSSI measurements. By integrating the characteristics of the wirele ss channel"
+  ],
+  "baselines": [
+   "outperforms traditional RSSI -based methods. Experimental results confirm the enhanced accuracy and reliability of the proposed mechanism for detecting sybil attacks in V2V communication scenarios.",
+   "outperform other state -of-art techniques in sybil attack detection. Further research in this area is carried in [24] through proposing a computation less heuristic approach that focuses on detecting",
+   "compared to the PCISAD technique. The TPR is evaluated across a range of vehicle densities, and it is observed tha t as the number of vehicles increases, the TPR ratio decreases for both mechanisms.",
+   "compared to the PCISAD technique. The reason behin d this behaviour can be attributed to the fact that, despite the increase in vehicle densities, an RSSI-based model may struggle to accurately diffe",
+   "compared to 10% in the PCISAD technique when the number of vehicles is increased from 10 to 100. It is notable that the functionality of the suggested algorithm remains unaffected by the overall qua"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 120s"
+  ],
+  "beacon_rate": [
+   "10Hz",
+   "10 Hz"
+  ],
+  "attacker_frac": [
+   "80% of sybil",
+   "70% of sybil"
+  ],
+  "claimed_perf": [
+   "TPR of the PCISAD technique drops by 24%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Chourey_Design_and_Develop_a_Trust_based_Scheme_for_Sybil_Attacker_Detection_and_Prevention_in_VAN.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "Design and Develop a Trust based Scheme for Sybil Attacker Detection and Prevention in VANETs",
+  "venue": "International Journal For Multidisciplinary Research",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations and potential enhancements to improve routing performance [35]-[45]. Table 2: Previous work of researchers Refer ence No.",
+   "Limitations Enhancement Possible [35] Proposed a fake node detection and prevention method for secure vehicular communication. In this approach, genuine vehicles give rewards, and fake vehicles are punished and given penalties."
+  ],
+  "future_work": [
+   "in the future [6][7].Security from attacks is the major International Journal for Multidisciplinary Research (IJFMR) E-ISSN: 2582-2160 ● Website: www.ijfmr.com ● Email: [email redacted] IJFMR250138087 Volume 7, Issue 1, January-February 2025 2 issue in vehicular communication. Th",
+   "Future Work Vehicular Ad hoc Network (VANET) is not perfectly implemented in many countries due to the absence of advanced infrastructure. This type of transport system is very effective to control the traffic on roads or handle the traffic on many busy roads."
+  ],
+  "baselines": [
+   "compared with CLS scheme in different vehicles density scenarios and the DITS is showing better result. The DITS approach average packets receiving is 3% more due to less delay and overhead in netwo",
+   "compared to previous CLS approach. While the overhead and delay are also showing 5% decrement in performance."
+  ],
+  "n_vehicles": [
+   "150 vehicles",
+   "150 vehicles",
+   "150 vehicles",
+   "150 vehicles",
+   "150 vehicles",
+   "150 vehicles",
+   "150 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Guven_Creating_a_realistic_sybil_attack_dataset_for_intervehicle_communication.pdf",
+  "year": 2025,
+  "cites": 4,
+  "title": "Creating a realistic sybil attack dataset for inter-vehicle communication",
+  "venue": "Peer-to-Peer Networking and Applications",
+  "assumptions": [
+   "we assume that attackers can capture packets over the wireless network, create new packets based on information from old packets, and broadcast new pack- ets with negligible delay, enabling them to carry out replay attacks as described in [ 49]. We also assume that attackers can ",
+   "we assume that the attackers can have a sufﬁcient number of pseudonym certiﬁcates to perform a sybil attack, as mentioned in [ 22]. With the capabilities we described, attackers can monitor network activity to analyze existing messages, create new Table 3 V eins conﬁguration used"
+  ],
+  "threat_model": [
+   "attack models on the performance of intrusion detection systems in V ANETs, underscoring the need for diverse and realistic attack scenarios in datasets. While numerous MDS methods exist, the scarcity of pub- licly accessible datasets incorporating realistic trafﬁc and RSSI chara",
+   "attack models as the V eReMi Extension [14] but focuses exclusively on data com- pliant with the misbehavior reporting protocol [ 28]. Since it lacks simulation of RSSI measurements, DARE is unsuitable for evaluating RSSI-based sybil attack detection methods.",
+   "attacker models included in our simulations are given. Our study aims to create an environment in which both sybil attacks and attack detection methods can be developed and evaluated."
+  ],
+  "limitations": [
+   "limitations include low beaconing frequency (1Hz), small simulation area (3.6km 2), low trafﬁc density, and a lack of built-in sybil attack scenar- ios, making it unsuitable for evaluating RSSI-based sybil attack detection methods. The simulation uses the outdated V eins 3.0, and",
+   "limitations regarding RSSI support. Additionally, the dataset covers a small area (1.6 km 2) with low trafﬁc density and low beaconing frequency (1 Hz), which makes it unsuitable for evaluating attack detec- tion methods in dense and diverse trafﬁc situations.",
+   "limitation is that BurST-ADMA contains only faulty behavior attack types, making it only suitable for evaluating attack detection methods based on plausibil- ity checks. Additionally, since the dataset is generated solely with a trafﬁc simulator without a network simulator, it do",
+   "limitations. The authors evaluated V oiceprint via a custom-built simula- tion environment consisting of a 2 km bi-directional highway.",
+   "limitation of V oiceprint’s reliance on RSSI patterns. To address this attack, they proposed a time-series change-point detection method and adapted V oiceprint to utilize Service Channel (SCH) messages to reduce message observation time and false positives.",
+   "limitation is that the AoA calculations rely on exact vehicle positions from the dataset rather than sim- ulating signal reception. This leads to inaccurate reﬂection of real-world conditions where signal reception and AoA estimations can be affected by various factors."
+  ],
+  "future_work": [
+   "Future research should investigate the precise effects of these elements on V ANET signals to create truly realistic simulation environ- ments. Speciﬁcally, determining the parameters needed to integrate these signal effects accurately into V eins would be a valuable contribution",
+   "Future work will focus on devel- oping more sophisticated and realistic attack models that leverage environmental context and employ more advanced attack strategies. This will involve examining existing attack detection methods in detail and exploring more complex attacks that po"
+  ],
+  "baselines": [
+   "compared to the V eReMi Extensions LuST scenario. It’s important to note that the V eReMi Extensions LuST trafﬁc scenario speciﬁ- cally produces zero collisions."
+  ],
+  "n_vehicles": [
+   "73 vehicles",
+   "7876 vehicles"
+  ],
+  "sim_time": [
+   "Simulation time 4800 s",
+   "Simulation time 25 min"
+  ],
+  "beacon_rate": [
+   "1Hz",
+   "1 Hz",
+   "10 Hz",
+   "10 Hz"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": [
+   "11.2 km2",
+   "1.6 km2"
+  ]
+ },
+ {
+  "file": "2025_Maram_Survey_on_Sybil_Attack_Detection_in_VANET.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "Survey on Sybil Attack Detection in VANET",
+  "venue": "Multimedia Research",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "drawbacks of the present techniques are examined and highlighted for further development. This ensures that future research directions are aligned toward addressing unresolved gaps such as scalability, latency, and deployment feasibility.",
+   "limitations of the present techniques are presented in Section 5. In Section 6, the analysis of the study concerning publishing years, simulation tools, evaluation metrics, and datasets is elucidated.",
+   "drawback, as the hashing algorithm is considered cryptographically broken. Meanwhile, the use of MD5 created a security vulnerability since MD5 was a known cryptographic weakness that could potentially jeopardize the overall security approach.",
+   "drawback of the proposed methodology was that if the mobility behavior changed dynamically, the ability of the model to learn was significantly undermined. In practice, highly dynamic road conditions may therefore reduce the effectiveness of this solution.",
+   "limitation of the TH-GAT model was that the reliance on synchronized broadcast patterns showed capacity for some tradeoffs or limitations that need to be addressed. In real- world VANETs, synchronization is often imperfect, which may reduce the applicability of such methods.",
+   "limitations that need to be addressed. In real- world VANETs, synchronization is often imperfect, which may reduce the applicability of such methods."
+  ],
+  "future_work": [
+   "future research directions are aligned toward addressing unresolved gaps such as scalability, latency, and deployment feasibility. This survey paper is structured as follows: Section 2 describes the general architecture for Sybil attack detection in VANET, and Section 3 elaborate",
+   "Future research must explore stronger cryptographic primitives such as SHA-3 or lattice-based algorithms to address this vulnerability. The LSTM-based self- learning model in [10] lacked robustness in the presence of sparse data and further disregarded collaborative features or s",
+   "future directions for addressing this limitation. The ABESO framework proposed in [24] was not tested for scalability under real-world, large-scale VANET conditions.",
+   "Future work should emphasize adversarial testing environments to ensure resilience against sophisticated attackers. The INTERLOC method in [17] lacked evaluation in real-world environments across hardware platforms and did not consider signal variation due to mobility.",
+   "Future research should also consider cross-layer detection mechanisms, hybrid approaches combining cryptography with ML/DL, and privacy-preserving models to strengthen trust in VANET communications. The future enhancements should focus on creating more lightweight, scalable, easy"
+  ],
+  "baselines": [
+   "compared to traditional wireless networks. The very nature of these systems is open and dynamic, which creates a potential opportunity for security threats to arise.",
+   "compared to the conventional method. However, despite these gains, the reliance on MD5 presented a major drawback, as the hashing algorithm is considered cryptographically broken.",
+   "compared to existing methods, while also demonstrating evidence of adaptability in varied network conditions. The one noted disadvantage is that the high training and computational complexity of the",
+   "outperform existing techniques in accuracy, sensitivity, and recall, while maintaining a very low processing overhead, allowing for real-time applications. The FLCs permitted an adaptive decision-mak",
+   "compared to other sniff packets within the beacon packets. First, RSUs would send directions to use beacon packets by broadcasting a key with instructions for vehicles to listen and broadcast within"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "precision and 95.93%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Nishtha_EXPLORING_VULNERABILITY_OF_TOPOLOGYBASED_ROUTING_PROTOCOLS_TO_SYBIL_ATTACK_IN_PURE_VEHICUL.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "EXPLORING VULNERABILITY OF TOPOLOGY-BASED ROUTING PROTOCOLS TO SYBIL ATTACK IN PURE VEHICULAR AD HOC NETWORK",
+  "venue": null,
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitation, vehicle connectivity issues with the unpredictable number of vehicles in sparse or dense networks for data dissemination using the multi-hop approach are some of the prime concerns in V ANETs.[1-3, 7] The absence of infrastructure for network management is a significa"
+  ],
+  "future_work": [
+   "In the future, we will be working on formulating a mechanism for detection and prevention of the Sybil Attack on the topology-based routing protocols in pure V ANETs. Simultaneously, we are also effectively involved in analyzing the impact of the Sybil Attack on the other four ca"
+  ],
+  "baselines": [],
+  "n_vehicles": [
+   "25 vehicles",
+   "398 vehicles"
+  ],
+  "sim_time": [
+   "Simulation Time = 6 s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Nishtha_ON_DISRUPTION_OF_EXISTING_ROUTING_PROTOCOLS_BY_SYBIL_ATTACK_ON_VEHICLE_TO_VEHICLE_COMMUNIC.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "ON DISRUPTION OF EXISTING ROUTING PROTOCOLS BY SYBIL ATTACK ON VEHICLE TO VEHICLE COMMUNICATION IN VEHICULAR AD HOC NETWORKS",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "assumptions": [
+   "it is assumed that the adjacent neighboring vehicle has departed from the beacon broadcasting vehicle. Consequently, entry of such vehicle is deleted from the neighbor list being maintained in it [6], [10]."
+  ],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [
+   "FUTURE WORK Due to restricted time frames in most of the V ANET applications, any information delay makes these networks unsuitable for deployment. For unhindered communication in V ANET, the prerequisites are the completion of routing protocols within the stipulated time with th"
+  ],
+  "baselines": [
+   "compared with GPS coordinates GPSR Research Article E-ISSN No : 2454-9916 | Volume : 11 | Issue : 8 | August 2025 International Education & Research Journal [IERJ] 382 D. P.",
+   "compared with its GPS information to detect Sybil vehicle T. Zhou et al. (2007) [90] Sybil detection framework DMV maintains the record of each vehicle and assigns certified synonyms to vehicles."
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Sderhll_On_the_Impact_of_Sybilbased_Attacks_on_Mobile_Crowdsensing_for_Transportation.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "On the Impact of Sybil-based Attacks on Mobile Crowdsensing for Transportation",
+  "venue": "arXiv preprint",
+  "assumptions": [
+   "we assume that the map matching is done on the application side when collecting data4. Moreover, the N-MCS is assumed to be designed with security in mind, preventing external adversaries from eavesdropping and tampering with the data of other users in transit using typical end-t"
+  ],
+  "threat_model": [
+   "adversary model uses graph theory, explained in Sec. V-C, to determine high-value roads.",
+   "adversary models. The proposed method is explained in Sec.",
+   "ADVERSARY MODEL We consider a single-task N-MCS with a server, without loss of generality, also playing the role of task initiator. The task requires users to submit speed and location data every second."
+  ],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to the InTAS DTA simulation. A 𝑤.𝑠𝑙𝑖𝑑𝑒 30𝑠 provided the best routing evaluation parameters (lower mean for both time loss and travel time) across all MCS populations, showing better results t",
+   "compared to clustered targets). From a different perspective, the increased time loss show- cases that the attack-induced routes did not manage to handle larger amounts of traffic, with the affected N",
+   "compared to all affected N-MCS users for an attack. 4b and 4c show the median percentage change of the metrics for the Did Not Enter set across road targets, considering Sybil attack durations (in min"
+  ],
+  "n_vehicles": [
+   "500 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Sefati_A_RealTime_Sybil_Attack_Detection_for_Vehicular_Ad_Hoc_Networks_VANETS_Using_SpatioTempora.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "A Real-Time Sybil Attack Detection for Vehicular Ad Hoc Networks (VANETS) Using Spatio-Temporal Learning and XGBoost",
+  "venue": null,
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [],
+  "future_work": [],
+  "baselines": [
+   "compared to structured programming languages such as C++ or Java. Zhang et al. [10] proposed a Sybil detection and trace- ability method for vehicular ad hoc networks that uses basic safety message (B",
+   "outperforms Probability Density Function (PDF)–based detection, Fuzzy-based Collab- orative Verification System (FCVS), and a Heartbeat scheme in delay, detection accuracy, and dropped packets. The ad",
+   "compared to high-mobility (urban) environments. TABLE I DETECTION ACCURACY AND FPR U NDER DIFFERENT SIMULATION SCENARIOS Scenario Accuracy (%) FPR (%) Vehicle Density: 10 Cars 10% Sybil Nodes 94.5 5.6"
+  ],
+  "n_vehicles": [
+   "35 vehicles",
+   "10 Cars",
+   "15 Cars",
+   "25 Cars",
+   "35 Cars",
+   "35 nodes",
+   "35 nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [
+   "10 Hz"
+  ],
+  "attacker_frac": [
+   "10% Sybil",
+   "10% Sybil",
+   "20% Sybil",
+   "20% Sybil",
+   "20% Sybil"
+  ],
+  "claimed_perf": [
+   "accuracy generally remains above 93%",
+   "accuracy (97.2%",
+   "Accuracy (%) FPR (%) Vehicle Density: 10 Cars 10%",
+   "accuracy (above 96%"
+  ],
+  "area_km2": [
+   "5 km2"
+  ]
+ },
+ {
+  "file": "2025_Suganyadevi_Sybil_Attack_Detection_in_VANET_Using_CNN_Enhanced_with_Chaotic_Maps_and_Elephant_Herding.pdf",
+  "year": 2025,
+  "cites": 1,
+  "title": "Sybil Attack Detection in VANET Using CNN Enhanced with Chaotic Maps and Elephant Herding Optimization for Secure Data Transmission",
+  "venue": "Journal of Machine and Computing",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations in terms of robustness and detection range. An IDS is becoming increasingly important for network security construction, but detecting complex security breaches remains challenging shown in the Fig 2 ."
+  ],
+  "future_work": [],
+  "baselines": [
+   "outperformed existing techniques regarding specificity, accuracy, recall, precision, and the F-measure. An earlier deep learning model for detecting DDoS attacks lacked load balancing and scalabilit",
+   "compared with the other existing approaches like CMEHA -DNN, DNN, ANN, SVM and KNN. Fig 7.",
+   "compared with the other existing approaches like CMEHA -DNN, DNN, ANN, SVM and KNN. Fig 8.",
+   "compared to CMEHA -DNN, DNN, ANN, SVM, and KNN. The CMEHA -CNN technique provides superior SA recognition in VANET compared to the existing classifier.",
+   "compared to the existing classifier. These findings provide sup port for the efficacy and efficiency of the proposed CMEHA-CNN method for detecting SAs in VANET."
+  ],
+  "n_vehicles": [
+   "70 nodes",
+   "50 vehicles",
+   "250 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy rate of 98.9%",
+   "precision and recall rates of 98%",
+   "accuracy level of 98.7%",
+   "accuracy of 98.7%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Taysi_A_better_way_to_detect_sybil_attacks_in_vehiuclar_ad_hoc_networks.pdf",
+  "year": 2025,
+  "cites": 1,
+  "title": "A better way to detect sybil attacks in vehiuclar ad hoc networks",
+  "venue": "DÜMF Mühendislik Dergisi",
+  "assumptions": [],
+  "threat_model": [
+   "attacker model, dataset characteristics, feature engineering techniques, and implementation specifics. Attacker model There are various ways to carry out a sybil attack described in the literature [1], [4], [19].",
+   "Attacker model There are various ways to carry out a sybil attack described in the literature [1], [4], [19]. In a sybil attack, an attacker can manipulate two properties: the content of the message and its transmission power."
+  ],
+  "limitations": [
+   "limitation is that the AoA calculations rely on exact position values from the dataset rather than simulating the inherent uncertainties and potential errors of real -world signal reception. The availability of publicly accessible datasets and frameworks for sybil attack detectio",
+   "Limitations [2] %87 - Vulnerable to intelligent Sybil attacks [3] <%90 - Accuracy decreases dramatically when the vehicle density increases - Vulnerable to intelligent Sybil attacks [4] %96.5 - %97.4 - not suitable for dense networks - creates network overhead, since it requires ",
+   "limitation, examining vehicle behavior over time offers a more reliable approach. One method, proposed by Yao et al. [3], involves comparing message sequences between vehicles to identify abnormal similarities in patterns, suggesting potential sybil attacks where attackers forge "
+  ],
+  "future_work": [
+   "future work are outlined in the final section. Related work Sybil attacks present a significant challenge in VANETs.",
+   "future work, we plan to expand our approach by exploring the usage of other features found in CAMs alongside RSSI. This may include information such as signal strength variations, packet timing patterns, or location data."
+  ],
+  "baselines": [
+   "compared to highways cause vehicles to move in different directions, speeds, and angles, which creates extreme differences in mobility patterns compared to highway scenarios. In this work, we pr",
+   "compare with our study. Voiceprint uses the similarity between two vehicles by comparing RSSI time series to detect sybil attacks.",
+   "outperform Voiceprint and PCI methods. This is likely due to designs of the existing works originally targeting highway scenarios with sparser traffic conditions and less complex traffic pattern va",
+   "compared to our high-density urban dataset. Additionally, both the original Voiceprint [3] and PCI methods [4] uses 200 samples, which can only be collected through a 20 second s interaction.",
+   "compared to existing R SSI sequence -based methods. Our findings demonstrate that existing RSSI sequence - based methods offer limited accuracy in urba n traffic, achieving only 82.43 % precision w"
+  ],
+  "n_vehicles": [],
+  "sim_time": [
+   "Simulation time 25 min"
+  ],
+  "beacon_rate": [
+   "10Hz",
+   "200 Hz",
+   "1 Hz",
+   "10 Hz"
+  ],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "accuracy in urba n traffic, achieving only 82.43 %",
+   "precision of 93.45%"
+  ],
+  "area_km2": [
+   "11.2 km2"
+  ]
+ },
+ {
+  "file": "2025_Velayudhan_Adaptive_Ship_Rescue_Optimization_Enabled_Deep_Learning_for_Sybil_Attack_Detection_with_Se.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "Adaptive Ship Rescue Optimization Enabled Deep Learning for Sybil Attack Detection with Secure Transmission in Urban VANET",
+  "venue": "International Journal of Electronics and Communication Engineering",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations, offering superior pattern recognition capabilities and improved detection accuracy. Specifically, models like Convolutional Neural Net works (CNNs) are well -suited for identifying complex patterns associated with security threats in VANETs."
+  ],
+  "future_work": [
+   "future directions. 2. Motivation Sybil attacks create more security threats in VANETs, in which malicious nodes create multiple identities to manipulate the performance of the network and disrupt communication.",
+   "In the future, the hybrid network will be designed to attain more precise outcomes. In conclusion, this study presents a novel and comprehensive approach to Sybil attack detection in VANETs by combining Adaptive Ship Rescue Optimization (ASRO) with a Deep Kronecker Network (DKN)."
+  ],
+  "baselines": [],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "Precision attained by the ASRO_DKN is 82.77%",
+   "Precision of 75.08%",
+   "recall achieved by the ASRO_DKN is 81.79%",
+   "recall of 74.36%",
+   "Precision achieved by the ASRO_DKN is 82.74%",
+   "Precision of 77.88%",
+   "Precision of ASRO_DKN is 82.79%",
+   "Precisions of 76.21%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2025_Zhang_Sybilresistant_and_privacypreserving_authentication_based_on_shortterm_pseudonym_for_inter.pdf",
+  "year": 2025,
+  "cites": 0,
+  "title": "Sybil-resistant and privacy-preserving authentication based on short-term pseudonym for internet of vehicles",
+  "venue": "Scientific Reports",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitations8. Generally, traditional PKI-based schemes exist certificate management burden12, 13, and key escrow issue14, 15."
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared with recent proposed schemes, SRPP scheme is practical in terms of computation time and communication overhead while resisting Sybil attacks and trajectory tacking attacks. Introduction To im",
+   "compared with other related work recently proposed, SRPP scheme has reasonable computation time cost in generating signature and verifying BSMs, and practical communication overhead in sending BSMs. R",
+   "compared with those schemes that do not use bilinear paring. During the registration phase, a vehicle applies to TA for a pool of pseudonyms.",
+   "compared with Yang’s scheme29, our scheme has the advantage of resisting trajectory tracking. In general, our proposed scheme, assisted by RSU, provides security capabilities against Sybil attacks and",
+   "compared with other related work, the proposed SRPP scheme is practical in terms of computation time cost in generating signature and verifying BSMs and communication overhead in sending BSMs. Data av"
+  ],
+  "n_vehicles": [],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [],
+  "area_km2": []
+ },
+ {
+  "file": "2026_B_EFLOQDCNN_Exponential_Frilled_Lizard_Optimization_Quantum_Dilated_Convolutional_Neural_Net.pdf",
+  "year": 2026,
+  "cites": 0,
+  "title": "EFLO_QDCNN: Exponential Frilled Lizard Optimization_ Quantum Dilated Convolutional Neural Network for Sybil attack detection in VANET",
+  "venue": "Journal of Networking and Communication Systems (JNACS)",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings of existing approaches. A major challenge lies in balancing detection accuracy with computational efficiency, especially in highly dynamic vehicular networks where real-time responsiveness is essential. 2.1 Literature Survey The literature review of classical models ",
+   "limitations in model adaptability, computational scalability, and handling of real-time detection in rapidly changing vehicular environments. 2.2 Main Challenges The main complexities of conventional sybil attack detection models are,  The presented module in [5] enabled efficie"
+  ],
+  "future_work": [],
+  "baselines": [
+   "compared with its classical systems to expose its efficacy. 4.1 Experimental Setup The developed Sybil attack detection model, named EFLO_QDCNN is implemented and evaluated using Python on a PC wit"
+  ],
+  "n_vehicles": [
+   "50 Nodes",
+   "50 nodes",
+   "50 nodes",
+   "100 Nodes",
+   "100 nodes",
+   "100 nodes",
+   "100 nodes",
+   "764 Nodes"
+  ],
+  "sim_time": [],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "precision of 90.764%",
+   "precision of 81.454%",
+   "precision of 89.742%",
+   "precision of 80.211%",
+   "precision of 89.742%",
+   "precision of 80.211%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2026_Hadri_A_Novel_Approach_to_Sybil_Attack_Detection_in_VANETs_Using_Verifiable_Delay_Functions_and.pdf",
+  "year": 2026,
+  "cites": 0,
+  "title": "A Novel Approach to Sybil Attack Detection in VANETs Using Verifiable Delay Functions and Hierarchical Fog-Cloud Architecture",
+  "venue": "Journal of Cybersecurity and Privacy",
+  "assumptions": [],
+  "threat_model": [
+   "Threat Model and Attack Scenarios Adversary Capabilities: Our threat model assumes adversaries can deploy multiple compromised vehicles or create sophisticated virtual nodes, possess standard computa- tional resources equivalent to legitimate vehicles, intercept and analyze wirel",
+   "threat model assumes adversaries can deploy multiple compromised vehicles or create sophisticated virtual nodes, possess standard computa- tional resources equivalent to legitimate vehicles, intercept and analyze wireless commu- nications using software-defined radios, and execut",
+   "threat model assumes that attackers have access to comparable computational resources as legitimate vehicles, the suggested framework is also intended to be functional against more powerful adversaries that have greatly more powerful com- putational capabilities (e.g., 510 times "
+  ],
+  "limitations": [
+   "limitations of existing Sybil detection mechanisms while remaining feasible for real-world vehicular deployment. Current Sybil-detection strategies in VANETs fall into four broad categories: • Position-based: Exploit physical constraints (a vehicle cannot occupy two places simult",
+   "limitations, we propose leveragingVerifiable Delay Functions (VDFs) combined with a hierarchical fog computing architecture. VDFs require a predetermined amount of sequential computation, making them inherently resistant to parallelization at- tacks while maintaining efficient ve",
+   "drawbacks of the currently available methods of Sybil detection and may apply to real-world vehicular implementations. Beyond incremental improvements to existing Sybil detection mechanisms, the core innovation of this work lies in the integration of cryptographically enforced co",
+   "Limitations of Existing Detection Methods The nature of VANET communications as being wireless broadcasts is such that it is impossible to differentiate between a series of messages sent by the same malicious vehicle and a series of messages sent by a series of different vehicles",
+   "limitations. Fog-enabled detection frameworks improve responsiveness but typically employ heuristic anomaly scoring without cryptographically enforced identity rate control.",
+   "limitations, are suitably accommodated with the help of adaptive VDF difficulty parameters, capping the computation time to safety-critical latency limits. By contrast, embedded OBUs with specific cryptographic accelerators have the ability to support higher levels of VDF difficu"
+  ],
+  "future_work": [],
+  "baselines": [
+   "outperforming at detection above 97.8% and false positives below 2.3%. The incorporation of machine learning techniques also extends detection capabilities, and our hybrid VDF-ML method proves better",
+   "compared to cloud-only setups [51]. Con- cone et al. proposed a fog- and cloud-assisted architecture for defending against Sybil attacks in vehicular crowdsourcing.",
+   "compared to sequential computation at the vehicle, the validation phase introduces negligible additional latency to safety-critical communication cycles. (C) Worst-Case Delay Analysis. A quantitative",
+   "Comparison with VDF-Based and Non-VDF-Based Methods To demonstrate the superiority of the proposed Verifiable Delay Function (VDF)-based approach, we compare it against representative state-of-the-art",
+   "comparison with the benchmark methods more just and controlled, a small subset of the benchmark methods, namely the Voiceprint (RSSI-based time-series similarity) and CFR-based signal clustering metho"
+  ],
+  "n_vehicles": [
+   "300 vehicles",
+   "500 vehicles",
+   "100 vehicles",
+   "500 vehicles",
+   "1000 vehicles",
+   "100 vehicles",
+   "1000 vehicles",
+   "5000 vehicles"
+  ],
+  "sim_time": [],
+  "beacon_rate": [
+   "000 messages per second"
+  ],
+  "attacker_frac": [
+   "20% attack",
+   "10% attack",
+   "20% attack"
+  ],
+  "claimed_perf": [
+   "Detection rates surpass 98.2%",
+   "accuracy, with a success rate greater than 97.3%",
+   "detection rate greater than 95.5%",
+   "detection rates ranged from 94 to 96%",
+   "accuracy of 91–93%",
+   "accuracy is likely to exceed 95%",
+   "Detection rates remained consistently above 97%",
+   "accuracy of 96.8%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2026_Khan_A_Robust_Framework_for_Sybil_Attack_Detection_in_Vehicular_Ad_Hoc_Networks.pdf",
+  "year": 2026,
+  "cites": 0,
+  "title": "A Robust Framework for Sybil Attack Detection in Vehicular Ad Hoc Networks",
+  "venue": "arXiv (Cornell University)",
+  "assumptions": [
+   "we assume that the both RSUs are placed in one side of the road. If fewer than 90% of the trajectory points fall within the bounded region (line 15 of Algorithm 1), theRSU B determines that the location data has likely been tampered with, indicating potential falsification of tra"
+  ],
+  "threat_model": [],
+  "limitations": [
+   "shortcomings and proposes a robust framework to tackle these issues. The proposed scheme reduces the FPR by utilizing GPS location data, enabling the construction of more accurate and distinguishable trajectories.",
+   "shortcomings of Baza et al.’s [11] scheme by incorporating Verifiable Delay Functions (VDFs) with both V2V and V2R interactions. VDFs ensure more consistent computation times across devices with varying processing capabilities, thereby reducing the advantage of ma- licious vehicl",
+   "drawback of this scheme is the use of V2V to create trajectories. Vehicles may collude to report false locations, leading to higher false negative rates."
+  ],
+  "future_work": [
+   "future directions of work in Section VII. II.",
+   "In the future, we plan to extend this work to scenarios involving untrusted RSUs. Furthermore, evaluating performance by incorporating other clustering mechanisms is also an interesting direction of research work."
+  ],
+  "baselines": [
+   "compared to the existing methods in both dense and sparse regions. Additionally, the proposed scheme decreases the detection time by almost 80% in dense regions and 43% in sparse ones.",
+   "outperforms the existing works in terms of de- tection time, improving by approximately 80% in dense areas and 43% in sparse regions. The remainder of the paper is organized as follows.",
+   "compared to the one where both have similar times. Typical similarity measures take into account the spatial aspect rather than incorporating the temporal part.",
+   "compared to the proposed scheme. The PoW Scheme uses check window size and trajectory length limit heuristics, which ensure that Sybil vehicles fail the exclusion test and are detected as Sybil vehicl",
+   "compared to the proposed scheme whenN=200. Due to the higher FNR, the proposed scheme shows a lower detection rate as shown in Fig. 8c."
+  ],
+  "n_vehicles": [
+   "200vehicles",
+   "60vehicles",
+   "60 vehicles"
+  ],
+  "sim_time": [
+   "Simulation time 1000 s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [
+   "10% malicious"
+  ],
+  "claimed_perf": [
+   "FPR by approximately 68%",
+   "FPR by approximately 68%",
+   "F1 score for the proposed scheme reaches almost 97%",
+   "False Positive Rate 10%",
+   "Detection Rate 10%",
+   "Accuracy 10%",
+   "FPR by 67%",
+   "accuracy for all values ofM(nearly 98%"
+  ],
+  "area_km2": []
+ },
+ {
+  "file": "2026_Tadesse_Sybil_Attack_Prevention_and_Detection_Mechanism_in_VANET_Based_on_Multifactor_Authenticati.pdf",
+  "year": 2026,
+  "cites": 1,
+  "title": "Sybil Attack Prevention and Detection Mechanism in VANET Based on Multi-factor Authentication",
+  "venue": "International Journal of Information and Communication Sciences",
+  "assumptions": [],
+  "threat_model": [],
+  "limitations": [
+   "limitation (1) after verified identification number does not check the status of vehicles. (2) If the internal node be- comes a malicious no de this algorithm will not detect and isolate the Sybil attack [6]. Contributions 1) Proposed a Sybil Attack Prevention and Detection Mecha",
+   "limitations of previous approaches by al- lowing nodes without iden tification numbers to reat- tempt registration and by verifying both minimum and maximum speed thresholds to prevent misclassification of legitimate and malicious nodes. 5) Provided a robust and scalable solution",
+   "Does not consider vehicle mobility; limited in high mobility/density Sharma et al.[12] NS2/Custom Short-lived Pseudo Certificates Provides privacy and anonymity Depends on vehicle feedback; does not consider vehicle behavior Eziama et al.[13] NS2/Custom Bayesian Neural Network Pr",
+   "Does not consider mobility patterns; lacks adaptability Saggi & Kaur [6] NS2/Custom Neighboring Infor- mation Uses identification and speed threshold Does not check vehicle status; cannot detect internal malicious nodes To address these limitations, we propose a Sybil Attack Prev",
+   "limitations, we propose a Sybil Attack Prevention and Detection Mechanism in VANET based on Multi-Factor Authentication (SAPDMV) , which enhances Sybil attack detection. Our approach integrates both min- imum and maximum threshold values along with identifi- cation number, status"
+  ],
+  "future_work": [
+   "In the future, VANET communication will play a first -rate position in improving the protection and performance of the transportation system. If security isn't always furnished in VANET, then it may result in apparent misapplication.",
+   "future research should focus on en- hancing the scalability of the system for larger networks and integrating adaptive learning techniques to counter evolving attack strategies. Additionally, the paper rec- ommends further exploration of real -time deployment and field testing to"
+  ],
+  "baselines": [
+   "compared with the Sybil attack -AODV and existing/old work. The approach is scalable and effective in real-world VANET environments, making it a promising framework for future intelligent transportat",
+   "compared to ex- isting schemes. 3) Implemented and tested the mechanism using Network Simulator-2.35, demonstrating superior performance in key network metrics such as end -to-end delay, throughpu",
+   "compared with the performance of existing routing meth- ods. Table 2.",
+   "compared to the baseline schemes. International Journal of Information and Communication Sciences http://www.sciencepg.com/journal/ijics 8 Figure 5.",
+   "compared to existing algorithms and AODV with Sybil attack. The False Negative Ratio measures the proportion of legitimate vehicles that are incorrectly identified as ma- licious nodes."
+  ],
+  "n_vehicles": [
+   "50 nodes"
+  ],
+  "sim_time": [
+   "Simulation Time 150s"
+  ],
+  "beacon_rate": [],
+  "attacker_frac": [],
+  "claimed_perf": [
+   "detection rate of 100%",
+   "detection rate for the proposed algorithm is 96%"
+  ],
+  "area_km2": []
+ }
+]

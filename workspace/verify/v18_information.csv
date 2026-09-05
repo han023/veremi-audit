@@ -1,0 +1,9 @@
+archive,identities,H_sender_bits,H_sender_given_decode_bits,bits_recovered,fraction_recovered,bits_recovered_permuted,fraction_permuted
+GridSybil_0709,1903,9.517,0.0,9.517,1.0,8.145,0.8559
+GridSybil_1416,1674,9.302,0.754,8.548,0.919,7.387,0.7941
+DataReplaySybil_0709,15332,8.289,0.192,8.098,0.9769,2.983,0.3599
+DataReplaySybil_1416,12701,8.063,0.624,7.439,0.9226,2.825,0.3504
+DoSRandomSybil_0709,26238,8.348,0.163,8.185,0.9804,2.396,0.287
+DoSRandomSybil_1416,23318,8.17,0.604,7.565,0.926,2.226,0.2725
+DoSDisruptiveSybil_0709,26236,8.348,0.163,8.185,0.9804,2.391,0.2864
+DoSDisruptiveSybil_1416,23313,8.169,0.604,7.565,0.9261,2.222,0.272

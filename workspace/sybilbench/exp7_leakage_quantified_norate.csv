@@ -1,0 +1,9 @@
+archive,naive_auc,naive_ap,controlled_auc,controlled_ap,auc_inflation,ap_inflation
+GridSybil_0709,0.9362,0.8778,0.7945,0.528,0.1417,0.3498
+GridSybil_1416,0.7874,0.6434,0.885,0.6914,-0.0976,-0.048
+DataReplaySybil_0709,0.9222,0.8825,0.9731,0.8494,-0.0509,0.0331
+DataReplaySybil_1416,0.8166,0.7214,0.9503,0.7802,-0.1337,-0.0588
+DoSRandomSybil_0709,1.0,1.0,0.9991,0.9696,0.0009,0.0304
+DoSRandomSybil_1416,0.9989,0.9985,0.9967,0.9455,0.0022,0.053
+DoSDisruptiveSybil_0709,0.9761,0.9662,0.919,0.5298,0.0571,0.4364
+DoSDisruptiveSybil_1416,0.9164,0.8741,0.9313,0.5246,-0.0149,0.3495

@@ -1,0 +1,5 @@
+scenario,identities,attacker_share_pct,benign_id_min,benign_id_max,attacker_id_min,attacker_id_max,ranges_disjoint,AUC_sender_id,AUC_sender_id_lo,AUC_sender_id_hi,AUC_id_digit_length,AUC_alias
+InTAS_highway_2_trafficCongestionSybil,15327,97.1,1375,4111,1001479,8999420,True,1.0,1.0,1.0,1.0,0.4944
+InTAS_highway_7_trafficCongestionSybil,32895,98.29,25391,32545,1000161,8999533,True,1.0,1.0,1.0,1.0,0.4986
+InTAS_urban_2_trafficCongestionSybil,56953,98.45,1303,4149,1000228,8999749,True,1.0,1.0,1.0,1.0,0.5058
+InTAS_urban_7_trafficCongestionSybil,48942,99.11,27306,32564,1000078,8999869,True,1.0,1.0,1.0,1.0,0.5015

@@ -1,0 +1,8 @@
+archive,factor,auc,auc_sd,delta,paired,delta_seed0,delta_seed0_lo,delta_seed0_hi,excludes_zero
+GridSybil_0709,controlled baseline,0.8428,0.1345,0.0,True,,,,
+GridSybil_0709,ground-truth key,0.9995,0.0004,0.1567,False,,,,
+GridSybil_0709,pseudonym feature,0.859,0.1209,0.0162,True,0.0402,-0.0135,0.1397,False
+GridSybil_0709,random folds,0.9232,0.0275,0.0803,False,,,,
+GridSybil_0709,native prevalence,0.9168,0.0117,0.0739,False,,,,
+GridSybil_0709,no jitter,0.8848,0.0955,0.0419,False,,,,
+GridSybil_0709,rate features,0.8339,0.1307,-0.0089,True,0.0471,-0.0038,0.1397,False

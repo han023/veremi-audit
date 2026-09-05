@@ -1,0 +1,9 @@
+archive,policy,tau_s,tracking_auc,tracking_sd,tracking_pos,detection_auc,detection_sd,detection_pos
+GridSybil_1416,benign re-key only,15,0.877,0.0075,466,0.9421,0.0007,296
+GridSybil_1416,benign re-key only,30,0.898,0.0091,411,0.9433,0.0014,560
+GridSybil_1416,benign re-key only,60,0.9034,0.0115,236,0.9551,0.0017,793
+GridSybil_1416,benign re-key only,120,0.9893,0.0032,88,0.9627,0.0015,971
+GridSybil_1416,all vehicles re-key,15,0.8442,0.0232,90,0.8825,0.0097,663
+GridSybil_1416,all vehicles re-key,30,0.8711,0.0152,85,0.9212,0.0003,884
+GridSybil_1416,all vehicles re-key,60,0.9111,0.0155,89,0.9423,0.002,889
+GridSybil_1416,all vehicles re-key,120,0.9922,0.0002,63,0.9579,0.0007,1021

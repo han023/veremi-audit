@@ -1,0 +1,9 @@
+archive,distinct_sender_pseudo_pairs,distinct_pseudonyms,distinct_senders,encoding_pct_pairs,encoding_pct_messages,messages,pseudonyms_with_multiple_owners,secs
+GridSybil_0709,8840,7648,4088,86.5,83.4,5483111,1,64.6
+GridSybil_1416,3726,3243,1688,87.01,88.05,1501368,1,14.2
+DataReplaySybil_0709,72140,72140,4067,100.0,100.0,2954753,0,34.1
+DataReplaySybil_1416,27421,27421,1688,100.0,100.0,767958,0,7.6
+DoSRandomSybil_0709,112191,112191,4067,100.0,100.0,3822887,0,35.6
+DoSRandomSybil_1416,47473,47473,1688,100.0,100.0,1005847,0,9.5
+DoSDisruptiveSybil_0709,112187,112187,4067,100.0,100.0,3822887,0,34.2
+DoSDisruptiveSybil_1416,47466,47466,1688,100.0,100.0,1005847,0,9.1

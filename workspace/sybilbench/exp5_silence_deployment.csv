@@ -1,0 +1,7 @@
+archive,silence_s,msgs_per_id,tracking_auc,tracking_sd,detection_auc,detection_sd
+GridSybil_1416,0,26.0,0.8072,0.0077,0.675,0.0068
+GridSybil_1416,10,18.0,0.774,0.0059,0.6587,0.008
+GridSybil_1416,20,9.0,0.7468,0.0076,0.6169,0.0122
+GridSybil_0709,0,25.0,0.808,0.0042,0.6808,0.0094
+GridSybil_0709,10,18.0,0.7762,0.0041,0.6717,0.0078
+GridSybil_0709,20,9.0,0.7589,0.0146,0.6523,0.006

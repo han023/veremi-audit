@@ -1,0 +1,8 @@
+archive,stage,auc,auc_sd_over_seeds,auc_boot_lo_seed0,auc_boot_hi_seed0,ap,trivial_auc,ml_minus_trivial,n_test,prevalence,seeds,note
+GridSybil_1416,S0_published,0.9917,0.0003,0.9792,1.0,0.9925,0.0039,0.9879,868.0,0.3007,5.0,
+GridSybil_1416,S1_no_pseudonym,0.9916,0.0003,0.9791,1.0,0.9922,0.0039,0.9877,868.0,0.3007,5.0,
+GridSybil_1416,S2_no_gt_agg,0.8954,0.0015,0.8801,0.9106,0.9484,0.5761,0.3193,1670.0,0.6365,5.0,
+GridSybil_1416,S3_disjoint,0.8908,0.0034,0.8599,0.9172,0.9462,0.5566,0.3342,501.0,0.6347,5.0,
+GridSybil_1416,S4_prevalence_3,,,,,,,,,,,degenerate
+GridSybil_1416,S5_jitter,,,,,,,,,,,degenerate
+GridSybil_1416,S6_no_rate,,,,,,,,,,,degenerate

@@ -1,0 +1,9 @@
+archive,senders_seen,senders_unlabelled,benign_vehicles,attacker_vehicles,prevalence_vehicles_pct,identities_benign,identities_attacker,prevalence_identities_pct,benign_ids_min,benign_ids_max,benign_ids_mean,benign_with_more_than_one,attacker_ids_min,attacker_ids_p25,attacker_ids_med,attacker_ids_p75,attacker_ids_max,secs
+GridSybil_0709,4088,24,2845,1219,30.0,2845,5948,67.64,1,1,1.0,0,1,3,3,7,7,66.6
+GridSybil_1416,1688,0,1181,507,30.04,1181,2545,68.3,1,1,1.0,0,1,3,6,7,7,18.7
+DataReplaySybil_0709,4067,0,2846,1221,30.02,2846,69294,96.05,1,1,1.0,0,1,34,56,83,100,36.0
+DataReplaySybil_1416,1688,0,1181,507,30.04,1181,26240,95.69,1,1,1.0,0,1,28,50,73,100,7.0
+DoSRandomSybil_0709,4067,0,2846,1221,30.02,2846,109345,97.46,1,1,1.0,0,1,98,100,100,100,37.1
+DoSRandomSybil_1416,1688,0,1181,507,30.04,1181,46292,97.51,1,1,1.0,0,1,97,100,100,100,9.4
+DoSDisruptiveSybil_0709,4067,0,2846,1221,30.02,2846,109341,97.46,1,1,1.0,0,1,98,100,100,100,34.3
+DoSDisruptiveSybil_1416,1688,0,1181,507,30.04,1181,46285,97.51,1,1,1.0,0,1,97,100,100,100,8.6

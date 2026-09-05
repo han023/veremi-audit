@@ -1,0 +1,9 @@
+archive,pairs,positive_rate,auc_all,ap_all,top_features,auc_geometry_only,ap_geometry_only,auc_timing_only,ap_timing_only,secs,note
+GridSybil_0709,25971.0,0.026953140040814755,0.9936,0.9618,dist_mean=0.26; phase=0.22; spd_diff_mean=0.19; dist_min=0.08,0.9791,0.8839,0.996,0.9741,53.4,
+GridSybil_1416,29218.0,0.059620781709904855,0.9977,0.9909,dist_mean=0.27; phase=0.21; spd_diff_mean=0.19; dist_std=0.09,0.9664,0.8551,1.0,1.0,53.0,
+DataReplaySybil_0709,,,,,,,,,,15.7,degenerate labels pos=0 neg=3715
+DataReplaySybil_1416,,,,,,,,,,13.7,degenerate labels pos=0 neg=2451
+DoSRandomSybil_0709,1717.0,0.05824111822947001,1.0,1.0,phase=0.66; overlap=0.15; dt_median=0.13; spd_diff_mean=0.02,0.7484,0.2855,1.0,1.0,15.7,
+DoSRandomSybil_1416,1847.0,0.09745533297238766,1.0,1.0,phase=0.62; overlap=0.17; dt_median=0.15; spd_diff_mean=0.02,0.8287,0.6958,1.0,1.0,15.7,
+DoSDisruptiveSybil_0709,1588.0,0.06360201511335013,1.0,1.0,phase=0.67; overlap=0.13; dt_median=0.10; dist_min=0.06,0.7161,0.5229,1.0,1.0,15.3,
+DoSDisruptiveSybil_1416,1733.0,0.10502019619157531,1.0,1.0,phase=0.59; dt_median=0.16; overlap=0.15; dist_min=0.06,0.6318,0.4406,1.0,1.0,15.5,

@@ -1,0 +1,5 @@
+silence_s,msgs_per_id,tracking_auc,tracking_pos,detection_auc,detection_pos
+0,26,0.8288,817,0.6765,649
+1,25,0.8377,835,0.7001,648
+3,24,0.8111,751,0.6825,725
+10,18,0.7984,777,0.6574,759

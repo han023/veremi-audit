@@ -1,0 +1,137 @@
+# Manifest
+
+Generated 2026-09-06.
+SHA-256 of every file that produced a number in the paper.
+
+## Environment
+
+```
+python           3.13.7
+platform         Windows-10-10.0.19045-SP0
+numpy            2.4.3
+pandas           3.0.1
+sklearn          1.9.0
+scipy            1.18.0
+matplotlib       3.11.1
+pyarrow          25.0.1
+```
+
+## loader and analysis
+
+```
+2a06c316c597ead8  sybilbench/loader.py
+9600dfcc38c3ea54  sybilbench/loader_veremi2018.py
+a6fa67b6390cd37c  sybilbench/analysis.py
+740a4c813f65ff2c  sybilbench/pseudonym_layer.py
+```
+
+## experiments
+
+```
+2b14b391c6573e8e  sybilbench\exp10_sensitivity.py
+6730abe46356a3ec  sybilbench\exp13_pseudonym_decode.py
+592bc55b587449d1  sybilbench\exp14_single_factor.py
+bf2c86eb1db79f01  sybilbench\exp1_linkage.py
+35a8493d22c6e20a  sybilbench\exp1b_rate_baseline.py
+97b22df7e32f322e  sybilbench\exp2_pareto.py
+98f39aff53584ae0  sybilbench\exp2b_pareto_controlled.py
+b863bd861d46b9ea  sybilbench\exp2c_pareto_final.py
+0bedc1339bc1bf9e  sybilbench\exp4_replicate.py
+a9243971021905f8  sybilbench\exp6_rsu_vantage.py
+e4d8e369fe7dc0e5  sybilbench\exp7_leakage_quantified.py
+a3e10eee585a1e1d  sybilbench\exp8_rssi_2018.py
+6886a7d3162a1b83  sybilbench\exp8b_position_verification.py
+b4ef5f041f037421  sybilbench\exp9_cascade.py
+```
+
+## independent verification
+
+```
+626c176572d37866  verify\v10_pseudonym_change.py
+c416100ac9754ceb  verify\v11_reporting_table.py
+7aa0775e6294f5b6  verify\v12_corpus_facts.py
+a194615aa19164c9  verify\v14_match_matrix.py
+692ae1e0713b7b9a  verify\v15_nextgen_shortcuts.py
+576cc3c765d15f5d  verify\v16_nextgen_identifier.py
+430b774f5fdef46c  verify\v17_master_census.py
+d8ecd8c1d5f4bbbb  verify\v18_information.py
+6f6710b78bdd2f28  verify\v19_table_reproduction.py
+9294616790d25836  verify\v1_raw_structure.py
+ce57651cecdcd895  verify\v1b_raw_refined.py
+950b9064d5f5c52c  verify\v20_release_splits.py
+5d1f46e6a79a18ac  verify\v21_attacker_budget.py
+f82cef367850892b  verify\v2_metrics.py
+cdbfc877249b29a8  verify\v3_pseudomap.py
+9b329d31886081b6  verify\v3b_pseudomap_full.py
+184262bdce6b9a1e  verify\v3c_identity_census.py
+4ffafc7294d0a1c5  verify\v4_timing_distributions.py
+2332d2a96ccf483c  verify\v5_pathloss_replicate.py
+9d2f7851cb74aa7e  verify\v6_prevalence_floor.py
+acd8c9999bd6f0b3  verify\v7_dataset_usage.py
+8a8f2db764f61b7e  verify\v8_nextgen_probe.py
+599cc888235f8510  verify\v9_derivative_audit.py
+```
+
+## paper
+
+```
+ce7b78bd9394cb70  paper/veremi_audit.tex
+f79d4d90ba8e26b8  paper/assemble.py
+a5cacb2a699e8d57  paper/body_new.tex
+8360eaa9d123101b  paper/bibliography.tex
+e5805bd4ff1564b1  paper/make_figure.py
+fd33010baa266ca9  paper/check_sentences.py
+5d2fe04fca9b8ba4  paper/check_refs.py
+```
+
+## results
+
+```
+aad4df3e1b2f520c  sybilbench\exp10_sensitivity.csv
+cd84661e9359f5ec  sybilbench\exp13_pseudonym_decode.csv
+85be5d521fc81ff2  sybilbench\exp14_single_factor.csv
+22114ff68513dcc2  sybilbench\exp1_results.csv
+1bd1f8b94a4a940c  sybilbench\exp1b_rate_baseline.csv
+10e9a2944d861f97  sybilbench\exp1b_rate_baseline_v2.csv
+3a449284da592528  sybilbench\exp2_pareto.csv
+cd30b28c6a3de0df  sybilbench\exp2b_pareto_controlled.csv
+5716e7fea77f83e1  sybilbench\exp2c_pareto_final.csv
+183fb7d4ec47728c  sybilbench\exp3_silence.csv
+204e9bed4673cc9d  sybilbench\exp3b_silence_matched.csv
+cdd2489ffdf23f93  sybilbench\exp4_evidence.csv
+36db66409a02885d  sybilbench\exp4_pareto.csv
+58802704bfef0370  sybilbench\exp4_silence.csv
+199c2c9fbae84da9  sybilbench\exp5_silence_deployment.csv
+cf286bda283dcdd7  sybilbench\exp6_rsu_vantage_GridSybil_0709.csv
+e00e5a7c3d9ca6e7  sybilbench\exp6_rsu_vantage_GridSybil_1416.csv
+97d45ec6c86fbfe4  sybilbench\exp7_leakage_quantified.csv
+2146d09da9796f97  sybilbench\exp7_leakage_quantified_norate.csv
+d0a51f8dbe6c8c4c  sybilbench\exp8_rssi_2018.csv
+a9a02388647c1940  sybilbench\exp8b_position_verification.csv
+06f12da24f32dfa1  sybilbench\exp9_cascade.csv
+36ba8354afd7aaa4  sybilbench\exp9_cascade_logistic_partial.csv
+c726e3817be6b17d  sybilbench\pareto_final.csv
+9ecbb270d6ffc5ea  verify\master_archive_table.csv
+91e43b39b7dcbe85  verify\v10_pseudonym_change.csv
+ca91e4c512b0acb2  verify\v11_reporting_table.csv
+236254783deac1ed  verify\v12_corpus_facts.csv
+d92dfdfe7803d8ef  verify\v12_ns2_papers.csv
+7f8cc04dd24d2cd4  verify\v14_match_matrix.csv
+c74c7a30dcb14eea  verify\v15_nextgen_shortcuts.csv
+42a37a3988a7e4de  verify\v16_nextgen_identifier.csv
+cce39ed932fcf5f4  verify\v17_master_census.csv
+c617b6eb7596bdc3  verify\v18_information.csv
+e21c4db5eae9e799  verify\v1_raw_structure.csv
+9311873593baccdb  verify\v1b_raw_refined.csv
+f0c11ae98739f275  verify\v20_splits.csv
+0e692f1f9d41eddc  verify\v21_attacker_budget.csv
+84cdf35c05f0e0d5  verify\v3b_pseudomap.csv
+8eb01a7972712070  verify\v3c_identity_census.csv
+d3ea5bcfad8222bb  verify\v4_timing_distributions.csv
+91cd0bd4350588c4  verify\v5_pathloss.csv
+431ba9fd5b07ec79  verify\v6_prevalence_floor.csv
+639bc8011c1738f0  verify\v7_dataset_usage.csv
+b440342c29a56fa5  verify\v8_nextgen_probe.csv
+a55e312f80f11734  verify\v9_derivative_audit.csv
+bc6d33a53b2bf6e5  verify\v9_derivative_summary.csv
+```

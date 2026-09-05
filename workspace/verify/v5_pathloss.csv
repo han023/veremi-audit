@@ -1,0 +1,3 @@
+fit,intercept_dbm,slope_db_per_decade,path_loss_exponent,corr_rssi_logd,links,attacker_links,attacker_link_rate,auc_oof,auc_boot_lo,auc_boot_hi,auc_delong_lo,auc_delong_hi,auc_fold_mean,auc_fold_sd,auc_fold_ci_lo,auc_fold_ci_hi,auc_fold_min,auc_fold_max,ap_oof,per_link_residual_scatter_db
+all_links,-27.33,-9.29,0.929,-0.6328,86919,4808,0.0553,0.4987,0.4906,0.5068,0.4905,0.5069,0.5303,0.0164,0.5075,0.5531,0.5138,0.5521,0.0541,3.57
+benign_only,-27.13,-9.41,0.941,-0.6393,86919,4808,0.0553,0.4928,0.4849,0.5012,0.4844,0.5011,0.5243,0.0163,0.5016,0.5469,0.5116,0.5459,0.0541,3.56

@@ -1,0 +1,5 @@
+archive,n_msgs,tracking_auc,detection_auc
+GridSybil_0709,5,0.7573,0.5878
+GridSybil_0709,10,0.7721,0.661
+GridSybil_0709,20,0.8186,0.699
+GridSybil_0709,40,0.8377,0.6832

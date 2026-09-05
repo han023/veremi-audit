@@ -1,0 +1,21 @@
+item,papers,share_pct
+VeReMi (any),5,5.4
+VeReMi Extension,4,4.3
+VeReMi NextGen,0,0.0
+F2MD,4,4.3
+NGSIM,0,0.0
+CRAWDAD,0,0.0
+BurST-ADMA,2,2.2
+Istanbul RSSI set,3,3.3
+Kaggle,0,0.0
+any named public dataset,7,7.6
+SUMO,28,30.4
+Veins,10,10.9
+OMNeT++,10,10.9
+NS-2,27,29.3
+NS-3,9,9.8
+MATLAB,9,9.8
+any simulator,51,55.4
+"simulator only, no named dataset",44,47.8
+neither,41,44.6
+TOTAL full texts,92,100.0

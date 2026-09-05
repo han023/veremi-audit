@@ -1,0 +1,234 @@
+{
+ "future_work": {
+  "trust / reputation extension": 8,
+  "privacy preservation": 7,
+  "mobility models / urban realism": 2,
+  "RSU deployment / infrastructure": 5,
+  "colluding/multiple attackers": 1,
+  "machine learning adoption": 1,
+  "attacker localization / revocation": 1,
+  "energy / overhead reduction": 7,
+  "latency / real-time": 4,
+  "detection accuracy / FPR reduction": 2,
+  "other attacks (DoS/blackhole/wormhole)": 2,
+  "scalability / large scale": 3,
+  "blockchain / distributed ledger": 1,
+  "real-world / testbed validation": 2,
+  "cross-layer / other protocols": 3
+ },
+ "limitations": {
+  "privacy preservation": 13,
+  "mobility models / urban realism": 2,
+  "trust / reputation extension": 10,
+  "RSU deployment / infrastructure": 8,
+  "energy / overhead reduction": 6,
+  "latency / real-time": 6,
+  "colluding/multiple attackers": 2,
+  "detection accuracy / FPR reduction": 9,
+  "cross-layer / other protocols": 1,
+  "5G/6G/IoV/edge": 2,
+  "dataset / benchmark": 4,
+  "scalability / large scale": 4,
+  "blockchain / distributed ledger": 1,
+  "attacker localization / revocation": 2,
+  "real-world / testbed validation": 2,
+  "machine learning adoption": 2
+ },
+ "examples": {
+  "trust / reputation extension": [
+   [
+    2007,
+    "2007_Bouassida_Sybil_Nodes_Detection_Bas",
+    " indeed, wireless net- works are subject to malicio as future work, we plan to elaborate a distributed trust"
+   ],
+   [
+    2007,
+    "2007_Guette_On_the_Sybil_attack_detectio",
+    " this model is based on trust"
+   ],
+   [
+    2014,
+    "2014_Narang_Strategical_Comparison_Recog",
+    " future work in this paper different strategies for recognition and eviction of sybil attack in vanet like resource testing, radio resource testing, trusted certification, received"
+   ]
+  ],
+  "privacy preservation": [
+   [
+    2011,
+    "2011_Chang_Footprint_Detecting_Sybil_Att",
+    "anonym"
+   ],
+   [
+    2011,
+    "2011_Mortazavi_Distributed_Sybil_Attack_",
+    " [7] have presented a distributed approach in which rsu can detect sybil attacks in conjunction with ca,named as privacy"
+   ],
+   [
+    2014,
+    "2014_Prakash_Improved_Session_key_based_",
+    " the privacy"
+   ]
+  ],
+  "mobility models / urban realism": [
+   [
+    2011,
+    "2011_Chang_Footprint_Detecting_Sybil_Att",
+    "urban"
+   ],
+   [
+    2013,
+    "2013_Dutta_A_Timeseries_Clustering_Appro",
+    "future work involve derivation of threshold parameters considering different mobility model"
+   ]
+  ],
+  "RSU deployment / infrastructure": [
+   [
+    2011,
+    "2011_Chang_Footprint_Detecting_Sybil_Att",
+    " we will develop cost-efficient techniques to fast detect the corrup- tion of an rsu"
+   ],
+   [
+    2011,
+    "2011_Mortazavi_Distributed_Sybil_Attack_",
+    " [7] have presented a distributed approach in which rsu"
+   ],
+   [
+    2014,
+    "2014_DBalamahalakshmi_Sybil_Attack_Detec",
+    " however, if an rsu"
+   ]
+  ],
+  "colluding/multiple attackers": [
+   [
+    2014,
+    "2014_Almutaz_Detecting_Sybil_attacks_in_",
+    "collusion"
+   ]
+  ],
+  "machine learning adoption": [
+   [
+    2014,
+    "2014_Almutaz_Detecting_Sybil_attacks_in_",
+    " future work involves integration of machine learning"
+   ]
+  ],
+  "attacker localization / revocation": [
+   [
+    2014,
+    "2014_Narang_Strategical_Comparison_Recog",
+    "eviction"
+   ]
+  ],
+  "energy / overhead reduction": [
+   [
+    2016,
+    "2016_Feng_A_method_for_defensing_against",
+    "resource testing (rt) method for sybil attack in p2p net- works."
+   ],
+   [
+    2018,
+    "2018_Shaik_Broadcast_Message_Authenticat",
+    "all traditional digital signature schemes results computation overhead"
+   ],
+   [
+    2022,
+    "2022_Ardakani_Fuzzy_clustering_algorithm",
+    "resource testing methods this met in the future, to identify malicious activities, intelligent methods can be used to learn the optimal choice of fuzzy rules for each environment."
+   ]
+  ],
+  "latency / real-time": [
+   [
+    2014,
+    "2014_Prakash_Improved_Session_key_based_",
+    "response time"
+   ],
+   [
+    2023,
+    "2023_Paranjothi_Enhancing_Security_in_VA",
+    "delay"
+   ],
+   [
+    2025,
+    "2025_Maram_Survey_on_Sybil_Attack_Detect",
+    "latency"
+   ]
+  ],
+  "detection accuracy / FPR reduction": [
+   [
+    2019,
+    "2019_Hamdan_Detecting_Sybil_attacks_in_v",
+    "detection rate"
+   ],
+   [
+    2020,
+    "2020_Rhamdhan_Hybrid_Trustbased_Defense_",
+    "accuracy"
+   ]
+  ],
+  "other attacks (DoS/blackhole/wormhole)": [
+   [
+    2019,
+    "2019_Kumar_Hash_Based_CoOperative_Method",
+    "our future work, use some framework oriented scenario to handle dos"
+   ],
+   [
+    2023,
+    "2023_Akil_NonInteractive_PrivacyPreservi",
+    "replay attack"
+   ]
+  ],
+  "scalability / large scale": [
+   [
+    2024,
+    "2024_Khatri_Sybil_AttackResistant_Blockc",
+    " implementation and scalability issues in this subsection, we will discuss scalab"
+   ],
+   [
+    2025,
+    "2025_Maram_Survey_on_Sybil_Attack_Detect",
+    "future research directions are aligned toward addressing unresolved gaps such as scalab"
+   ],
+   [
+    2026,
+    "2026_Tadesse_Sybil_Attack_Prevention_and",
+    " future research should focus on en- hancing the scalab"
+   ]
+  ],
+  "blockchain / distributed ledger": [
+   [
+    2024,
+    "2024_Khatri_Sybil_AttackResistant_Blockc",
+    "smart contract is encrypted with a pol privacy preservation mechanism, thereby preserving the privacy of vehicles."
+   ]
+  ],
+  "real-world / testbed validation": [
+   [
+    2025,
+    "2025_Maram_Survey_on_Sybil_Attack_Detect",
+    " the abeso framework proposed in [24] was not tested for scalability under real-world"
+   ],
+   [
+    2026,
+    "2026_Tadesse_Sybil_Attack_Prevention_and",
+    "field test"
+   ]
+  ],
+  "cross-layer / other protocols": [
+   [
+    2025,
+    "2025_Maram_Survey_on_Sybil_Attack_Detect",
+    "cross-layer"
+   ],
+   [
+    2025,
+    "2025_Nishtha_EXPLORING_VULNERABILITY_OF_",
+    "in the future, we will be working on formulating a mechanism for detection and prevention of the sybil attack on the topology-based routing protocol"
+   ],
+   [
+    2025,
+    "2025_Nishtha_ON_DISRUPTION_OF_EXISTING_R",
+    " for unhindered communication in v anet, the prerequisites are the completion of routing protocol"
+   ]
+  ]
+ }
+}

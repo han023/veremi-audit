@@ -1,0 +1,15 @@
+archive,prevalence,benign_identities,attacker_identities_available,attacker_identities_kept,test_positives_mean,test_positives_min,seeds_usable,usable
+GridSybil_0709,0.005,718,1166,4,0.0,0,0,False
+GridSybil_0709,0.01,718,1166,7,0.0,0,0,False
+GridSybil_0709,0.02,718,1166,15,0.0,0,0,False
+GridSybil_0709,0.03,718,1166,22,6.4,6,5,True
+GridSybil_0709,0.05,718,1166,38,11.8,10,5,True
+GridSybil_0709,0.1,718,1166,80,24.8,21,5,True
+GridSybil_0709,0.2,718,1166,179,52.8,43,5,True
+GridSybil_1416,0.005,607,1063,3,0.0,0,0,False
+GridSybil_1416,0.01,607,1063,6,0.0,0,0,False
+GridSybil_1416,0.02,607,1063,12,0.0,0,0,False
+GridSybil_1416,0.03,607,1063,19,0.0,0,0,False
+GridSybil_1416,0.05,607,1063,32,8.6,5,5,True
+GridSybil_1416,0.1,607,1063,67,21.4,20,5,True
+GridSybil_1416,0.2,607,1063,152,45.6,38,5,True

@@ -1,0 +1,9 @@
+file,records,senders,aliases,encoding_pct
+InTAS_highway_2_Train_groundTruth.json,19186,482,482,0.0
+InTAS_highway_2_Validation_groundTruth.json,7023,152,152,0.0
+InTAS_highway_7_Train_groundTruth.json,34132,562,562,0.0
+InTAS_highway_7_Validation_groundTruth.json,9251,221,221,0.0
+InTAS_urban_2_Train_groundTruth.json,102782,1165,1165,0.02
+InTAS_urban_2_Validation_groundTruth.json,29521,317,317,0.0
+InTAS_urban_7_Train_groundTruth.json,45849,435,435,0.0
+InTAS_urban_7_Validation_groundTruth.json,8268,175,175,0.0

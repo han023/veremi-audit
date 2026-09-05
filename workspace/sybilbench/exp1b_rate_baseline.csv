@@ -1,0 +1,9 @@
+archive,identities,attacker_frac,benign_interval_med,attacker_interval_med,AUC_interval_alone,AUC_msgcount_alone
+GridSybil_0709,1868,0.616,1.0,1.0,0.6581,0.6308
+GridSybil_1416,1645,0.636,1.0,1.0,0.5751,0.6034
+DataReplaySybil_0709,1770,0.612,1.0,1.0,0.5032,0.9946
+DataReplaySybil_1416,1984,0.699,1.0,1.0,0.5008,0.994
+DoSRandomSybil_0709,1943,0.647,1.0,50.0,1.0,0.9976
+DoSRandomSybil_1416,2976,0.799,1.0,50.0,1.0,0.9978
+DoSDisruptiveSybil_0709,1944,0.647,1.0,50.0,1.0,0.9976
+DoSDisruptiveSybil_1416,2972,0.799,1.0,50.0,1.0,0.9978

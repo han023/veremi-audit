@@ -1,0 +1,5 @@
+archive,tau_s,tracking_auc,tracking_sd,tracking_pos,detection_auc,detection_sd,detection_pos
+GridSybil_1416,15,0.8247,0.0228,52,0.6666,0.0084,643
+GridSybil_1416,30,0.8502,0.0228,45,0.6748,0.0087,853
+GridSybil_1416,60,0.8841,0.0201,55,0.7055,0.0036,827
+GridSybil_1416,120,0.9879,0.0038,50,0.7305,0.0069,1014
