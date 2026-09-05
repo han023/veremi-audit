@@ -86,8 +86,13 @@ Sign in at <https://zenodo.org> with GitHub or ORCID, then *New upload*.
 Code and data for "What VeReMi Measures: Structural Artefacts in VANET Misbehaviour Detection Benchmarks"
 ```
 
-**4. Authors:** Hannan Muzammil, affiliation Hannsoft. Add your ORCID if you have
-one; it links the record to you permanently.
+**4. Authors:** Zenodo splits the name into two boxes, and the split is what
+DataCite indexes. Enter **Family name: Muzammil**, **Given names: Hannan**. The
+record then displays "Muzammil, Hannan" in its citation block. That is the
+family-name-first convention every citation format uses, not a reordering of your
+name, and it renders as "Hannan Muzammil" wherever the name is written in full.
+Affiliation Hannsoft. ORCID **0009-0000-7502-2755** — enter it; it links the
+record to you permanently and settles the name split for every future deposit.
 
 **5. Reserve DOI.** In the *Basic information* block, click **Reserve DOI**. Do this
 now, before the description, so you can stop and update the paper.

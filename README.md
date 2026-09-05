@@ -92,6 +92,12 @@ different model writes its own file rather than overwriting the published one.
 }
 ```
 
+In BibTeX the comma in an author field separates family name from given name, so
+`{Muzammil, Hannan}` records Muzammil as the family name. It typesets as
+"Hannan Muzammil" and cites as "H. Muzammil". [CITATION.cff](CITATION.cff) carries
+the same metadata machine-readably, including ORCID
+[0009-0000-7502-2755](https://orcid.org/0009-0000-7502-2755).
+
 ## Licence
 
 MIT for the code, CC-BY-4.0 for the result tables, matching their CC-BY inputs.

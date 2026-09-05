@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: >-
+  Code and data for "What VeReMi Measures: Structural Artefacts
+  in VANET Misbehaviour Detection Benchmarks"
+message: If you use this software or its result tables, please cite it.
+type: software
+authors:
+  - given-names: Hannan
+    family-names: Muzammil
+    email: abdullhannan0311@gmail.com
+    affiliation: Hannsoft
+    orcid: https://orcid.org/0009-0000-7502-2755
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22397725
+    description: Archived replication package, all versions
+repository-code: https://github.com/han023/veremi-audit
+url: https://doi.org/10.5281/zenodo.22397725
+abstract: >-
+  A measurement audit of the VeReMi and VeReMi Extension misbehaviour-detection
+  benchmarks. One untrained scalar, raw message count, exceeds AUC 0.99 on six of
+  the eight Sybil archives. Pseudonyms encode the true sender in 86.5-100% of
+  identity pairs, attacker prevalence is fixed at 30% of vehicles, and running one
+  detector through seven progressively stricter protocols takes AUC from 0.998 to
+  0.843. The package contains the experiments, independent verifiers, result
+  tables and the paper source.
+keywords:
+  - VANET
+  - misbehaviour detection
+  - Sybil attack
+  - benchmarking
+  - reproducibility
+  - VeReMi
+license: MIT
+version: v1.0.0
+date-released: '2026-09-06'

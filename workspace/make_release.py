@@ -56,7 +56,7 @@ def main() -> None:
         if p.is_file():
             files.append(p)
     # the corpus index and bibliography live at the project root
-    for name in ("index.csv", "references.bib", "README.md", "LICENSE"):
+    for name in ("index.csv", "references.bib", "README.md", "LICENSE", "CITATION.cff"):
         p = Path(name)
         if p.is_file():
             files.append(p)

@@ -32,8 +32,11 @@ def cut(old, new, label):
 
 
 # --- class and running head ------------------------------------------------------
+# twoside, because IEEEtran only alternates the running heads in twoside mode.
+# Without it the second \markboth argument never renders and every page carries
+# the journal name, which is not what the mark was written for.
 cut(r"\documentclass[conference]{IEEEtran}",
-    r"\documentclass[journal]{IEEEtran}", "journal class")
+    r"\documentclass[journal,twoside]{IEEEtran}", "journal class")
 cut(r"\maketitle",
     "\\markboth{IEEE Transactions on Intelligent Transportation Systems}%\n"
     "{Muzammil: What VeReMi Measures}\n\\maketitle", "running head")
@@ -45,7 +48,7 @@ b = s.index("\n\n", a)
 s = s[:a] + r"""\author{Hannan~Muzammil%
 \thanks{Manuscript submitted for review. This work received no external funding.}%
 \thanks{H. Muzammil is with Hannsoft (e-mail: abdullhannan0311@gmail.com;
-web: https://www.hannsoft.org/).}%
+web: https://www.hannsoft.org/). ORCID 0009-0000-7502-2755.}%
 \thanks{The replication package is archived at doi:10.5281/zenodo.22397725.}}
 """ + s[b + 1:]
 applied.append("author footnote")

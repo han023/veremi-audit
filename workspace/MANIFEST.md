@@ -78,7 +78,7 @@ cefc10704cb96962  verify/v8_nextgen_probe.py
 dc204730b5a5cf1a  paper/assemble.py
 fa01281acd29122f  paper/audit_numbers.py
 8360eaa9d123101b  paper/bibliography.tex
-f8454436f0d71fc0  paper/body_new.tex
+19f441089f953928  paper/body_new.tex
 727cff28c548ee21  paper/check_claims.py
 37112bdb6db76bfe  paper/check_refs.py
 bc0f69a2bf1d16ad  paper/check_sentences.py
@@ -91,11 +91,11 @@ a03c4116913fb881  paper/fix_criticals.py
 f56ee469ac40a052  paper/make_fig_abstract.py
 e5805bd4ff1564b1  paper/make_figure.py
 9ecaa932f6b9a0db  paper/make_figures_2_3.py
-e1bfc516df1204c2  paper/make_journal.py
-3b7c46d9cdfde6b6  paper/veremi_audit.pdf
-d6e6c8bbc27d90b0  paper/veremi_audit.tex
-f67fcbecefc65faf  paper/veremi_audit_journal.pdf
-bf78344d40e3ee57  paper/veremi_audit_journal.tex
+85944160286fe8a9  paper/make_journal.py
+d8993c2392929715  paper/veremi_audit.pdf
+f6d9359f55123865  paper/veremi_audit.tex
+7e87c95bd7820033  paper/veremi_audit_journal.pdf
+c361db7e2f315e00  paper/veremi_audit_journal.tex
 ```
 
 ## results
