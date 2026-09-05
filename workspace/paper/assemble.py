@@ -17,9 +17,9 @@ BENCH = Path("workspace/sybilbench")
 
 NEW_BIB = {
     # inserted in publication order among the existing entries
-    "sommer2010": r"""\bibitem{sommer2010} R.~Sommer and V.~Paxson, ``Outside the closed world: on using machine learning for network intrusion detection,'' in \emph{IEEE Symp. Security and Privacy}, 2010, pp.~305--316. DOI: \\url{10.1109/SP.2010.25}.""",
+    "sommer2010": r"""\bibitem{sommer2010} R.~Sommer and V.~Paxson, ``Outside the closed world: on using machine learning for network intrusion detection,'' in \emph{IEEE Symp. Security and Privacy}, 2010, pp.~305--316. DOI: \url{10.1109/SP.2010.25}.""",
     "arp2022": r"""\bibitem{arp2022} D.~Arp, E.~Quiring, F.~Pendlebury, A.~Warnecke, F.~Pierazzi, C.~Wressnegger, L.~Cavallaro, and K.~Rieck, ``Dos and don'ts of machine learning in computer security,'' in \emph{USENIX Security Symposium}, 2022.""",
-    "guven2024": r"""\bibitem{guven2024} T.~Guven and Z.~C. Tay\c{s}i, ``Creating a realistic Sybil attack dataset for inter-vehicle communication,'' \emph{Peer-to-Peer Netw. Appl.}, 2025. DOI: \\url{10.1007/s12083-025-02058-w}.""",
+    "guven2024": r"""\bibitem{guven2024} T.~Guven and Z.~C. Tay\c{s}i, ``Creating a realistic Sybil attack dataset for inter-vehicle communication,'' \emph{Peer-to-Peer Netw. Appl.}, 2025. DOI: \url{10.1007/s12083-025-02058-w}.""",
 }
 # key after which each new entry is placed
 ANCHOR = {"sommer2010": "park2009", "arp2022": "azam2022", "guven2024": "khatri2024"}

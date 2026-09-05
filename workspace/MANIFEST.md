@@ -21,8 +21,8 @@ pyarrow          25.0.1
 ```
 2a06c316c597ead8  sybilbench/loader.py
 9600dfcc38c3ea54  sybilbench/loader_veremi2018.py
-a6fa67b6390cd37c  sybilbench/analysis.py
-740a4c813f65ff2c  sybilbench/pseudonym_layer.py
+572b4f24e39027a2  sybilbench/analysis.py
+32cd805a3eb7882f  sybilbench/pseudonym_layer.py
 ```
 
 ## experiments
@@ -32,70 +32,70 @@ a6fa67b6390cd37c  sybilbench/analysis.py
 6730abe46356a3ec  sybilbench/exp13_pseudonym_decode.py
 592bc55b587449d1  sybilbench/exp14_single_factor.py
 bf2c86eb1db79f01  sybilbench/exp1_linkage.py
-35a8493d22c6e20a  sybilbench/exp1b_rate_baseline.py
-97b22df7e32f322e  sybilbench/exp2_pareto.py
-98f39aff53584ae0  sybilbench/exp2b_pareto_controlled.py
-b863bd861d46b9ea  sybilbench/exp2c_pareto_final.py
-0bedc1339bc1bf9e  sybilbench/exp4_replicate.py
+bb54e3b6e793bc50  sybilbench/exp1b_rate_baseline.py
+0629874cb7659365  sybilbench/exp2_pareto.py
+44dd0484df245b15  sybilbench/exp2b_pareto_controlled.py
+7dacafb6040e9df5  sybilbench/exp2c_pareto_final.py
+c6b04a9937941c7d  sybilbench/exp4_replicate.py
 a9243971021905f8  sybilbench/exp6_rsu_vantage.py
-e4d8e369fe7dc0e5  sybilbench/exp7_leakage_quantified.py
-a3e10eee585a1e1d  sybilbench/exp8_rssi_2018.py
-6886a7d3162a1b83  sybilbench/exp8b_position_verification.py
+a1fc4192d9dd911a  sybilbench/exp7_leakage_quantified.py
+719bc8f14aad09ae  sybilbench/exp8_rssi_2018.py
+ac573ad3e4ffd8e8  sybilbench/exp8b_position_verification.py
 b4ef5f041f037421  sybilbench/exp9_cascade.py
 ```
 
 ## independent verification
 
 ```
-626c176572d37866  verify/v10_pseudonym_change.py
+9b3992e9249d666f  verify/v10_pseudonym_change.py
 c416100ac9754ceb  verify/v11_reporting_table.py
-7aa0775e6294f5b6  verify/v12_corpus_facts.py
-a194615aa19164c9  verify/v14_match_matrix.py
-692ae1e0713b7b9a  verify/v15_nextgen_shortcuts.py
-576cc3c765d15f5d  verify/v16_nextgen_identifier.py
-430b774f5fdef46c  verify/v17_master_census.py
-d8ecd8c1d5f4bbbb  verify/v18_information.py
-6f6710b78bdd2f28  verify/v19_table_reproduction.py
-9294616790d25836  verify/v1_raw_structure.py
-ce57651cecdcd895  verify/v1b_raw_refined.py
-950b9064d5f5c52c  verify/v20_release_splits.py
-5d1f46e6a79a18ac  verify/v21_attacker_budget.py
-f82cef367850892b  verify/v2_metrics.py
-cdbfc877249b29a8  verify/v3_pseudomap.py
-9b329d31886081b6  verify/v3b_pseudomap_full.py
-184262bdce6b9a1e  verify/v3c_identity_census.py
-4ffafc7294d0a1c5  verify/v4_timing_distributions.py
+29f3f4a9699fb047  verify/v12_corpus_facts.py
+e2130df54aa5c359  verify/v14_match_matrix.py
+14f20c6461f42daa  verify/v15_nextgen_shortcuts.py
+81b3f19ecc542cc5  verify/v16_nextgen_identifier.py
+b6134d8e721aec70  verify/v17_master_census.py
+991999156abd0c84  verify/v18_information.py
+3463ea99e2cb0a39  verify/v19_table_reproduction.py
+4727a0010d155915  verify/v1_raw_structure.py
+88ca5bef0cff5c8d  verify/v1b_raw_refined.py
+7c1762af553adde1  verify/v20_release_splits.py
+11f7028484868303  verify/v21_attacker_budget.py
+c1126a86012114cd  verify/v2_metrics.py
+dcce2e60aa2c28d8  verify/v3_pseudomap.py
+95421130d32bb499  verify/v3b_pseudomap_full.py
+7173c0b167f10658  verify/v3c_identity_census.py
+acdf3e01f0502d3b  verify/v4_timing_distributions.py
 2332d2a96ccf483c  verify/v5_pathloss_replicate.py
 9d2f7851cb74aa7e  verify/v6_prevalence_floor.py
-acd8c9999bd6f0b3  verify/v7_dataset_usage.py
-8a8f2db764f61b7e  verify/v8_nextgen_probe.py
+5be4c04d393add15  verify/v7_dataset_usage.py
+cefc10704cb96962  verify/v8_nextgen_probe.py
 599cc888235f8510  verify/v9_derivative_audit.py
 ```
 
 ## paper
 
 ```
-f79d4d90ba8e26b8  paper/assemble.py
-c7348655852db3b9  paper/audit_numbers.py
+dc204730b5a5cf1a  paper/assemble.py
+fa01281acd29122f  paper/audit_numbers.py
 8360eaa9d123101b  paper/bibliography.tex
 81a46e2df16b060b  paper/body_new.tex
 9ac4ee3dfeb687ab  paper/check_claims.py
-5d2fe04fca9b8ba4  paper/check_refs.py
+37112bdb6db76bfe  paper/check_refs.py
 bc0f69a2bf1d16ad  paper/check_sentences.py
 f612d20e94d516ca  paper/fig_ablation.pdf
 5b5848fd35bca0a8  paper/fig_abstract.pdf
 a31a53e9584b1ae7  paper/fig_decode.pdf
 703ec678898a2f70  paper/fig_prevalence.pdf
-43501314b40392b4  paper/find_corruption.py
-5e891a039e63cf58  paper/fix_criticals.py
+d9fbd314d6411591  paper/find_corruption.py
+a03c4116913fb881  paper/fix_criticals.py
 b8f1ee092dd20124  paper/make_fig_abstract.py
 e5805bd4ff1564b1  paper/make_figure.py
 9ecaa932f6b9a0db  paper/make_figures_2_3.py
-e852f3e4eb399235  paper/make_journal.py
-3b3662133ac4d3ba  paper/veremi_audit.pdf
-de3c934a696ec896  paper/veremi_audit.tex
-288cff8b01c2f814  paper/veremi_audit_journal.pdf
-f03004e63d7d1025  paper/veremi_audit_journal.tex
+cabcdee57f50e4fa  paper/make_journal.py
+407ae0de537c3a94  paper/veremi_audit.pdf
+a60a1fcc52d73b68  paper/veremi_audit.tex
+b2d002bdae7548d7  paper/veremi_audit_journal.pdf
+356505afdd0f9f84  paper/veremi_audit_journal.tex
 ```
 
 ## results

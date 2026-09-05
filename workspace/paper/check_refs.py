@@ -25,3 +25,20 @@ missing = [k for k in keys if k not in cited]
 undefined = [k for k in cited if k not in keys]
 print("uncited entries:", missing or "none")
 print("undefined citations:", undefined or "none")
+
+# A doubled backslash before a control sequence is a line break followed by
+# literal text, which compiles without error and prints "url10.1109/..." in the
+# reference list. Two entries shipped that way. Nothing else catches it, because
+# the document builds cleanly, so the check lives here.
+mangled = re.findall(r"\\\\[a-zA-Z]+\{", bib)
+print("mangled control sequences:", sorted(set(mangled)) or "none")
+
+# Every DOI in the list should be a bare DOI, not a resolver URL, and should
+# carry the 10.x prefix that makes it resolvable.
+doi = re.findall(r"DOI: ([^\n]+?)\.$", bib, re.M)
+bad_doi = [d for d in doi if "10." not in d]
+print("malformed DOIs:", bad_doi or "none")
+
+if mangled or bad_doi or undefined:
+    sys.exit(1)
+
