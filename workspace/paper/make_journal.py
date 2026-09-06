@@ -55,10 +55,11 @@ applied.append("author footnote")
 
 cut(r"\end{document}",
     r"""\begin{IEEEbiographynophoto}{Hannan Muzammil}
-is an independent researcher at Hannsoft. His work concerns measurement
-and reproducibility in vehicular network security, with a focus on what
-shared evaluation benchmarks encode. He maintains the replication package
-accompanying this paper.
+received the B.S. degree in computer science from the University of Management
+and Technology, Lahore, Pakistan, in 2025. He worked as a freelance software
+developer before founding Hannsoft, where he is currently Chief Executive
+Officer. His research interests include vehicular network security, misbehaviour
+detection, and reproducibility in security machine learning.
 \end{IEEEbiographynophoto}
 
 \end{document}""", "biography")
@@ -264,9 +265,15 @@ An accessible calibrated dataset is therefore a necessity.
 Our code, controls and checklist accompany this paper.
 We hope future results become comparable again.""",
     """VeReMi 2018 cannot validate the signal-strength family.
-An accessible calibrated dataset is therefore a necessity.
-Our code, controls and checklist accompany this paper.""",
+An accessible calibrated dataset is therefore a necessity.""",
     "conclusion close")
+
+# The Availability section already points at the released controls, so the
+# conclusion's pointer to them is a second copy of the same sentence.
+cut("""Pseudonyms encode sender identity almost everywhere.
+Honest vehicles never change pseudonyms in these archives.""",
+    """Pseudonyms encode sender identity, and honest vehicles never rotate.""",
+    "conclusion merge")
 
 # --- 7. schema table kinematic rows ----------------------------------------------
 cut(r"""\texttt{pos}, \texttt{pos\_noise} & claimed position, variance & yes \\
