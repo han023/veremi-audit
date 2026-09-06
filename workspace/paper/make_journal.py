@@ -46,7 +46,8 @@ cut(r"\maketitle",
 a = s.index(r"\author{")
 b = s.index("\n\n", a)
 s = s[:a] + r"""\author{Hannan~Muzammil%
-\thanks{Manuscript submitted for review. This work received no external funding.}%
+\thanks{Manuscript submitted for review. This work received no external funding,
+and the author declares no conflict of interest.}%
 \thanks{H. Muzammil is with Hannsoft (e-mail: abdullhannan0311@gmail.com;
 web: https://www.hannsoft.org/). ORCID 0009-0000-7502-2755.}%
 \thanks{The replication package is archived at doi:10.5281/zenodo.22397725.}}

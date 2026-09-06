@@ -92,11 +92,11 @@ a03c4116913fb881  paper/fix_criticals.py
 f56ee469ac40a052  paper/make_fig_abstract.py
 e5805bd4ff1564b1  paper/make_figure.py
 9ecaa932f6b9a0db  paper/make_figures_2_3.py
-cfbc13d6ed832ac0  paper/make_journal.py
+64d52459ef5592c2  paper/make_journal.py
 d8993c2392929715  paper/veremi_audit.pdf
 f6d9359f55123865  paper/veremi_audit.tex
-0b1077ba28cf852a  paper/veremi_audit_journal.pdf
-1203bbaefd6b761c  paper/veremi_audit_journal.tex
+8bcee887a23f0c3b  paper/veremi_audit_journal.pdf
+02073ac22108a703  paper/veremi_audit_journal.tex
 ```
 
 ## results
