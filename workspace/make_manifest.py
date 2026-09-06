@@ -21,9 +21,12 @@ GROUPS = [
     ("independent verification", sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "verify").glob("v*.py"))),
     # globbed, not listed: a hardcoded list silently drops scripts added later,
     # and the paper promises a hash per file
+    # "_"-prefixed files are scratch: a probe file left behind by a page-length
+    # experiment was hashed here and shipped in the release before this filter
     ("paper", sorted(p.relative_to(ROOT).as_posix()
                      for ext in ("*.py", "*.tex", "*.pdf")
-                     for p in (ROOT / "paper").glob(ext))),
+                     for p in (ROOT / "paper").glob(ext)
+                     if not p.name.startswith("_"))),
     ("results", sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "sybilbench").glob("*.csv"))
                 + sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "verify").glob("*.csv"))),
 ]

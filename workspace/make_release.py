@@ -39,6 +39,10 @@ EXCLUDE_DIRS = {"cache", "__pycache__", "release", "datasets", "text"}
 
 
 def wanted(p: Path) -> bool:
+    # "_"-prefixed names are scratch. _probe.tex, left over from a page-length
+    # experiment, shipped in a release before this check existed.
+    if p.name.startswith("_"):
+        return False
     return not any(part in EXCLUDE_DIRS for part in p.parts)
 
 

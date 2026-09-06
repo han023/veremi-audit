@@ -75,7 +75,6 @@ cefc10704cb96962  verify/v8_nextgen_probe.py
 ## paper
 
 ```
-d4d3d78e33838953  paper/_probe.tex
 dc204730b5a5cf1a  paper/assemble.py
 fa01281acd29122f  paper/audit_numbers.py
 8360eaa9d123101b  paper/bibliography.tex
