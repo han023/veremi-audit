@@ -56,10 +56,10 @@ applied.append("author footnote")
 cut(r"\end{document}",
     r"""\begin{IEEEbiographynophoto}{Hannan Muzammil}
 received the B.S. degree in computer science from the University of Management
-and Technology, Lahore, Pakistan, in 2025. He worked as a freelance software
-developer before founding Hannsoft, where he is currently Chief Executive
-Officer. His research interests include vehicular network security, misbehaviour
-detection, and reproducibility in security machine learning.
+and Technology, Lahore, Pakistan, in 2025. He worked as a freelance developer
+before founding Hannsoft, where he is Chief Executive Officer. His interests
+include vehicular and Android application security, machine learning and deep
+learning, and research reproducibility.
 \end{IEEEbiographynophoto}
 
 \end{document}""", "biography")
@@ -217,8 +217,7 @@ Two further limits are structural.""",
 cut("""External validity now rests on two datasets, not one.
 Section~\\ref{sec:generalise} tests the shortcuts on NextGen.
 Both remain simulator output from one research lineage.""",
-    """External validity rests on two datasets, not one.
-Both remain simulator output from one research lineage.""",
+    """External validity rests on two datasets, both from one lineage.""",
     "external validity")
 
 # --- 6. availability walkthrough -------------------------------------------------
@@ -245,8 +244,7 @@ Independent metric implementations are included and self-tested.""",
     """Scripts, controls and result tables reproduce every number above.
 The archive is deposited at \\url{10.5281/zenodo.22397725}.
 A container image rebuilds and re-verifies it in one command.
-The eight-archive census ships as a machine-readable table.
-Every measured statistic is a column there, not only printed ones.
+The eight-archive census ships as a table, every statistic a column.
 Every result file names the script that produced it.
 A manifest records hashes, library versions and self-tested metric code.""",
     "availability")
