@@ -89,7 +89,7 @@ different model writes its own file rather than overwriting the published one.
                Artefacts in VANET Misbehaviour Detection Benchmarks"},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v1.0.0},
+  version   = {v1.0.1},
   doi       = {10.5281/zenodo.22397724},
   url       = {https://doi.org/10.5281/zenodo.22397724}
 }
