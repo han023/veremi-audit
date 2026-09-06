@@ -12,10 +12,13 @@ authors:
     orcid: https://orcid.org/0009-0000-7502-2755
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.22397724
+    description: Concept DOI, resolves to the latest version
+  - type: doi
     value: 10.5281/zenodo.22397725
-    description: Archived replication package, all versions
+    description: Version DOI of the first deposit
 repository-code: https://github.com/han023/veremi-audit
-url: https://doi.org/10.5281/zenodo.22397725
+url: https://doi.org/10.5281/zenodo.22397724
 abstract: >-
   A measurement audit of the VeReMi and VeReMi Extension misbehaviour-detection
   benchmarks. One untrained scalar, raw message count, exceeds AUC 0.99 on six of

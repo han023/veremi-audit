@@ -3,9 +3,12 @@
 Replication package for a measurement audit of the VeReMi and VeReMi Extension
 misbehaviour-detection benchmarks.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22397725.svg)](https://doi.org/10.5281/zenodo.22397725)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22397724.svg)](https://doi.org/10.5281/zenodo.22397724)
 
-**Paper:** `workspace/paper/veremi_audit.pdf` (conference, 12 pp) · `veremi_audit_journal.pdf` (IEEE Transactions, 10 pp) · **Archive:** <https://doi.org/10.5281/zenodo.22397725>
+**Paper:** `workspace/paper/veremi_audit.pdf` (conference, 12 pp) · `veremi_audit_journal.pdf` (IEEE Transactions, 10 pp) · **Archive:** <https://doi.org/10.5281/zenodo.22397724> (all versions)
+
+Under review as a Regular Paper at IEEE Transactions on Intelligent Transportation
+Systems. See [`submission/`](submission/) for what was submitted and where.
 
 ---
 
@@ -87,10 +90,14 @@ different model writes its own file rather than overwriting the published one.
   year      = {2026},
   publisher = {Zenodo},
   version   = {v1.0.0},
-  doi       = {10.5281/zenodo.22397725},
-  url       = {https://doi.org/10.5281/zenodo.22397725}
+  doi       = {10.5281/zenodo.22397724},
+  url       = {https://doi.org/10.5281/zenodo.22397724}
 }
 ```
+
+`10.5281/zenodo.22397724` is the concept DOI and always resolves to the newest
+version. Cite `10.5281/zenodo.22397725` instead to pin the exact version this
+README was written against.
 
 In BibTeX the comma in an author field separates family name from given name, so
 `{Muzammil, Hannan}` records Muzammil as the family name. It typesets as
