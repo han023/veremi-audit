@@ -1,6 +1,6 @@
 # Manifest
 
-Generated 2026-09-06.
+Generated 2026-09-28.
 SHA-256 of every file that produced a number in the paper.
 
 ## Environment
@@ -81,19 +81,22 @@ fa01281acd29122f  paper/audit_numbers.py
 19f441089f953928  paper/body_new.tex
 727cff28c548ee21  paper/check_claims.py
 37112bdb6db76bfe  paper/check_refs.py
-bc0f69a2bf1d16ad  paper/check_sentences.py
+a62a3e4acd653490  paper/check_sentences.py
 f612d20e94d516ca  paper/fig_ablation.pdf
 3ab0769674968b92  paper/fig_abstract.pdf
 a31a53e9584b1ae7  paper/fig_decode.pdf
 703ec678898a2f70  paper/fig_prevalence.pdf
 d9fbd314d6411591  paper/find_corruption.py
 a03c4116913fb881  paper/fix_criticals.py
+581b6e319daea8ae  paper/make_elsevier.py
 f56ee469ac40a052  paper/make_fig_abstract.py
 e5805bd4ff1564b1  paper/make_figure.py
 9ecaa932f6b9a0db  paper/make_figures_2_3.py
 64d52459ef5592c2  paper/make_journal.py
 d8993c2392929715  paper/veremi_audit.pdf
 f6d9359f55123865  paper/veremi_audit.tex
+4b7f2ee0fd4fcefe  paper/veremi_audit_elsevier.pdf
+4295a78e21b32d81  paper/veremi_audit_elsevier.tex
 8bcee887a23f0c3b  paper/veremi_audit_journal.pdf
 02073ac22108a703  paper/veremi_audit_journal.tex
 ```
