@@ -1,7 +1,27 @@
 # Submission record
 
-The manuscript was submitted to **IEEE Transactions on Intelligent Transportation
-Systems** as a Regular Paper, through the IEEE Author Portal at
+## Status
+
+| Venue | Submitted | Outcome |
+|---|---|---|
+| IEEE Trans. Intelligent Transportation Systems | 2026-09-06 | Desk rejected 2026-09-27, out of scope |
+
+T-ITS returned it without review as **T-ITS-26-09-4944**. The editor's reason was
+scope alone, quoted in full because it is useful to anyone choosing a venue for
+this kind of work:
+
+> The paper is related to the problem of security of communication networks. The
+> paper is out of the scope of the journal as it does not have a strong focus on a
+> transportation system/network. In particular, the dynamics of an underlying
+> transportation system are not explicitly accounted for in algorithm
+> design/analysis/validation.
+
+No reviewer comments, and nothing about the methods or results was questioned. The
+objection is structural and correct: the paper audits datasets and evaluation
+protocol for a security problem, and it models no traffic dynamics. That is a
+mismatch with the journal, not a defect in the work.
+
+The manuscript was submitted as a Regular Paper through the IEEE Author Portal at
 <https://ieee.atyponrex.com/journal/t-its>.
 
 Two notes for anyone following the same route, because both cost time to work out:
