@@ -1,8 +1,14 @@
 # Submitting to Vehicular Communications (Elsevier)
 
-Journal: <https://www.sciencedirect.com/journal/vehicular-communications>
-Submit through Editorial Manager via the journal's "Submit your article" link.
-Sign in with your ORCID so the submission links to your record.
+**Submit at: <https://www.editorialmanager.com/vehcom/>**
+
+That is Editorial Manager, not ScienceDirect. Verified by fetching the page: the
+site at `vehcom` identifies itself as Vehicular Communications. There is also an
+Editorial Manager site at `/vc/`, which is a different journal; do not use it.
+Submission is only through Editorial Manager, as email submissions are not
+accepted.
+
+Register or sign in with your ORCID so the submission links to your record.
 
 ## Why here, and not Computers & Security
 
@@ -117,6 +123,133 @@ without review as out of scope, with no reviewer comments. Say so if asked.
 **SSRN preprint offer:** the submission flow may offer to post your manuscript to
 SSRN. Declining costs nothing, since the Zenodo record already serves that purpose.
 Accepting is also harmless and adds a second DOI.
+
+---
+
+## Step by step
+
+### Before you start
+
+Have these open: this folder, and <https://declarations.elsevier.com/> for the one
+file you must generate yourself.
+
+### 1. Account
+
+Go to <https://www.editorialmanager.com/vehcom/>. Click **Register** if you have no
+account there, or **Login**. Prefer **Login via ORCID** so `0009-0000-7502-2755`
+attaches to the submission automatically. Editorial Manager accounts are per
+journal, so an account on another Elsevier journal will not carry over.
+
+### 2. Start the submission
+
+From the Author Main Menu choose **Submit New Manuscript**.
+
+### 3. Article type
+
+Select **Full Length Article**.
+
+### 4. Generate the competing-interests file
+
+In a second tab open <https://declarations.elsevier.com/>. Fill in the journal and
+title, select **"I have nothing to declare"**, and download the Word file. Keep it
+as `.docx` — do not convert it to PDF. You will upload it in step 6.
+
+### 5. Attach files
+
+Upload in this order, choosing the item type shown. Order matters, because
+Editorial Manager builds the reviewer PDF in the order listed.
+
+| # | File | Item type |
+|---|---|---|
+| 1 | `manuscript.tex` | Manuscript |
+| 2 | `fig_abstract.pdf` | Figure |
+| 3 | `fig_decode.pdf` | Figure |
+| 4 | `fig_ablation.pdf` | Figure |
+| 5 | `fig_prevalence.pdf` | Figure |
+| 6 | `highlights.docx` | Highlights |
+| 7 | `cover-letter.pdf` | Cover Letter |
+| 8 | the file from step 4 | Conflict of Interest / Declaration of Interest |
+
+**Do not upload `manuscript-preview.pdf`.** The guide states that a PDF is not an
+acceptable source file; the system compiles its own PDF from the `.tex`. The
+preview is only so you can read the paper before sending it.
+
+If the form asks you to identify a LaTeX main document, point it at
+`manuscript.tex`. No `.bib` file exists: the references are inline `ibitem`
+entries inside the manuscript.
+
+### 6. Metadata
+
+**Title**
+```
+What VeReMi Measures: Structural Artefacts in VANET Misbehaviour Detection Benchmarks
+```
+
+**Abstract.** Paste the 182-word abstract as plain text. It is the text in the
+manuscript's abstract environment; there are no LaTeX escapes to strip except the
+percent signs, which paste as ordinary `%`.
+
+**Keywords.** Exactly these six, entered one per field:
+```
+VANET
+misbehaviour detection
+Sybil attack
+benchmarking
+reproducibility
+VeReMi
+```
+The journal allows 1 to 7. Do not add `V2X` or `evaluation methodology`, which were
+for the IEEE submission and would take you to eight.
+
+**Author.** Given name `Hannan`, family name `Muzammil`, corresponding author.
+Hannsoft, Township, Lahore 54700, Punjab, Pakistan. ORCID 0009-0000-7502-2755.
+
+### 7. Questions in the flow
+
+| Question | Answer |
+|---|---|
+| Funding | None. The manuscript carries Elsevier's recommended "no funding" sentence |
+| Competing interests | None; the file from step 4 covers it |
+| Data availability | Data is in a public repository: `https://doi.org/10.5281/zenodo.22397725` |
+| Generative AI | Declared in the manuscript, in its own section before the references |
+| Preprint on SSRN | Optional. Declining costs nothing, since the Zenodo record already serves that purpose |
+| Previously published | No. A preprint is not prior publication, and the cover letter discloses the Zenodo copy |
+| Suggested reviewers | Areas rather than names: VANET and V2X security; evaluation methodology and dataset auditing; reproducibility in empirical security. Avoid anyone connected to the VeReMi releases or to papers the manuscript discusses |
+
+### 8. Open access — the one costly misclick
+
+When asked how you want to publish, choose the **subscription** route. Elsevier's
+own wording for these journals is that no publication fee is charged to authors
+under it. Selecting open access commits you to an article publishing charge in the
+thousands of dollars.
+
+### 9. Check the built PDF before you approve
+
+Editorial Manager compiles your LaTeX and shows a proof. **Open it and read it**
+before approving. Confirm:
+
+- it built at all, and reports no LaTeX error
+- all four figures appear, not grey boxes
+- the section numbers run 1 to 13 in Arabic, with 1.1 style subsections
+- the fifteen tables are present and not split badly
+- the declarations appear before the references
+
+This is the step that catches a bad build. If a figure is missing, the file was
+attached with the wrong item type or did not upload.
+
+### 10. Approve
+
+Approve the PDF to complete the submission. You will get a manuscript number by
+email. Record it in `submission/README.md`.
+
+---
+
+## What happens next
+
+The published timings for this journal are a first decision at about 6 days, which
+is the desk screen, a post-review decision at about 65 days, and acceptance at
+about 145 days. If it clears the desk screen, expect roughly two months to the
+first substantive decision.
 
 ## Before submitting
 
