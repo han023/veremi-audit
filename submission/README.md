@@ -5,6 +5,18 @@
 | Venue | Submitted | Outcome |
 |---|---|---|
 | IEEE Trans. Intelligent Transportation Systems | 2026-09-06 | Desk rejected 2026-09-27, out of scope |
+| Vehicular Communications (Elsevier) | 2026-10-06 | Under review |
+
+Submitted to Vehicular Communications as a Full Length Article through Editorial
+Manager at <https://www.editorialmanager.com/vehcom/>, subscription route, no
+article publishing charge. Classifications: security and privacy; vehicle to
+vehicle and vehicle to infrastructure communications; artificial intelligence and
+machine learning; protocol design, testing and verification. Deliberately not
+"intelligent transportation systems", which is the framing T-ITS rejected.
+
+The submitted source is `workspace/paper/veremi_audit_elsevier.tex`, built by
+`make_elsevier.py`. Published timings for this journal are roughly 6 days to the
+desk decision, 65 days to a post-review decision and 145 days to acceptance.
 
 T-ITS returned it without review as **T-ITS-26-09-4944**. The editor's reason was
 scope alone, quoted in full because it is useful to anyone choosing a venue for
