@@ -1,3 +1,11 @@
+> **Superseded, kept for the record.** The paper went to Vehicular Communications
+> instead; see `SUBMIT-TO-VEHICULAR-COMMUNICATIONS.md`. Computers & Security was
+> ruled out after reading their aims and scope, which carry a moratorium in force
+> since early 2024 on submissions featuring AI or ML as significant components.
+> This file is kept because that finding, and the impact-factor correction below,
+> are worth knowing before anyone considers the venue again. Do not follow its
+> steps.
+
 # Submitting to Computers & Security (Elsevier)
 
 Journal home: <https://www.sciencedirect.com/journal/computers-and-security>
