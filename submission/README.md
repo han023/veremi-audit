@@ -5,7 +5,24 @@
 | Venue | Submitted | Outcome |
 |---|---|---|
 | IEEE Trans. Intelligent Transportation Systems | 2026-09-06 | Desk rejected 2026-09-27, out of scope |
-| Vehicular Communications (Elsevier) | 2026-10-06 | Under review |
+| Vehicular Communications (Elsevier) | 2026-10-06 | Desk rejected 2026-10-09, significance |
+
+Vehicular Communications returned it without review as **VEHCOM-D-26-01393**:
+
+> The novelty and scientific contributions of this paper in terms of vehicular
+> communications do not appear to be significant enough for further consideration
+> by the journal.
+
+No reviewer comments again. Read alongside the T-ITS letter, the two say the same
+thing from different directions, and the qualifier "in terms of vehicular
+communications" is the whole point. Neither editor disputed a measurement. Both
+judged the paper as a contribution to their domain, and a critique of how a domain
+evaluates itself does not advance that domain's methods.
+
+The lesson for venue choice: a scope list says what a journal accepts, not what it
+values. Both journals list security in scope. Neither values an evaluation audit.
+This paper's peers are Sommer and Paxson, and Arp et al., and both of those
+appeared at security venues rather than domain journals.
 
 Submitted to Vehicular Communications as a Full Length Article through Editorial
 Manager at <https://www.editorialmanager.com/vehcom/>, subscription route, no
