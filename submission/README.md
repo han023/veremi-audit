@@ -6,6 +6,39 @@
 |---|---|---|
 | IEEE Trans. Intelligent Transportation Systems | 2026-09-06 | Desk rejected 2026-09-27, out of scope |
 | Vehicular Communications (Elsevier) | 2026-10-06 | Desk rejected 2026-10-09, significance |
+| IEEE Trans. Dependable and Secure Computing | prepared 2026-10-10 | not yet submitted |
+
+## The reframe, 2026-10-10
+
+Both rejections were a framing failure rather than two unlucky venue picks, so the
+paper was reframed before being sent anywhere else. It now leads with the audit
+method and treats VeReMi as the case study: new title, an abstract and
+introduction that open on how security machine learning is evaluated, contributions
+that put the cascade and the reporting rules first, and a new Section XI
+subsection stating what transfers beyond this benchmark.
+
+No measurement, table or figure changed. `check_claims.py` passes all 316
+assertions on the reframed source, `check_sentences.py` reports none over twelve
+words, and the journal build is 11 pages against TDSC's 12-page limit.
+
+See [`SUBMIT-TO-TDSC.md`](SUBMIT-TO-TDSC.md), which also records what was verified
+about the venue before choosing it: the traditional route is free, open access is
+$2,800 and must not be selected, overlength beyond 12 pages is $220 per page, and
+the submission URL must be taken from the journal page's own button because the
+Computer Society moved its periodicals to the IEEE Author Portal.
+
+### Why not ACM
+
+ACM TOPS and ACM DTRAP are the venues most receptive to this kind of audit, and
+McHugh's critique of the DARPA intrusion-detection evaluations — the closest
+precedent for this paper — appeared in ACM TISSEC, now TOPS. They were ruled out on
+cost. ACM became fully open access on 1 January 2026, so an APC applies unless the
+corresponding author's institution is in ACM Open or the country qualifies for a
+waiver. Pakistan is World Bank lower-middle-income, which earns a **50% discount,
+not a waiver**; Hannsoft is not an ACM Open institution; and ACM states explicitly
+that being an independent consultant without an affiliated institution is not by
+itself a demonstration of financial hardship. That leaves a real bill, so ACM
+fails the no-cost constraint.
 
 Vehicular Communications returned it without review as **VEHCOM-D-26-01393**:
 

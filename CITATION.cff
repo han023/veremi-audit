@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: >-
-  Code and data for "What VeReMi Measures: Structural Artefacts
-  in VANET Misbehaviour Detection Benchmarks"
+  Code and data for "Auditing a Security Benchmark by Measurement:
+  Structural Artefacts in VANET Misbehaviour Detection"
 message: If you use this software or its result tables, please cite it.
 type: software
 authors:
@@ -28,10 +28,11 @@ abstract: >-
   0.843. The package contains the experiments, independent verifiers, result
   tables and the paper source.
 keywords:
-  - VANET
-  - misbehaviour detection
-  - Sybil attack
   - benchmarking
+  - evaluation methodology
+  - security machine learning
+  - misbehaviour detection
+  - VANET
   - reproducibility
   - VeReMi
 license: MIT

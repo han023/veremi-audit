@@ -38,10 +38,11 @@ def cut(old, new, label):
 cut(r"\documentclass[conference]{IEEEtran}",
     r"\documentclass[journal,twoside]{IEEEtran}", "journal class")
 cut(r"\maketitle",
-    "\\markboth{IEEE Transactions on Intelligent Transportation Systems}%\n"
-    "{Muzammil: What VeReMi Measures}\n\\maketitle", "running head")
+    "\\markboth{IEEE Transactions on Dependable and Secure Computing}%\n"
+    "{Muzammil: Auditing a Security Benchmark by Measurement}\n\\maketitle",
+    "running head")
 
-# T-ITS wants the affiliation as a title footnote rather than an author block,
+# TDSC wants the affiliation as a title footnote rather than an author block,
 # and Regular Papers carry a biography. The conference variant keeps its block.
 a = s.index(r"\author{")
 b = s.index("\n\n", a)

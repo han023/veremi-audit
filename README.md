@@ -1,14 +1,21 @@
-# What VeReMi Measures
+# Auditing a Security Benchmark by Measurement
 
 Replication package for a measurement audit of the VeReMi and VeReMi Extension
 misbehaviour-detection benchmarks.
 
+The contribution is the audit method: enumerate the properties a benchmark's users
+assume, measure each from source, then withdraw the evaluation's advantages one
+stage at a time and report the whole ladder. VeReMi is the case it is demonstrated
+on.
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22397724.svg)](https://doi.org/10.5281/zenodo.22397724)
 
-**Paper:** `workspace/paper/veremi_audit.pdf` (conference, 12 pp) · `veremi_audit_journal.pdf` (IEEE Transactions, 10 pp) · **Archive:** <https://doi.org/10.5281/zenodo.22397724> (all versions)
+**Paper:** `workspace/paper/veremi_audit.pdf` (conference, 12 pp) · `veremi_audit_journal.pdf` (IEEE Transactions, 11 pp) · **Archive:** <https://doi.org/10.5281/zenodo.22397724> (all versions)
 
-Under review as a Regular Paper at IEEE Transactions on Intelligent Transportation
-Systems. See [`submission/`](submission/) for what was submitted and where.
+Prepared for IEEE Transactions on Dependable and Secure Computing, after two
+domain journals returned it without review on scope. See
+[`submission/`](submission/) for the record of each, and for why the framing
+changed rather than the measurements.
 
 ---
 
@@ -18,8 +25,8 @@ The VeReMi archives are the main shared benchmark for vehicular misbehaviour
 detection. This audits them by measurement rather than by reading, and reports what
 survives once the shortcuts are removed.
 
-One untrained scalar solves six of the eight Sybil archives, reading message timing
-alone and never a claimed position. Pseudonyms encode the true sender in 86.5–100%
+One untrained scalar exceeds AUC 0.99 on six of the eight Sybil archives. That
+scalar is raw message count, never a claimed position. Pseudonyms encode the true sender in 86.5–100%
 of identity pairs, and an untrained decoder recovers the emitting vehicle 87.6% of
 the time against 0.3% under a permuted control. Attacker prevalence is fixed at 30%
 of vehicles in every archive. Running one detector through seven progressively
@@ -85,8 +92,9 @@ different model writes its own file rather than overwriting the published one.
 ```bibtex
 @software{muzammil2026veremi,
   author    = {Muzammil, Hannan},
-  title     = {Code and data for "What VeReMi Measures: Structural
-               Artefacts in VANET Misbehaviour Detection Benchmarks"},
+  title     = {Code and data for "Auditing a Security Benchmark by
+               Measurement: Structural Artefacts in VANET Misbehaviour
+               Detection"},
   year      = {2026},
   publisher = {Zenodo},
   version   = {v1.0.0},

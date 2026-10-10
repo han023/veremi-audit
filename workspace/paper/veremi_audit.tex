@@ -1,8 +1,12 @@
-%% What VeReMi Measures --- structural artefacts in VANET misbehaviour benchmarks
+%% Auditing a Security Benchmark by Measurement --- VANET misbehaviour detection
 %%
-%% Target venue: ISOC VehicleSec (Symposium on Vehicle Security and Privacy).
-%% VehicleSec uses the NDSS class. Swap the first line for \documentclass{ndss} when the
-%% class file is available. IEEEtran is used here because it is portable and compiles anywhere.
+%% Target venue: IEEE Transactions on Dependable and Secure Computing.
+%% Regular papers there run to 12 formatted pages including references and the
+%% biography, so make_journal.py's ten-page cut clears the limit without charges.
+%%
+%% The framing is deliberate. Two domain journals desk-rejected an earlier draft
+%% for thin contribution to *their* field, neither disputing a measurement. The
+%% contribution is the audit method; VeReMi is the case it is demonstrated on.
 \documentclass[conference]{IEEEtran}
 
 \usepackage{booktabs}
@@ -14,7 +18,8 @@
 
 \begin{document}
 
-\title{What VeReMi Measures: Structural Artefacts in\\ VANET Misbehaviour Detection Benchmarks}
+\title{Auditing a Security Benchmark by Measurement:\\
+Structural Artefacts in VANET Misbehaviour Detection}
 
 \author{\IEEEauthorblockN{Hannan Muzammil}
 \IEEEauthorblockA{Hannsoft\\ \url{https://www.hannsoft.org/}\\ abdullhannan0311@gmail.com\\ ORCID 0009-0000-7502-2755}}
@@ -22,30 +27,29 @@
 \maketitle
 
 \begin{abstract}
+Security machine learning is judged on benchmarks that are rarely audited.
+We treat one such benchmark as an object of measurement.
+Every reported property is re-derived from source.
+A staged cascade then withdraws, one at a time, each evaluation advantage.
+We apply this to VeReMi, the main shared vehicular misbehaviour benchmark.
 One untrained scalar exceeds AUC 0.99 on six of eight VeReMi archives.
 That scalar is raw message count, never a claimed position.
-These archives are the field's main shared misbehaviour benchmark.
-Reported detection rates on them sit between 94\% and 99.9\%.
-We audit them by measurement: every claim is re-derived from source.
 We examine the eight Sybil archives of the extension.
 Pseudonyms encode the true sender in 86.5--100\% of identity pairs.
 No benign vehicle in them emits a second pseudonym.
 Attacker prevalence is 30.0\% of vehicles in all eight.
 Attacker identities form 68--98\% of the identity population.
 Ground-truth files list up to 28 times fewer identities than receivers observe.
-We then run one detector through seven progressively stricter protocols.
+Seven progressively stricter protocols take one detector from 0.998 to 0.843.
 Removing ground-truth aggregation is associated with a 0.060 fall.
-We evaluate the pseudonym feature in its original representation.
-The lowest stable evaluable prevalence is 3\% dense, 5\% sparse.
 Ranking metrics barely move with prevalence; precision metrics collapse.
-We show VeReMi 2018 cannot validate signal-strength position verification.
-Its measured path-loss exponent is 0.93 against a free-space two.
+Signal-strength position verification cannot be validated on VeReMi 2018.
 That detector then reaches AUC 0.530, barely above chance.
-We release code, controls and a reporting checklist for future work.
+The cascade and the reporting checklist transfer to other security benchmarks.
 \end{abstract}
 
 \begin{IEEEkeywords}
-VANET, misbehaviour detection, Sybil attack, benchmarking, reproducibility, VeReMi.
+Benchmarking, evaluation methodology, security machine learning, misbehaviour detection, VANET, reproducibility, VeReMi.
 \end{IEEEkeywords}
 
 \begin{figure}[t]
@@ -61,28 +65,37 @@ Both are read from the result files, not quoted.}
 
 \section{Introduction}
 
+A field's progress is read off the benchmarks it shares.
+Those benchmarks are built once and then reused for years.
+Their contents are rarely re-measured after the paper announcing them.
+Security machine learning has paid for this before.
+Sommer and Paxson warned about it fifteen years ago~\cite{sommer2010}.
+Arp et al.\ catalogued the pitfalls that produce it~\cite{arp2022}.
+Sampling bias and spurious correlation head their list.
+Both works name the failure; neither gives a procedure for finding it.
+
+That procedure is what we are after here.
+We treat a published benchmark as the object of measurement.
+Every property a user would assume is instead derived from source.
+We then withdraw, one at a time, each advantage the evaluation grants.
+Each withdrawal is a protocol stage, and the stages are cumulative.
+The result is a ladder rather than a single number.
+A detector that holds its score down the ladder has earned it.
+A collapse at a known stage names the artefact used.
+
+We demonstrate the method on vehicular misbehaviour detection.
+The case is chosen because the symptom is unusually clear there.
 A Sybil attacker presents many identities from one radio.
-In vehicular networks the consequence is direct and physical.
 Safety applications count reporters before believing a claim.
 Fake congestion, forged warnings and vote manipulation all follow.
 Douceur formalised the problem for peer-to-peer systems~\cite{douceur2002}.
 Newsome adapted the defence taxonomy to sensor networks~\cite{newsome2004}.
 Vehicular work inherited both, then grew for twenty years.
-
-Progress is normally judged by reported detection rates.
-Those rates have risen steadily and now approach saturation.
 Early trajectory schemes reported roughly 98\% detection~\cite{chang2011}.
 Recent deep models report between 94\% and 99.9\%.
 Such numbers imply the problem is essentially solved.
 Deployment experience does not support that conclusion.
 
-Security machine learning has met this pattern before.
-Sommer and Paxson warned about it fifteen years ago~\cite{sommer2010}.
-Arp et al.\ catalogued the pitfalls that produce it~\cite{arp2022}.
-Sampling bias and spurious correlation head their list.
-We found that lens rarely applied to vehicular benchmarks.
-
-Comparability is the missing ingredient, and it is scarce.
 VeReMi introduced a common reference for misbehaviour detection~\cite{heijden2018}.
 Its extension added attack families including explicit Sybil variants~\cite{kamel2020}.
 Shared evaluation is nonetheless rare in this literature.
@@ -92,24 +105,23 @@ The other 85, or 92.4\%, name none.
 So these archives are not ubiquitous; they are the main alternative.
 That is precisely why their contents matter.
 
-Figure~\ref{fig:abstract} summarises what follows.
-We therefore ask what these archives actually contain.
-We parse them and quantify their structure directly.
-We then re-derive headline results under explicit controls.
+Figure~\ref{fig:abstract} summarises what the method returns here.
 Our contributions are as follows.
 
 \begin{itemize}
+  \item We give a staged cascade, one withdrawn advantage per stage.
+        It is released as a runnable script.
+        It takes an archive and a model flag and reports the ladder.
+  \item We give seven reporting rules drawn from what the cascade exposed.
+        Neither the cascade nor the rules is specific to this benchmark.
   \item We document six structural artefacts across all eight Sybil archives.
         Each is measured from source, not read from documentation.
   \item A single untrained scalar exceeds AUC 0.99 on six archives.
         No training, no linkage and no physical reasoning are required.
   \item We separate timing evidence from geometric evidence.
         Timing alone reaches AUC near unity on several families.
-  \item We run one detector through seven progressively stricter protocols.
-        Each stage measures the change associated with one removed control.
   \item We sweep prevalence, jitter, attack intensity and beacon rate.
   \item We show VeReMi 2018 cannot validate signal-strength verification.
-  \item We release controls, scripts and a reporting checklist.
 \end{itemize}
 
 Our stance is deliberately narrow.
@@ -1190,6 +1202,25 @@ Compare against a single-scalar baseline first.
 Match evidence per identity when comparing policies.
 Use identity-free tokens and disjoint splits by vehicle.
 Publish the prevalence sweep, not one operating point.
+
+\subsection{What transfers beyond this benchmark}
+
+Nothing in the cascade depends on vehicular data.
+A stage withdraws an advantage; the advantages recur across security benchmarks.
+Identity leakage through a supposedly opaque token is one.
+A ground-truth key that aggregates what a receiver sees separately is another.
+Splits that share an entity between training and test are a third.
+A prevalence fixed far above any deployment is a fourth.
+Each has an analogue in intrusion detection and in malware evaluation.
+The artefacts we report are specific to VeReMi.
+The stages that found them are not.
+
+We therefore state the method in benchmark-neutral terms.
+Enumerate the properties a user assumes and measure each one.
+Rank candidate shortcuts by what an untrained scalar already achieves.
+Withdraw advantages cumulatively and report the whole ladder.
+Confirm the ordering with a single-factor add-back from the controlled end.
+The last step matters because a cascade alone cannot attribute.
 
 \subsection{What our own errors taught us}
 

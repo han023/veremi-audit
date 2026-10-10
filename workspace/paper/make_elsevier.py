@@ -1,6 +1,14 @@
 """Build the Elsevier submission from the assembled paper.
 
-Target: Vehicular Communications. Its guide rules out several things the IEEE
+SUPERSEDED. Vehicular Communications desk-rejected the manuscript on 2026-10-09
+(VEHCOM-D-26-01393) for insignificant contribution "in terms of vehicular
+communications", which is the same verdict T-ITS gave from the scope side. The
+paper was then reframed as an evaluation-methodology paper and retargeted at IEEE
+TDSC, which takes IEEEtran, so this script builds nothing that is currently being
+submitted. It is kept because it works, and because any later Elsevier venue would
+need exactly this conversion.
+
+Original target: Vehicular Communications. Its guide rules out several things the IEEE
 variants rely on, so this is a conversion rather than a class swap:
 
   - "A PDF is not an acceptable source file", so the .tex is what gets submitted
